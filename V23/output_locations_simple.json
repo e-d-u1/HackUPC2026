@@ -1,0 +1,49 @@
+{
+  "confidence_level": "high",
+  "exact_location_found": true,
+  "media_type": "image",
+  "possible_locations": [
+    {
+      "coordinates": {
+        "latitude": 18.9633474,
+        "longitude": 72.9314864
+      },
+      "formatted_address": "Gharapuri, Maharashtra 400021, India",
+      "name": "Elephanta Caves"
+    },
+    {
+      "coordinates": {
+        "latitude": 52.9505869,
+        "longitude": -1.1460116
+      },
+      "formatted_address": "Garner's Hill, Nottingham NG1 1HF, UK",
+      "name": "City of Caves"
+    },
+    {
+      "coordinates": {
+        "latitude": 41.4029088,
+        "longitude": 2.1773211
+      },
+      "formatted_address": "Carrer de València, 456, Eixample, 08013 Barcelona, Spain",
+      "name": "Island"
+    },
+    {
+      "coordinates": {
+        "latitude": 41.3927481,
+        "longitude": 2.1804829
+      },
+      "formatted_address": "Carrer de Roger de Flor, 49, Escalera A, Entlo. 2a, Eixample, 08013 Barcelona, Spain",
+      "name": "Island Post Bookstore 孤岛邮电局中文书店"
+    },
+    {
+      "coordinates": {
+        "latitude": 41.3915431,
+        "longitude": 2.1587233
+      },
+      "formatted_address": "Estancia F, C. de Mallorca, 221, 2º 2ª, Eixample, 08008 Barcelona, Spain",
+      "name": "Grupo Island Tours (Delegación Barcelona)"
+    }
+  ],
+  "source_input": "./uploads/1777157087942_image1.jpg",
+  "source_type": "local_file"
+}

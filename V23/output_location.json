@@ -1,0 +1,1642 @@
+{
+  "analyzed_images": [
+    {
+      "image_path": "./uploads/1777157087942_image1.jpg",
+      "labels": [
+        {
+          "description": "Tourist attraction",
+          "score": 0.8162285
+        },
+        {
+          "description": "Column",
+          "score": 0.7226775
+        },
+        {
+          "description": "Ruins",
+          "score": 0.65755737
+        },
+        {
+          "description": "Archaeological site",
+          "score": 0.5720876
+        },
+        {
+          "description": "Stairs",
+          "score": 0.5612293
+        }
+      ],
+      "landmarks": [
+        {
+          "description": "Elephanta Caves",
+          "lat": 18.9633474,
+          "lng": 72.93148640000001,
+          "score": 0.71969855
+        }
+      ],
+      "logos": [],
+      "safe_search": {
+        "adult": "VERY_UNLIKELY",
+        "medical": "VERY_UNLIKELY",
+        "racy": "VERY_UNLIKELY",
+        "spoof": "VERY_UNLIKELY",
+        "violence": "VERY_UNLIKELY"
+      },
+      "text": "",
+      "web_entities": [
+        {
+          "description": "Elephanta Caves",
+          "score": 1.5754201
+        },
+        {
+          "description": "Ajanta Caves",
+          "score": 1.0518
+        },
+        {
+          "description": "Ellora Caves",
+          "score": 0.81299996
+        },
+        {
+          "description": "Cave",
+          "score": 0.7103
+        },
+        {
+          "description": "City of Caves",
+          "score": 0.6975
+        },
+        {
+          "description": "World Heritage Site",
+          "score": 0.6129
+        },
+        {
+          "description": "Mumbai",
+          "score": 0.5589
+        },
+        {
+          "description": "Rock-cut architecture",
+          "score": 0.55724996
+        },
+        {
+          "description": "Rock art",
+          "score": 0.5076
+        },
+        {
+          "description": "Island",
+          "score": 0.4728
+        }
+      ]
+    }
+  ],
+  "content_type": "image/jpeg",
+  "location_inference": {
+    "candidate_locations": [
+      {
+        "name": "Island Post Bookstore 孤岛邮电局中文书店",
+        "formatted_address": "Carrer de Roger de Flor, 49, Escalera A, Entlo. 2a, Eixample, 08013 Barcelona, Spain",
+        "coordinates": {
+          "latitude": 41.3927481,
+          "longitude": 2.1804829
+        },
+        "latitude": 41.3927481,
+        "longitude": 2.1804829,
+        "final_confidence": 5,
+        "confidence_label": null,
+        "reasons": [
+          "El nombre/dirección del lugar coincide con entidades detectadas por Vision."
+        ],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=41.3927481%2C2.1804829",
+        "place_id": "ChIJGTGk88ujpBIRQX0JmuVBQac",
+        "source": "analyzer_candidate",
+        "raw": {
+          "formatted_address": "Carrer de Roger de Flor, 49, Escalera A, Entlo. 2a, Eixample, 08013 Barcelona, Spain",
+          "latitude": 41.3927481,
+          "longitude": 2.1804829,
+          "matched_visual_terms": [],
+          "name": "Island Post Bookstore 孤岛邮电局中文书店",
+          "photos_checked": [
+            {
+              "matched_terms": [],
+              "photo_path": "tmp/place_photos/ChIJGTGk88ujpBIRQX0JmuVBQac_1.jpg",
+              "visual_similarity_score": 0
+            }
+          ],
+          "place_id": "ChIJGTGk88ujpBIRQX0JmuVBQac",
+          "query_used": "Island",
+          "rating": 5,
+          "reasons": [
+            "El nombre/dirección del lugar coincide con entidades detectadas por Vision."
+          ],
+          "scores": {
+            "best_photo_visual_similarity": 0,
+            "final_confidence": 0.40092,
+            "vision_entity_match": 0.07092
+          },
+          "types": [
+            "book_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+          ]
+        }
+      },
+      {
+        "name": "City of Caves",
+        "formatted_address": "Garner's Hill, Nottingham NG1 1HF, UK",
+        "coordinates": {
+          "latitude": 52.9505869,
+          "longitude": -1.1460116
+        },
+        "latitude": 52.9505869,
+        "longitude": -1.1460116,
+        "final_confidence": 4.5,
+        "confidence_label": null,
+        "reasons": [
+          "El nombre/dirección del lugar coincide con entidades detectadas por Vision.",
+          "Algunas fotos del lugar comparten pistas visuales con la imagen original."
+        ],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=52.9505869%2C-1.1460116",
+        "place_id": "ChIJQUGYldTDeUgRRO1uSxmY3hQ",
+        "source": "analyzer_candidate",
+        "raw": {
+          "formatted_address": "Garner's Hill, Nottingham NG1 1HF, UK",
+          "latitude": 52.9505869,
+          "longitude": -1.1460116,
+          "matched_visual_terms": [
+            "archaeological site",
+            "cave",
+            "city of caves",
+            "ruins"
+          ],
+          "name": "City of Caves",
+          "photos_checked": [
+            {
+              "matched_terms": [
+                "archaeological site",
+                "cave",
+                "city of caves",
+                "ruins"
+              ],
+              "photo_path": "tmp/place_photos/ChIJQUGYldTDeUgRRO1uSxmY3hQ_1.jpg",
+              "visual_similarity_score": 0.3448275862068966
+            }
+          ],
+          "place_id": "ChIJQUGYldTDeUgRRO1uSxmY3hQ",
+          "query_used": "City of Caves",
+          "rating": 4.5,
+          "reasons": [
+            "El nombre/dirección del lugar coincide con entidades detectadas por Vision.",
+            "Algunas fotos del lugar comparten pistas visuales con la imagen original."
+          ],
+          "scores": {
+            "best_photo_visual_similarity": 0.3448275862068966,
+            "final_confidence": 0.6963424137931034,
+            "vision_entity_match": 0.21117
+          },
+          "types": [
+            "tourist_attraction",
+            "point_of_interest",
+            "establishment"
+          ]
+        }
+      },
+      {
+        "name": "Elephanta Caves",
+        "formatted_address": "Gharapuri, Maharashtra 400021, India",
+        "coordinates": {
+          "latitude": 18.9633474,
+          "longitude": 72.9314864
+        },
+        "latitude": 18.9633474,
+        "longitude": 72.9314864,
+        "final_confidence": 4.3,
+        "confidence_label": null,
+        "reasons": [
+          "El nombre/dirección del lugar coincide con entidades detectadas por Vision.",
+          "Algunas fotos del lugar comparten pistas visuales con la imagen original."
+        ],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=18.9633474%2C72.9314864",
+        "place_id": "ChIJL2CjfTDF5zsRP_WuGhsYq_Q",
+        "source": "analyzer_candidate",
+        "raw": {
+          "formatted_address": "Gharapuri, Maharashtra 400021, India",
+          "latitude": 18.9633474,
+          "longitude": 72.9314864,
+          "matched_visual_terms": [
+            "archaeological site",
+            "column",
+            "elephanta caves",
+            "ruins",
+            "tourist attraction",
+            "world heritage site"
+          ],
+          "name": "Elephanta Caves",
+          "photos_checked": [
+            {
+              "matched_terms": [
+                "archaeological site",
+                "column",
+                "elephanta caves",
+                "ruins",
+                "tourist attraction",
+                "world heritage site"
+              ],
+              "photo_path": "tmp/place_photos/ChIJL2CjfTDF5zsRP_WuGhsYq_Q_1.jpg",
+              "visual_similarity_score": 0.5
+            }
+          ],
+          "place_id": "ChIJL2CjfTDF5zsRP_WuGhsYq_Q",
+          "query_used": "Elephanta Caves",
+          "rating": 4.3,
+          "reasons": [
+            "El nombre/dirección del lugar coincide con entidades detectadas por Vision.",
+            "Algunas fotos del lugar comparten pistas visuales con la imagen original."
+          ],
+          "scores": {
+            "best_photo_visual_similarity": 0.5,
+            "final_confidence": 0.897858015,
+            "vision_entity_match": 0.342858015
+          },
+          "types": [
+            "historical_place",
+            "historical_landmark",
+            "tourist_attraction",
+            "point_of_interest",
+            "establishment"
+          ]
+        }
+      },
+      {
+        "name": "Grupo Island Tours (Delegación Barcelona)",
+        "formatted_address": "Estancia F, C. de Mallorca, 221, 2º 2ª, Eixample, 08008 Barcelona, Spain",
+        "coordinates": {
+          "latitude": 41.3915431,
+          "longitude": 2.1587233
+        },
+        "latitude": 41.3915431,
+        "longitude": 2.1587233,
+        "final_confidence": 4.2,
+        "confidence_label": null,
+        "reasons": [
+          "El nombre/dirección del lugar coincide con entidades detectadas por Vision."
+        ],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=41.3915431%2C2.1587233",
+        "place_id": "ChIJVSr6JOqipBIRo80D7TJO4nU",
+        "source": "analyzer_candidate",
+        "raw": {
+          "formatted_address": "Estancia F, C. de Mallorca, 221, 2º 2ª, Eixample, 08008 Barcelona, Spain",
+          "latitude": 41.3915431,
+          "longitude": 2.1587233,
+          "matched_visual_terms": [],
+          "name": "Grupo Island Tours (Delegación Barcelona)",
+          "photos_checked": [
+            {
+              "matched_terms": [],
+              "photo_path": "tmp/place_photos/ChIJVSr6JOqipBIRo80D7TJO4nU_1.jpg",
+              "visual_similarity_score": 0
+            }
+          ],
+          "place_id": "ChIJVSr6JOqipBIRo80D7TJO4nU",
+          "query_used": "Island",
+          "rating": 4.2,
+          "reasons": [
+            "El nombre/dirección del lugar coincide con entidades detectadas por Vision."
+          ],
+          "scores": {
+            "best_photo_visual_similarity": 0,
+            "final_confidence": 0.40092,
+            "vision_entity_match": 0.07092
+          },
+          "types": [
+            "travel_agency",
+            "point_of_interest",
+            "service",
+            "establishment"
+          ]
+        }
+      },
+      {
+        "name": "Island",
+        "formatted_address": "Carrer de València, 456, Eixample, 08013 Barcelona, Spain",
+        "coordinates": {
+          "latitude": 41.4029088,
+          "longitude": 2.1773211
+        },
+        "latitude": 41.4029088,
+        "longitude": 2.1773211,
+        "final_confidence": 4.1,
+        "confidence_label": null,
+        "reasons": [
+          "El nombre/dirección del lugar coincide con entidades detectadas por Vision."
+        ],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=41.4029088%2C2.1773211",
+        "place_id": "ChIJ127g4OujpBIRRvUpXe5qhKE",
+        "source": "analyzer_candidate",
+        "raw": {
+          "formatted_address": "Carrer de València, 456, Eixample, 08013 Barcelona, Spain",
+          "latitude": 41.4029088,
+          "longitude": 2.1773211,
+          "matched_visual_terms": [],
+          "name": "Island",
+          "photos_checked": [
+            {
+              "matched_terms": [],
+              "photo_path": "tmp/place_photos/ChIJ127g4OujpBIRRvUpXe5qhKE_1.jpg",
+              "visual_similarity_score": 0
+            }
+          ],
+          "place_id": "ChIJ127g4OujpBIRRvUpXe5qhKE",
+          "query_used": "Island",
+          "rating": 4.1,
+          "reasons": [
+            "El nombre/dirección del lugar coincide con entidades detectadas por Vision."
+          ],
+          "scores": {
+            "best_photo_visual_similarity": 0,
+            "final_confidence": 0.40092,
+            "vision_entity_match": 0.07092
+          },
+          "types": [
+            "clothing_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+          ]
+        }
+      }
+    ],
+    "confidence_level": "high",
+    "exact_location_found": true,
+    "queries_generated": [
+      "Elephanta Caves",
+      "City of Caves",
+      "City of Caves tourist attraction",
+      "City of Caves location",
+      "Island",
+      "Island tourist attraction",
+      "Island location"
+    ]
+  },
+  "media_type": "image",
+  "note": "final_confidence es un score heurístico, no una probabilidad matemática exacta.",
+  "source_file": "./uploads/1777157087942_image1.jpg",
+  "source_input": "./uploads/1777157087942_image1.jpg",
+  "source_type": "local_file",
+  "visual_summary": {
+    "labels": [
+      {
+        "description": "Tourist attraction",
+        "score": 0.8162285
+      },
+      {
+        "description": "Column",
+        "score": 0.7226775
+      },
+      {
+        "description": "Ruins",
+        "score": 0.65755737
+      },
+      {
+        "description": "Archaeological site",
+        "score": 0.5720876
+      },
+      {
+        "description": "Stairs",
+        "score": 0.5612293
+      }
+    ],
+    "landmarks": [
+      {
+        "description": "Elephanta Caves",
+        "lat": 18.9633474,
+        "lng": 72.93148640000001,
+        "score": 0.71969855
+      }
+    ],
+    "logos": [],
+    "text": "",
+    "web_entities": [
+      {
+        "description": "Elephanta Caves",
+        "score": 1.5754201
+      },
+      {
+        "description": "Ajanta Caves",
+        "score": 1.0518
+      },
+      {
+        "description": "Ellora Caves",
+        "score": 0.81299996
+      },
+      {
+        "description": "Cave",
+        "score": 0.7103
+      },
+      {
+        "description": "City of Caves",
+        "score": 0.6975
+      },
+      {
+        "description": "World Heritage Site",
+        "score": 0.6129
+      },
+      {
+        "description": "Mumbai",
+        "score": 0.5589
+      },
+      {
+        "description": "Rock-cut architecture",
+        "score": 0.55724996
+      },
+      {
+        "description": "Rock art",
+        "score": 0.5076
+      },
+      {
+        "description": "Island",
+        "score": 0.4728
+      }
+    ]
+  },
+  "candidate_locations": [
+    {
+      "name": "Island Post Bookstore 孤岛邮电局中文书店",
+      "formatted_address": "Carrer de Roger de Flor, 49, Escalera A, Entlo. 2a, Eixample, 08013 Barcelona, Spain",
+      "coordinates": {
+        "latitude": 41.3927481,
+        "longitude": 2.1804829
+      },
+      "latitude": 41.3927481,
+      "longitude": 2.1804829,
+      "final_confidence": 5,
+      "confidence_label": null,
+      "reasons": [
+        "El nombre/dirección del lugar coincide con entidades detectadas por Vision."
+      ],
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=41.3927481%2C2.1804829",
+      "place_id": "ChIJGTGk88ujpBIRQX0JmuVBQac",
+      "source": "analyzer_candidate",
+      "raw": {
+        "name": "Island Post Bookstore 孤岛邮电局中文书店",
+        "formatted_address": "Carrer de Roger de Flor, 49, Escalera A, Entlo. 2a, Eixample, 08013 Barcelona, Spain",
+        "coordinates": {
+          "latitude": 41.3927481,
+          "longitude": 2.1804829
+        },
+        "latitude": 41.3927481,
+        "longitude": 2.1804829,
+        "final_confidence": 5,
+        "confidence_label": null,
+        "reasons": [
+          "El nombre/dirección del lugar coincide con entidades detectadas por Vision."
+        ],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=41.3927481%2C2.1804829",
+        "place_id": "ChIJGTGk88ujpBIRQX0JmuVBQac",
+        "source": "analyzer_candidate",
+        "raw": {
+          "formatted_address": "Carrer de Roger de Flor, 49, Escalera A, Entlo. 2a, Eixample, 08013 Barcelona, Spain",
+          "latitude": 41.3927481,
+          "longitude": 2.1804829,
+          "matched_visual_terms": [],
+          "name": "Island Post Bookstore 孤岛邮电局中文书店",
+          "photos_checked": [
+            {
+              "matched_terms": [],
+              "photo_path": "tmp/place_photos/ChIJGTGk88ujpBIRQX0JmuVBQac_1.jpg",
+              "visual_similarity_score": 0
+            }
+          ],
+          "place_id": "ChIJGTGk88ujpBIRQX0JmuVBQac",
+          "query_used": "Island",
+          "rating": 5,
+          "reasons": [
+            "El nombre/dirección del lugar coincide con entidades detectadas por Vision."
+          ],
+          "scores": {
+            "best_photo_visual_similarity": 0,
+            "final_confidence": 0.40092,
+            "vision_entity_match": 0.07092
+          },
+          "types": [
+            "book_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+          ]
+        }
+      }
+    },
+    {
+      "name": "City of Caves",
+      "formatted_address": "Garner's Hill, Nottingham NG1 1HF, UK",
+      "coordinates": {
+        "latitude": 52.9505869,
+        "longitude": -1.1460116
+      },
+      "latitude": 52.9505869,
+      "longitude": -1.1460116,
+      "final_confidence": 4.5,
+      "confidence_label": null,
+      "reasons": [
+        "El nombre/dirección del lugar coincide con entidades detectadas por Vision.",
+        "Algunas fotos del lugar comparten pistas visuales con la imagen original."
+      ],
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=52.9505869%2C-1.1460116",
+      "place_id": "ChIJQUGYldTDeUgRRO1uSxmY3hQ",
+      "source": "analyzer_candidate",
+      "raw": {
+        "name": "City of Caves",
+        "formatted_address": "Garner's Hill, Nottingham NG1 1HF, UK",
+        "coordinates": {
+          "latitude": 52.9505869,
+          "longitude": -1.1460116
+        },
+        "latitude": 52.9505869,
+        "longitude": -1.1460116,
+        "final_confidence": 4.5,
+        "confidence_label": null,
+        "reasons": [
+          "El nombre/dirección del lugar coincide con entidades detectadas por Vision.",
+          "Algunas fotos del lugar comparten pistas visuales con la imagen original."
+        ],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=52.9505869%2C-1.1460116",
+        "place_id": "ChIJQUGYldTDeUgRRO1uSxmY3hQ",
+        "source": "analyzer_candidate",
+        "raw": {
+          "formatted_address": "Garner's Hill, Nottingham NG1 1HF, UK",
+          "latitude": 52.9505869,
+          "longitude": -1.1460116,
+          "matched_visual_terms": [
+            "archaeological site",
+            "cave",
+            "city of caves",
+            "ruins"
+          ],
+          "name": "City of Caves",
+          "photos_checked": [
+            {
+              "matched_terms": [
+                "archaeological site",
+                "cave",
+                "city of caves",
+                "ruins"
+              ],
+              "photo_path": "tmp/place_photos/ChIJQUGYldTDeUgRRO1uSxmY3hQ_1.jpg",
+              "visual_similarity_score": 0.3448275862068966
+            }
+          ],
+          "place_id": "ChIJQUGYldTDeUgRRO1uSxmY3hQ",
+          "query_used": "City of Caves",
+          "rating": 4.5,
+          "reasons": [
+            "El nombre/dirección del lugar coincide con entidades detectadas por Vision.",
+            "Algunas fotos del lugar comparten pistas visuales con la imagen original."
+          ],
+          "scores": {
+            "best_photo_visual_similarity": 0.3448275862068966,
+            "final_confidence": 0.6963424137931034,
+            "vision_entity_match": 0.21117
+          },
+          "types": [
+            "tourist_attraction",
+            "point_of_interest",
+            "establishment"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Elephanta Caves",
+      "formatted_address": "Gharapuri, Maharashtra 400021, India",
+      "coordinates": {
+        "latitude": 18.9633474,
+        "longitude": 72.9314864
+      },
+      "latitude": 18.9633474,
+      "longitude": 72.9314864,
+      "final_confidence": 4.3,
+      "confidence_label": null,
+      "reasons": [
+        "El nombre/dirección del lugar coincide con entidades detectadas por Vision.",
+        "Algunas fotos del lugar comparten pistas visuales con la imagen original."
+      ],
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=18.9633474%2C72.9314864",
+      "place_id": "ChIJL2CjfTDF5zsRP_WuGhsYq_Q",
+      "source": "analyzer_candidate",
+      "raw": {
+        "name": "Elephanta Caves",
+        "formatted_address": "Gharapuri, Maharashtra 400021, India",
+        "coordinates": {
+          "latitude": 18.9633474,
+          "longitude": 72.9314864
+        },
+        "latitude": 18.9633474,
+        "longitude": 72.9314864,
+        "final_confidence": 4.3,
+        "confidence_label": null,
+        "reasons": [
+          "El nombre/dirección del lugar coincide con entidades detectadas por Vision.",
+          "Algunas fotos del lugar comparten pistas visuales con la imagen original."
+        ],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=18.9633474%2C72.9314864",
+        "place_id": "ChIJL2CjfTDF5zsRP_WuGhsYq_Q",
+        "source": "analyzer_candidate",
+        "raw": {
+          "formatted_address": "Gharapuri, Maharashtra 400021, India",
+          "latitude": 18.9633474,
+          "longitude": 72.9314864,
+          "matched_visual_terms": [
+            "archaeological site",
+            "column",
+            "elephanta caves",
+            "ruins",
+            "tourist attraction",
+            "world heritage site"
+          ],
+          "name": "Elephanta Caves",
+          "photos_checked": [
+            {
+              "matched_terms": [
+                "archaeological site",
+                "column",
+                "elephanta caves",
+                "ruins",
+                "tourist attraction",
+                "world heritage site"
+              ],
+              "photo_path": "tmp/place_photos/ChIJL2CjfTDF5zsRP_WuGhsYq_Q_1.jpg",
+              "visual_similarity_score": 0.5
+            }
+          ],
+          "place_id": "ChIJL2CjfTDF5zsRP_WuGhsYq_Q",
+          "query_used": "Elephanta Caves",
+          "rating": 4.3,
+          "reasons": [
+            "El nombre/dirección del lugar coincide con entidades detectadas por Vision.",
+            "Algunas fotos del lugar comparten pistas visuales con la imagen original."
+          ],
+          "scores": {
+            "best_photo_visual_similarity": 0.5,
+            "final_confidence": 0.897858015,
+            "vision_entity_match": 0.342858015
+          },
+          "types": [
+            "historical_place",
+            "historical_landmark",
+            "tourist_attraction",
+            "point_of_interest",
+            "establishment"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Grupo Island Tours (Delegación Barcelona)",
+      "formatted_address": "Estancia F, C. de Mallorca, 221, 2º 2ª, Eixample, 08008 Barcelona, Spain",
+      "coordinates": {
+        "latitude": 41.3915431,
+        "longitude": 2.1587233
+      },
+      "latitude": 41.3915431,
+      "longitude": 2.1587233,
+      "final_confidence": 4.2,
+      "confidence_label": null,
+      "reasons": [
+        "El nombre/dirección del lugar coincide con entidades detectadas por Vision."
+      ],
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=41.3915431%2C2.1587233",
+      "place_id": "ChIJVSr6JOqipBIRo80D7TJO4nU",
+      "source": "analyzer_candidate",
+      "raw": {
+        "name": "Grupo Island Tours (Delegación Barcelona)",
+        "formatted_address": "Estancia F, C. de Mallorca, 221, 2º 2ª, Eixample, 08008 Barcelona, Spain",
+        "coordinates": {
+          "latitude": 41.3915431,
+          "longitude": 2.1587233
+        },
+        "latitude": 41.3915431,
+        "longitude": 2.1587233,
+        "final_confidence": 4.2,
+        "confidence_label": null,
+        "reasons": [
+          "El nombre/dirección del lugar coincide con entidades detectadas por Vision."
+        ],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=41.3915431%2C2.1587233",
+        "place_id": "ChIJVSr6JOqipBIRo80D7TJO4nU",
+        "source": "analyzer_candidate",
+        "raw": {
+          "formatted_address": "Estancia F, C. de Mallorca, 221, 2º 2ª, Eixample, 08008 Barcelona, Spain",
+          "latitude": 41.3915431,
+          "longitude": 2.1587233,
+          "matched_visual_terms": [],
+          "name": "Grupo Island Tours (Delegación Barcelona)",
+          "photos_checked": [
+            {
+              "matched_terms": [],
+              "photo_path": "tmp/place_photos/ChIJVSr6JOqipBIRo80D7TJO4nU_1.jpg",
+              "visual_similarity_score": 0
+            }
+          ],
+          "place_id": "ChIJVSr6JOqipBIRo80D7TJO4nU",
+          "query_used": "Island",
+          "rating": 4.2,
+          "reasons": [
+            "El nombre/dirección del lugar coincide con entidades detectadas por Vision."
+          ],
+          "scores": {
+            "best_photo_visual_similarity": 0,
+            "final_confidence": 0.40092,
+            "vision_entity_match": 0.07092
+          },
+          "types": [
+            "travel_agency",
+            "point_of_interest",
+            "service",
+            "establishment"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Island",
+      "formatted_address": "Carrer de València, 456, Eixample, 08013 Barcelona, Spain",
+      "coordinates": {
+        "latitude": 41.4029088,
+        "longitude": 2.1773211
+      },
+      "latitude": 41.4029088,
+      "longitude": 2.1773211,
+      "final_confidence": 4.1,
+      "confidence_label": null,
+      "reasons": [
+        "El nombre/dirección del lugar coincide con entidades detectadas por Vision."
+      ],
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=41.4029088%2C2.1773211",
+      "place_id": "ChIJ127g4OujpBIRRvUpXe5qhKE",
+      "source": "analyzer_candidate",
+      "raw": {
+        "name": "Island",
+        "formatted_address": "Carrer de València, 456, Eixample, 08013 Barcelona, Spain",
+        "coordinates": {
+          "latitude": 41.4029088,
+          "longitude": 2.1773211
+        },
+        "latitude": 41.4029088,
+        "longitude": 2.1773211,
+        "final_confidence": 4.1,
+        "confidence_label": null,
+        "reasons": [
+          "El nombre/dirección del lugar coincide con entidades detectadas por Vision."
+        ],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=41.4029088%2C2.1773211",
+        "place_id": "ChIJ127g4OujpBIRRvUpXe5qhKE",
+        "source": "analyzer_candidate",
+        "raw": {
+          "formatted_address": "Carrer de València, 456, Eixample, 08013 Barcelona, Spain",
+          "latitude": 41.4029088,
+          "longitude": 2.1773211,
+          "matched_visual_terms": [],
+          "name": "Island",
+          "photos_checked": [
+            {
+              "matched_terms": [],
+              "photo_path": "tmp/place_photos/ChIJ127g4OujpBIRRvUpXe5qhKE_1.jpg",
+              "visual_similarity_score": 0
+            }
+          ],
+          "place_id": "ChIJ127g4OujpBIRRvUpXe5qhKE",
+          "query_used": "Island",
+          "rating": 4.1,
+          "reasons": [
+            "El nombre/dirección del lugar coincide con entidades detectadas por Vision."
+          ],
+          "scores": {
+            "best_photo_visual_similarity": 0,
+            "final_confidence": 0.40092,
+            "vision_entity_match": 0.07092
+          },
+          "types": [
+            "clothing_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+          ]
+        }
+      }
+    }
+  ],
+  "possible_locations": [
+    {
+      "name": "Island Post Bookstore 孤岛邮电局中文书店",
+      "formatted_address": "Carrer de Roger de Flor, 49, Escalera A, Entlo. 2a, Eixample, 08013 Barcelona, Spain",
+      "coordinates": {
+        "latitude": 41.3927481,
+        "longitude": 2.1804829
+      },
+      "latitude": 41.3927481,
+      "longitude": 2.1804829,
+      "final_confidence": 5,
+      "confidence_label": null,
+      "reasons": [
+        "El nombre/dirección del lugar coincide con entidades detectadas por Vision."
+      ],
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=41.3927481%2C2.1804829",
+      "place_id": "ChIJGTGk88ujpBIRQX0JmuVBQac",
+      "source": "analyzer_candidate",
+      "raw": {
+        "name": "Island Post Bookstore 孤岛邮电局中文书店",
+        "formatted_address": "Carrer de Roger de Flor, 49, Escalera A, Entlo. 2a, Eixample, 08013 Barcelona, Spain",
+        "coordinates": {
+          "latitude": 41.3927481,
+          "longitude": 2.1804829
+        },
+        "latitude": 41.3927481,
+        "longitude": 2.1804829,
+        "final_confidence": 5,
+        "confidence_label": null,
+        "reasons": [
+          "El nombre/dirección del lugar coincide con entidades detectadas por Vision."
+        ],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=41.3927481%2C2.1804829",
+        "place_id": "ChIJGTGk88ujpBIRQX0JmuVBQac",
+        "source": "analyzer_candidate",
+        "raw": {
+          "formatted_address": "Carrer de Roger de Flor, 49, Escalera A, Entlo. 2a, Eixample, 08013 Barcelona, Spain",
+          "latitude": 41.3927481,
+          "longitude": 2.1804829,
+          "matched_visual_terms": [],
+          "name": "Island Post Bookstore 孤岛邮电局中文书店",
+          "photos_checked": [
+            {
+              "matched_terms": [],
+              "photo_path": "tmp/place_photos/ChIJGTGk88ujpBIRQX0JmuVBQac_1.jpg",
+              "visual_similarity_score": 0
+            }
+          ],
+          "place_id": "ChIJGTGk88ujpBIRQX0JmuVBQac",
+          "query_used": "Island",
+          "rating": 5,
+          "reasons": [
+            "El nombre/dirección del lugar coincide con entidades detectadas por Vision."
+          ],
+          "scores": {
+            "best_photo_visual_similarity": 0,
+            "final_confidence": 0.40092,
+            "vision_entity_match": 0.07092
+          },
+          "types": [
+            "book_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+          ]
+        }
+      }
+    },
+    {
+      "name": "City of Caves",
+      "formatted_address": "Garner's Hill, Nottingham NG1 1HF, UK",
+      "coordinates": {
+        "latitude": 52.9505869,
+        "longitude": -1.1460116
+      },
+      "latitude": 52.9505869,
+      "longitude": -1.1460116,
+      "final_confidence": 4.5,
+      "confidence_label": null,
+      "reasons": [
+        "El nombre/dirección del lugar coincide con entidades detectadas por Vision.",
+        "Algunas fotos del lugar comparten pistas visuales con la imagen original."
+      ],
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=52.9505869%2C-1.1460116",
+      "place_id": "ChIJQUGYldTDeUgRRO1uSxmY3hQ",
+      "source": "analyzer_candidate",
+      "raw": {
+        "name": "City of Caves",
+        "formatted_address": "Garner's Hill, Nottingham NG1 1HF, UK",
+        "coordinates": {
+          "latitude": 52.9505869,
+          "longitude": -1.1460116
+        },
+        "latitude": 52.9505869,
+        "longitude": -1.1460116,
+        "final_confidence": 4.5,
+        "confidence_label": null,
+        "reasons": [
+          "El nombre/dirección del lugar coincide con entidades detectadas por Vision.",
+          "Algunas fotos del lugar comparten pistas visuales con la imagen original."
+        ],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=52.9505869%2C-1.1460116",
+        "place_id": "ChIJQUGYldTDeUgRRO1uSxmY3hQ",
+        "source": "analyzer_candidate",
+        "raw": {
+          "formatted_address": "Garner's Hill, Nottingham NG1 1HF, UK",
+          "latitude": 52.9505869,
+          "longitude": -1.1460116,
+          "matched_visual_terms": [
+            "archaeological site",
+            "cave",
+            "city of caves",
+            "ruins"
+          ],
+          "name": "City of Caves",
+          "photos_checked": [
+            {
+              "matched_terms": [
+                "archaeological site",
+                "cave",
+                "city of caves",
+                "ruins"
+              ],
+              "photo_path": "tmp/place_photos/ChIJQUGYldTDeUgRRO1uSxmY3hQ_1.jpg",
+              "visual_similarity_score": 0.3448275862068966
+            }
+          ],
+          "place_id": "ChIJQUGYldTDeUgRRO1uSxmY3hQ",
+          "query_used": "City of Caves",
+          "rating": 4.5,
+          "reasons": [
+            "El nombre/dirección del lugar coincide con entidades detectadas por Vision.",
+            "Algunas fotos del lugar comparten pistas visuales con la imagen original."
+          ],
+          "scores": {
+            "best_photo_visual_similarity": 0.3448275862068966,
+            "final_confidence": 0.6963424137931034,
+            "vision_entity_match": 0.21117
+          },
+          "types": [
+            "tourist_attraction",
+            "point_of_interest",
+            "establishment"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Elephanta Caves",
+      "formatted_address": "Gharapuri, Maharashtra 400021, India",
+      "coordinates": {
+        "latitude": 18.9633474,
+        "longitude": 72.9314864
+      },
+      "latitude": 18.9633474,
+      "longitude": 72.9314864,
+      "final_confidence": 4.3,
+      "confidence_label": null,
+      "reasons": [
+        "El nombre/dirección del lugar coincide con entidades detectadas por Vision.",
+        "Algunas fotos del lugar comparten pistas visuales con la imagen original."
+      ],
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=18.9633474%2C72.9314864",
+      "place_id": "ChIJL2CjfTDF5zsRP_WuGhsYq_Q",
+      "source": "analyzer_candidate",
+      "raw": {
+        "name": "Elephanta Caves",
+        "formatted_address": "Gharapuri, Maharashtra 400021, India",
+        "coordinates": {
+          "latitude": 18.9633474,
+          "longitude": 72.9314864
+        },
+        "latitude": 18.9633474,
+        "longitude": 72.9314864,
+        "final_confidence": 4.3,
+        "confidence_label": null,
+        "reasons": [
+          "El nombre/dirección del lugar coincide con entidades detectadas por Vision.",
+          "Algunas fotos del lugar comparten pistas visuales con la imagen original."
+        ],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=18.9633474%2C72.9314864",
+        "place_id": "ChIJL2CjfTDF5zsRP_WuGhsYq_Q",
+        "source": "analyzer_candidate",
+        "raw": {
+          "formatted_address": "Gharapuri, Maharashtra 400021, India",
+          "latitude": 18.9633474,
+          "longitude": 72.9314864,
+          "matched_visual_terms": [
+            "archaeological site",
+            "column",
+            "elephanta caves",
+            "ruins",
+            "tourist attraction",
+            "world heritage site"
+          ],
+          "name": "Elephanta Caves",
+          "photos_checked": [
+            {
+              "matched_terms": [
+                "archaeological site",
+                "column",
+                "elephanta caves",
+                "ruins",
+                "tourist attraction",
+                "world heritage site"
+              ],
+              "photo_path": "tmp/place_photos/ChIJL2CjfTDF5zsRP_WuGhsYq_Q_1.jpg",
+              "visual_similarity_score": 0.5
+            }
+          ],
+          "place_id": "ChIJL2CjfTDF5zsRP_WuGhsYq_Q",
+          "query_used": "Elephanta Caves",
+          "rating": 4.3,
+          "reasons": [
+            "El nombre/dirección del lugar coincide con entidades detectadas por Vision.",
+            "Algunas fotos del lugar comparten pistas visuales con la imagen original."
+          ],
+          "scores": {
+            "best_photo_visual_similarity": 0.5,
+            "final_confidence": 0.897858015,
+            "vision_entity_match": 0.342858015
+          },
+          "types": [
+            "historical_place",
+            "historical_landmark",
+            "tourist_attraction",
+            "point_of_interest",
+            "establishment"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Grupo Island Tours (Delegación Barcelona)",
+      "formatted_address": "Estancia F, C. de Mallorca, 221, 2º 2ª, Eixample, 08008 Barcelona, Spain",
+      "coordinates": {
+        "latitude": 41.3915431,
+        "longitude": 2.1587233
+      },
+      "latitude": 41.3915431,
+      "longitude": 2.1587233,
+      "final_confidence": 4.2,
+      "confidence_label": null,
+      "reasons": [
+        "El nombre/dirección del lugar coincide con entidades detectadas por Vision."
+      ],
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=41.3915431%2C2.1587233",
+      "place_id": "ChIJVSr6JOqipBIRo80D7TJO4nU",
+      "source": "analyzer_candidate",
+      "raw": {
+        "name": "Grupo Island Tours (Delegación Barcelona)",
+        "formatted_address": "Estancia F, C. de Mallorca, 221, 2º 2ª, Eixample, 08008 Barcelona, Spain",
+        "coordinates": {
+          "latitude": 41.3915431,
+          "longitude": 2.1587233
+        },
+        "latitude": 41.3915431,
+        "longitude": 2.1587233,
+        "final_confidence": 4.2,
+        "confidence_label": null,
+        "reasons": [
+          "El nombre/dirección del lugar coincide con entidades detectadas por Vision."
+        ],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=41.3915431%2C2.1587233",
+        "place_id": "ChIJVSr6JOqipBIRo80D7TJO4nU",
+        "source": "analyzer_candidate",
+        "raw": {
+          "formatted_address": "Estancia F, C. de Mallorca, 221, 2º 2ª, Eixample, 08008 Barcelona, Spain",
+          "latitude": 41.3915431,
+          "longitude": 2.1587233,
+          "matched_visual_terms": [],
+          "name": "Grupo Island Tours (Delegación Barcelona)",
+          "photos_checked": [
+            {
+              "matched_terms": [],
+              "photo_path": "tmp/place_photos/ChIJVSr6JOqipBIRo80D7TJO4nU_1.jpg",
+              "visual_similarity_score": 0
+            }
+          ],
+          "place_id": "ChIJVSr6JOqipBIRo80D7TJO4nU",
+          "query_used": "Island",
+          "rating": 4.2,
+          "reasons": [
+            "El nombre/dirección del lugar coincide con entidades detectadas por Vision."
+          ],
+          "scores": {
+            "best_photo_visual_similarity": 0,
+            "final_confidence": 0.40092,
+            "vision_entity_match": 0.07092
+          },
+          "types": [
+            "travel_agency",
+            "point_of_interest",
+            "service",
+            "establishment"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Island",
+      "formatted_address": "Carrer de València, 456, Eixample, 08013 Barcelona, Spain",
+      "coordinates": {
+        "latitude": 41.4029088,
+        "longitude": 2.1773211
+      },
+      "latitude": 41.4029088,
+      "longitude": 2.1773211,
+      "final_confidence": 4.1,
+      "confidence_label": null,
+      "reasons": [
+        "El nombre/dirección del lugar coincide con entidades detectadas por Vision."
+      ],
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=41.4029088%2C2.1773211",
+      "place_id": "ChIJ127g4OujpBIRRvUpXe5qhKE",
+      "source": "analyzer_candidate",
+      "raw": {
+        "name": "Island",
+        "formatted_address": "Carrer de València, 456, Eixample, 08013 Barcelona, Spain",
+        "coordinates": {
+          "latitude": 41.4029088,
+          "longitude": 2.1773211
+        },
+        "latitude": 41.4029088,
+        "longitude": 2.1773211,
+        "final_confidence": 4.1,
+        "confidence_label": null,
+        "reasons": [
+          "El nombre/dirección del lugar coincide con entidades detectadas por Vision."
+        ],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=41.4029088%2C2.1773211",
+        "place_id": "ChIJ127g4OujpBIRRvUpXe5qhKE",
+        "source": "analyzer_candidate",
+        "raw": {
+          "formatted_address": "Carrer de València, 456, Eixample, 08013 Barcelona, Spain",
+          "latitude": 41.4029088,
+          "longitude": 2.1773211,
+          "matched_visual_terms": [],
+          "name": "Island",
+          "photos_checked": [
+            {
+              "matched_terms": [],
+              "photo_path": "tmp/place_photos/ChIJ127g4OujpBIRRvUpXe5qhKE_1.jpg",
+              "visual_similarity_score": 0
+            }
+          ],
+          "place_id": "ChIJ127g4OujpBIRRvUpXe5qhKE",
+          "query_used": "Island",
+          "rating": 4.1,
+          "reasons": [
+            "El nombre/dirección del lugar coincide con entidades detectadas por Vision."
+          ],
+          "scores": {
+            "best_photo_visual_similarity": 0,
+            "final_confidence": 0.40092,
+            "vision_entity_match": 0.07092
+          },
+          "types": [
+            "clothing_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+          ]
+        }
+      }
+    }
+  ],
+  "simple_possible_locations": [
+    {
+      "name": "Island Post Bookstore 孤岛邮电局中文书店",
+      "formatted_address": "Carrer de Roger de Flor, 49, Escalera A, Entlo. 2a, Eixample, 08013 Barcelona, Spain",
+      "latitude": 41.3927481,
+      "longitude": 2.1804829
+    },
+    {
+      "name": "City of Caves",
+      "formatted_address": "Garner's Hill, Nottingham NG1 1HF, UK",
+      "latitude": 52.9505869,
+      "longitude": -1.1460116
+    },
+    {
+      "name": "Elephanta Caves",
+      "formatted_address": "Gharapuri, Maharashtra 400021, India",
+      "latitude": 18.9633474,
+      "longitude": 72.9314864
+    },
+    {
+      "name": "Grupo Island Tours (Delegación Barcelona)",
+      "formatted_address": "Estancia F, C. de Mallorca, 221, 2º 2ª, Eixample, 08008 Barcelona, Spain",
+      "latitude": 41.3915431,
+      "longitude": 2.1587233
+    },
+    {
+      "name": "Island",
+      "formatted_address": "Carrer de València, 456, Eixample, 08013 Barcelona, Spain",
+      "latitude": 41.4029088,
+      "longitude": 2.1773211
+    }
+  ],
+  "frontend_candidate_locations": [
+    {
+      "name": "Island Post Bookstore 孤岛邮电局中文书店",
+      "formatted_address": "Carrer de Roger de Flor, 49, Escalera A, Entlo. 2a, Eixample, 08013 Barcelona, Spain",
+      "coordinates": {
+        "latitude": 41.3927481,
+        "longitude": 2.1804829
+      },
+      "latitude": 41.3927481,
+      "longitude": 2.1804829,
+      "final_confidence": 5,
+      "confidence_label": null,
+      "reasons": [
+        "El nombre/dirección del lugar coincide con entidades detectadas por Vision."
+      ],
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=41.3927481%2C2.1804829",
+      "place_id": "ChIJGTGk88ujpBIRQX0JmuVBQac",
+      "source": "analyzer_candidate",
+      "raw": {
+        "name": "Island Post Bookstore 孤岛邮电局中文书店",
+        "formatted_address": "Carrer de Roger de Flor, 49, Escalera A, Entlo. 2a, Eixample, 08013 Barcelona, Spain",
+        "coordinates": {
+          "latitude": 41.3927481,
+          "longitude": 2.1804829
+        },
+        "latitude": 41.3927481,
+        "longitude": 2.1804829,
+        "final_confidence": 5,
+        "confidence_label": null,
+        "reasons": [
+          "El nombre/dirección del lugar coincide con entidades detectadas por Vision."
+        ],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=41.3927481%2C2.1804829",
+        "place_id": "ChIJGTGk88ujpBIRQX0JmuVBQac",
+        "source": "analyzer_candidate",
+        "raw": {
+          "formatted_address": "Carrer de Roger de Flor, 49, Escalera A, Entlo. 2a, Eixample, 08013 Barcelona, Spain",
+          "latitude": 41.3927481,
+          "longitude": 2.1804829,
+          "matched_visual_terms": [],
+          "name": "Island Post Bookstore 孤岛邮电局中文书店",
+          "photos_checked": [
+            {
+              "matched_terms": [],
+              "photo_path": "tmp/place_photos/ChIJGTGk88ujpBIRQX0JmuVBQac_1.jpg",
+              "visual_similarity_score": 0
+            }
+          ],
+          "place_id": "ChIJGTGk88ujpBIRQX0JmuVBQac",
+          "query_used": "Island",
+          "rating": 5,
+          "reasons": [
+            "El nombre/dirección del lugar coincide con entidades detectadas por Vision."
+          ],
+          "scores": {
+            "best_photo_visual_similarity": 0,
+            "final_confidence": 0.40092,
+            "vision_entity_match": 0.07092
+          },
+          "types": [
+            "book_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+          ]
+        }
+      }
+    },
+    {
+      "name": "City of Caves",
+      "formatted_address": "Garner's Hill, Nottingham NG1 1HF, UK",
+      "coordinates": {
+        "latitude": 52.9505869,
+        "longitude": -1.1460116
+      },
+      "latitude": 52.9505869,
+      "longitude": -1.1460116,
+      "final_confidence": 4.5,
+      "confidence_label": null,
+      "reasons": [
+        "El nombre/dirección del lugar coincide con entidades detectadas por Vision.",
+        "Algunas fotos del lugar comparten pistas visuales con la imagen original."
+      ],
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=52.9505869%2C-1.1460116",
+      "place_id": "ChIJQUGYldTDeUgRRO1uSxmY3hQ",
+      "source": "analyzer_candidate",
+      "raw": {
+        "name": "City of Caves",
+        "formatted_address": "Garner's Hill, Nottingham NG1 1HF, UK",
+        "coordinates": {
+          "latitude": 52.9505869,
+          "longitude": -1.1460116
+        },
+        "latitude": 52.9505869,
+        "longitude": -1.1460116,
+        "final_confidence": 4.5,
+        "confidence_label": null,
+        "reasons": [
+          "El nombre/dirección del lugar coincide con entidades detectadas por Vision.",
+          "Algunas fotos del lugar comparten pistas visuales con la imagen original."
+        ],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=52.9505869%2C-1.1460116",
+        "place_id": "ChIJQUGYldTDeUgRRO1uSxmY3hQ",
+        "source": "analyzer_candidate",
+        "raw": {
+          "formatted_address": "Garner's Hill, Nottingham NG1 1HF, UK",
+          "latitude": 52.9505869,
+          "longitude": -1.1460116,
+          "matched_visual_terms": [
+            "archaeological site",
+            "cave",
+            "city of caves",
+            "ruins"
+          ],
+          "name": "City of Caves",
+          "photos_checked": [
+            {
+              "matched_terms": [
+                "archaeological site",
+                "cave",
+                "city of caves",
+                "ruins"
+              ],
+              "photo_path": "tmp/place_photos/ChIJQUGYldTDeUgRRO1uSxmY3hQ_1.jpg",
+              "visual_similarity_score": 0.3448275862068966
+            }
+          ],
+          "place_id": "ChIJQUGYldTDeUgRRO1uSxmY3hQ",
+          "query_used": "City of Caves",
+          "rating": 4.5,
+          "reasons": [
+            "El nombre/dirección del lugar coincide con entidades detectadas por Vision.",
+            "Algunas fotos del lugar comparten pistas visuales con la imagen original."
+          ],
+          "scores": {
+            "best_photo_visual_similarity": 0.3448275862068966,
+            "final_confidence": 0.6963424137931034,
+            "vision_entity_match": 0.21117
+          },
+          "types": [
+            "tourist_attraction",
+            "point_of_interest",
+            "establishment"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Elephanta Caves",
+      "formatted_address": "Gharapuri, Maharashtra 400021, India",
+      "coordinates": {
+        "latitude": 18.9633474,
+        "longitude": 72.9314864
+      },
+      "latitude": 18.9633474,
+      "longitude": 72.9314864,
+      "final_confidence": 4.3,
+      "confidence_label": null,
+      "reasons": [
+        "El nombre/dirección del lugar coincide con entidades detectadas por Vision.",
+        "Algunas fotos del lugar comparten pistas visuales con la imagen original."
+      ],
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=18.9633474%2C72.9314864",
+      "place_id": "ChIJL2CjfTDF5zsRP_WuGhsYq_Q",
+      "source": "analyzer_candidate",
+      "raw": {
+        "name": "Elephanta Caves",
+        "formatted_address": "Gharapuri, Maharashtra 400021, India",
+        "coordinates": {
+          "latitude": 18.9633474,
+          "longitude": 72.9314864
+        },
+        "latitude": 18.9633474,
+        "longitude": 72.9314864,
+        "final_confidence": 4.3,
+        "confidence_label": null,
+        "reasons": [
+          "El nombre/dirección del lugar coincide con entidades detectadas por Vision.",
+          "Algunas fotos del lugar comparten pistas visuales con la imagen original."
+        ],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=18.9633474%2C72.9314864",
+        "place_id": "ChIJL2CjfTDF5zsRP_WuGhsYq_Q",
+        "source": "analyzer_candidate",
+        "raw": {
+          "formatted_address": "Gharapuri, Maharashtra 400021, India",
+          "latitude": 18.9633474,
+          "longitude": 72.9314864,
+          "matched_visual_terms": [
+            "archaeological site",
+            "column",
+            "elephanta caves",
+            "ruins",
+            "tourist attraction",
+            "world heritage site"
+          ],
+          "name": "Elephanta Caves",
+          "photos_checked": [
+            {
+              "matched_terms": [
+                "archaeological site",
+                "column",
+                "elephanta caves",
+                "ruins",
+                "tourist attraction",
+                "world heritage site"
+              ],
+              "photo_path": "tmp/place_photos/ChIJL2CjfTDF5zsRP_WuGhsYq_Q_1.jpg",
+              "visual_similarity_score": 0.5
+            }
+          ],
+          "place_id": "ChIJL2CjfTDF5zsRP_WuGhsYq_Q",
+          "query_used": "Elephanta Caves",
+          "rating": 4.3,
+          "reasons": [
+            "El nombre/dirección del lugar coincide con entidades detectadas por Vision.",
+            "Algunas fotos del lugar comparten pistas visuales con la imagen original."
+          ],
+          "scores": {
+            "best_photo_visual_similarity": 0.5,
+            "final_confidence": 0.897858015,
+            "vision_entity_match": 0.342858015
+          },
+          "types": [
+            "historical_place",
+            "historical_landmark",
+            "tourist_attraction",
+            "point_of_interest",
+            "establishment"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Grupo Island Tours (Delegación Barcelona)",
+      "formatted_address": "Estancia F, C. de Mallorca, 221, 2º 2ª, Eixample, 08008 Barcelona, Spain",
+      "coordinates": {
+        "latitude": 41.3915431,
+        "longitude": 2.1587233
+      },
+      "latitude": 41.3915431,
+      "longitude": 2.1587233,
+      "final_confidence": 4.2,
+      "confidence_label": null,
+      "reasons": [
+        "El nombre/dirección del lugar coincide con entidades detectadas por Vision."
+      ],
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=41.3915431%2C2.1587233",
+      "place_id": "ChIJVSr6JOqipBIRo80D7TJO4nU",
+      "source": "analyzer_candidate",
+      "raw": {
+        "name": "Grupo Island Tours (Delegación Barcelona)",
+        "formatted_address": "Estancia F, C. de Mallorca, 221, 2º 2ª, Eixample, 08008 Barcelona, Spain",
+        "coordinates": {
+          "latitude": 41.3915431,
+          "longitude": 2.1587233
+        },
+        "latitude": 41.3915431,
+        "longitude": 2.1587233,
+        "final_confidence": 4.2,
+        "confidence_label": null,
+        "reasons": [
+          "El nombre/dirección del lugar coincide con entidades detectadas por Vision."
+        ],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=41.3915431%2C2.1587233",
+        "place_id": "ChIJVSr6JOqipBIRo80D7TJO4nU",
+        "source": "analyzer_candidate",
+        "raw": {
+          "formatted_address": "Estancia F, C. de Mallorca, 221, 2º 2ª, Eixample, 08008 Barcelona, Spain",
+          "latitude": 41.3915431,
+          "longitude": 2.1587233,
+          "matched_visual_terms": [],
+          "name": "Grupo Island Tours (Delegación Barcelona)",
+          "photos_checked": [
+            {
+              "matched_terms": [],
+              "photo_path": "tmp/place_photos/ChIJVSr6JOqipBIRo80D7TJO4nU_1.jpg",
+              "visual_similarity_score": 0
+            }
+          ],
+          "place_id": "ChIJVSr6JOqipBIRo80D7TJO4nU",
+          "query_used": "Island",
+          "rating": 4.2,
+          "reasons": [
+            "El nombre/dirección del lugar coincide con entidades detectadas por Vision."
+          ],
+          "scores": {
+            "best_photo_visual_similarity": 0,
+            "final_confidence": 0.40092,
+            "vision_entity_match": 0.07092
+          },
+          "types": [
+            "travel_agency",
+            "point_of_interest",
+            "service",
+            "establishment"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Island",
+      "formatted_address": "Carrer de València, 456, Eixample, 08013 Barcelona, Spain",
+      "coordinates": {
+        "latitude": 41.4029088,
+        "longitude": 2.1773211
+      },
+      "latitude": 41.4029088,
+      "longitude": 2.1773211,
+      "final_confidence": 4.1,
+      "confidence_label": null,
+      "reasons": [
+        "El nombre/dirección del lugar coincide con entidades detectadas por Vision."
+      ],
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=41.4029088%2C2.1773211",
+      "place_id": "ChIJ127g4OujpBIRRvUpXe5qhKE",
+      "source": "analyzer_candidate",
+      "raw": {
+        "name": "Island",
+        "formatted_address": "Carrer de València, 456, Eixample, 08013 Barcelona, Spain",
+        "coordinates": {
+          "latitude": 41.4029088,
+          "longitude": 2.1773211
+        },
+        "latitude": 41.4029088,
+        "longitude": 2.1773211,
+        "final_confidence": 4.1,
+        "confidence_label": null,
+        "reasons": [
+          "El nombre/dirección del lugar coincide con entidades detectadas por Vision."
+        ],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=41.4029088%2C2.1773211",
+        "place_id": "ChIJ127g4OujpBIRRvUpXe5qhKE",
+        "source": "analyzer_candidate",
+        "raw": {
+          "formatted_address": "Carrer de València, 456, Eixample, 08013 Barcelona, Spain",
+          "latitude": 41.4029088,
+          "longitude": 2.1773211,
+          "matched_visual_terms": [],
+          "name": "Island",
+          "photos_checked": [
+            {
+              "matched_terms": [],
+              "photo_path": "tmp/place_photos/ChIJ127g4OujpBIRRvUpXe5qhKE_1.jpg",
+              "visual_similarity_score": 0
+            }
+          ],
+          "place_id": "ChIJ127g4OujpBIRRvUpXe5qhKE",
+          "query_used": "Island",
+          "rating": 4.1,
+          "reasons": [
+            "El nombre/dirección del lugar coincide con entidades detectadas por Vision."
+          ],
+          "scores": {
+            "best_photo_visual_similarity": 0,
+            "final_confidence": 0.40092,
+            "vision_entity_match": 0.07092
+          },
+          "types": [
+            "clothing_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+          ]
+        }
+      }
+    }
+  ],
+  "frontend_simple_possible_locations": [
+    {
+      "name": "Island Post Bookstore 孤岛邮电局中文书店",
+      "formatted_address": "Carrer de Roger de Flor, 49, Escalera A, Entlo. 2a, Eixample, 08013 Barcelona, Spain",
+      "latitude": 41.3927481,
+      "longitude": 2.1804829
+    },
+    {
+      "name": "City of Caves",
+      "formatted_address": "Garner's Hill, Nottingham NG1 1HF, UK",
+      "latitude": 52.9505869,
+      "longitude": -1.1460116
+    },
+    {
+      "name": "Elephanta Caves",
+      "formatted_address": "Gharapuri, Maharashtra 400021, India",
+      "latitude": 18.9633474,
+      "longitude": 72.9314864
+    },
+    {
+      "name": "Grupo Island Tours (Delegación Barcelona)",
+      "formatted_address": "Estancia F, C. de Mallorca, 221, 2º 2ª, Eixample, 08008 Barcelona, Spain",
+      "latitude": 41.3915431,
+      "longitude": 2.1587233
+    },
+    {
+      "name": "Island",
+      "formatted_address": "Carrer de València, 456, Eixample, 08013 Barcelona, Spain",
+      "latitude": 41.4029088,
+      "longitude": 2.1773211
+    }
+  ],
+  "request_info": {
+    "user_ip": "::1",
+    "user_country": null,
+    "user_country_code": null,
+    "user_ip_location": {
+      "status": "skipped",
+      "reason": "Local/private IP address. Country cannot be inferred from localhost or a private network IP.",
+      "provider": null,
+      "ip_used": "::1",
+      "country": null,
+      "country_code": null,
+      "city": null,
+      "region": null,
+      "timezone": null
+    },
+    "analyzed_at": "2026-04-25T22:44:47.947Z",
+    "input_method": "file_upload",
+    "original_filename": "image1.jpg"
+  }
+}

@@ -1,0 +1,43 @@
+Generar imatges:
+https://picsum.photos/800/600
+
+
+
+V1:
+rm -rf build
+mkdir build
+cd build
+cmake .. -G "MinGW Makefiles" -DCMAKE_PREFIX_PATH=C:/msys64/ucrt64  
+C:\msys64\ucrt64\bin\mingw32-make.exe                       
+$env:GOOGLE_VISION_API_KEY="AIzaSyA9sFxBdn8-BWqHv8bO985nRejeeUEAAag" 
+.\vision_prototype.exe ".\vision_prototype.exe "https://fastly.picsum.photos/id/656/800/600.jpg?hmac=rQjFQWAQRt1X3WciBHZ03H-QXq_JtdDPjmI997jeJzE"
+
+
+
+V2:
+mkdir build
+cd build
+cmake .. -G "MinGW Makefiles" -DCMAKE_PREFIX_PATH=C:/msys64/ucrt64  
+C:\msys64\ucrt64\bin\mingw32-make.exe    
+$env:GOOGLE_VISION_API_KEY="AIzaSyA9sFxBdn8-BWqHv8bO985nRejeeUEAAag"
+$env:GOOGLE_MAPS_API_KEY="AIzaSyCYkmyQfSlVvaF0BcVnDJb3DuNIzStUOqQ"
+.\location_prototype.exe "https://fastly.picsum.photos/id/656/800/600.jpg?hmac=rQjFQWAQRt1X3WciBHZ03H-QXq_JtdDPjmI997jeJzE" --max-candidates 5 --photos-per-place 1
+
+.\location_prototype.exe "../../media/video1.mp4" --max-candidates 5 --photos-per-place 1
+
+
+
+
+
+V7:
+mkdir build
+cd build
+cmake .. -G "MinGW Makefiles" -DCMAKE_PREFIX_PATH=C:/msys64/ucrt64  
+C:\msys64\ucrt64\bin\mingw32-make.exe    
+$env:GOOGLE_VISION_API_KEY="AIzaSyA9sFxBdn8-BWqHv8bO985nRejeeUEAAag"
+$env:GOOGLE_MAPS_API_KEY="AIzaSyCYkmyQfSlVvaF0BcVnDJb3DuNIzStUOqQ"
+$env:GOOGLE_MAPS_API_KEY="AIzaSyAYSR7yd43IERx_GC1UzvJydJyOppAN4Fg"
+.\location_prototype.exe "https://fastly.picsum.photos/id/656/800/600.jpg?hmac=rQjFQWAQRt1X3WciBHZ03H-QXq_JtdDPjmI997jeJzE" --max-candidates 5 --photos-per-place 1
+
+.\location_prototype.exe "../../media/video1.mp4" --max-candidates 5 --photos-per-place 1
+
