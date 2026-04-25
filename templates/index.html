@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skyscanner Route Optimizer</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <style>
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.6; color: #333; }
         h1 { color: #0056b3; border-bottom: 2px solid #eee; padding-bottom: 10px; }
@@ -31,8 +32,51 @@
         @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
 
         #results { margin-top: 30px; }
-        .card { background: white; padding: 15px; border-left: 5px solid #007bff; margin-bottom: 10px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-radius: 4px; }
+        #map { height: 400px; width: 100%; margin-top: 20px; border-radius: 8px; display: none; }
+        .card { background: white; margin-bottom: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden; border-left: 5px solid #007bff; }
+        .card-content { padding: 15px; }
+        .card-content h3 { margin: 0 0 10px 0; color: #0056b3; }
+        .card-content p { margin: 5px 0; }
+        .card img { 
+            width: 100%; 
+            aspect-ratio: 16 / 9; /* Reserva el espacio exacto antes de cargar */
+            object-fit: cover; 
+            background: linear-gradient(110deg, #ececec 8%, #f5f5f5 18%, #ececec 33%);
+            background-size: 200% 100%;
+            animation: shine 1.5s linear infinite;
+            cursor: pointer; 
+            transition: opacity 0.3s; 
+            display: block;
+        }
+        @keyframes shine { to { background-position-x: -200%; } }
+        .card img:hover { opacity: 0.9; }
         .error { color: #dc3545; font-weight: bold; background: #f8d7da; padding: 10px; border-radius: 4px; }
+
+        /* Estilos para el Modal de Imagen */
+        .modal-img {
+            display: none;
+            position: fixed;
+            z-index: 10000;
+            padding-top: 50px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.9);
+            cursor: zoom-out;
+        }
+        .modal-img-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 1000px;
+            border-radius: 8px;
+            animation: zoom 0.3s;
+        }
+        @keyframes zoom {
+            from {transform:scale(0.8); opacity: 0;}
+            to {transform:scale(1); opacity: 1;}
+        }
     </style>
 </head>
 <body>
@@ -47,8 +91,8 @@
             <input type="text" id="destinations" placeholder="Ej: Tokio, Paris, New York" value="Paris">
         </div>
         <div class="form-group">
-            <label for="date">Fecha (Año '2025', Mes '2025-06' o Día '2025-06-15'):</label>
-            <input type="text" id="date" placeholder="Ej: 2025" value="2025">
+            <label for="date">Fecha (Año '2025' o Mes '2025-06'):</label>
+            <input type="text" id="date" placeholder="Ej: 2025-06" value="2025">
         </div>
         <button id="searchBtn">Buscar Mejores Precios</button>
 
@@ -57,13 +101,56 @@
             <div class="spinner"></div> <span>Analizando rutas con Skyscanner... esto puede tardar unos segundos.</span>
         </div>
 
+        <div id="map"></div>
         <div id="results"></div>
     </div>
 
+    <!-- Contenedor para el zoom de imagen -->
+    <div id="imgModal" class="modal-img" onclick="this.style.display='none'">
+        <img class="modal-img-content" id="fullImg">
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
         const btn = document.getElementById('searchBtn');
         const loading = document.getElementById('loading');
         const resultsDiv = document.getElementById('results');
+        const mapDiv = document.getElementById('map');
+        const imgModal = document.getElementById('imgModal');
+        const fullImg = document.getElementById('fullImg');
+
+        // Inicializar Mapa
+        const map = L.map('map').setView([20, 0], 2);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+        let layers = L.layerGroup().addTo(map);
+
+        // Función para obtener imágenes de Wikipedia sin necesidad de API Key
+        // Función para obtener imágenes de Wikipedia con soporte para nombres en español y redirecciones
+        async function getWikiImage(city) {
+            async function fetchFromWiki(lang) {
+                const wikiUrl = `https://${lang}.wikipedia.org/w/api.php?action=query&format=json&origin=*&prop=pageimages&titles=${encodeURIComponent(city)}&pithumbsize=600&redirects=1`;
+                try {
+                    const res = await fetch(wikiUrl);
+                    const data = await res.json();
+                    const pages = data.query.pages;
+                    const pageId = Object.keys(pages)[0];
+                    if (pageId !== "-1" && pages[pageId].thumbnail) {
+                        return pages[pageId].thumbnail.source;
+                    }
+                } catch (e) {
+                    console.error(`Error buscando en Wikipedia (${lang}):`, e);
+                }
+                return null;
+            }
+
+            // Primero intentamos en español, luego en inglés
+            let imageUrl = await fetchFromWiki('es');
+            if (!imageUrl) {
+                imageUrl = await fetchFromWiki('en');
+            }
+
+            return imageUrl || `https://placehold.co/600/400?text=${encodeURIComponent(city)}`;
+        }
 
         btn.addEventListener('click', async () => {
             const origin = document.getElementById('origin').value;
@@ -74,25 +161,79 @@
             loading.style.display = 'block';
             btn.disabled = true;
             resultsDiv.innerHTML = '';
+            layers.clearLayers();
+            mapDiv.style.display = 'none';
 
             try {
                 const url = `/api/search?origin=${encodeURIComponent(origin)}&destinations=${encodeURIComponent(destinations)}&date=${encodeURIComponent(date)}`;
                 const response = await fetch(url);
-                const data = await response.json();
+                
+                let data;
+                try {
+                    data = await response.json();
+                } catch (err) {
+                    throw new Error("El servidor no devolvió una respuesta válida.");
+                }
+
+                if (!response.ok) {
+                    resultsDiv.innerHTML = `<p class="error">❌ Error ${response.status}: ${data.detail || 'Error desconocido'}</p>`;
+                    return;
+                }
 
                 // 2. Renderizar resultados
-                resultsDiv.innerHTML = '<h2>Resultados de la búsqueda:</h2>';
-                for (const [dest, price] of Object.entries(data)) {
-                    resultsDiv.innerHTML += `<div class="card"><strong>${dest}:</strong> ${price}</div>`;
-                }
-            } catch (e) {
-                resultsDiv.innerHTML = '<p class="error">❌ Hubo un error al conectar con el servidor. Revisa la consola o el estado de tu red.</p>';
+                mapDiv.style.display = 'block';
+                map.invalidateSize();
+                // Marcador Origen
+                const originMarker = L.marker([data.origin.lat, data.origin.lon]).addTo(layers).bindPopup(`<b>Origen: ${data.origin.name}</b>`);
+                
+                // Buscamos las imágenes de Wikipedia en paralelo desde el navegador
+                const destNames = Object.keys(data.results);
+                const imageUrls = await Promise.all(destNames.map(name => getWikiImage(name)));
+
+                let resultsHtml = '<h2>Resultados de la búsqueda:</h2>';
+                
+                destNames.forEach((dest, index) => {
+                    const info = data.results[dest];
+                    const imageUrl = imageUrls[index];
+                    
+                    resultsHtml += `
+                        <div class="card">
+                            <img src="${imageUrl}" alt="${dest}" onclick="openImgModal('${imageUrl}')" onerror="this.src='https://placehold.co/600/400?text=Foto+no+disponible'">
+                            <div class="card-content">
+                                <h3>${dest}</h3>
+                                <p><strong>💰 Vuelo:</strong> ${info.price}</p>
+                                <p><strong>🏨 Hotel desde:</strong> ${info.hotel_price || 'No disponible'}</p>
+                                <p><strong>📅 Fecha:</strong> ${info.date || 'N/A'}</p>
+                                <p><strong>🕒 Visto el:</strong> ${info.observed || 'N/A'}</p>
+                                ${info.duration ? `<p><strong>⏱️ Duración:</strong> ${info.duration}</p>` : ''}
+                                <p><strong>🔄 Escalas:</strong> ${info.stops !== undefined ? info.stops : 'N/A'}</p>
+                            </div>
+                        </div>`;
+                    
+                    if (info.lat !== 0) {
+                        // Añadir foto también al popup del mapa
+                        const popupContent = `<b>${dest}</b><br><img src="${imageUrl}" style="width:100%;border-radius:4px;margin-top:5px;"><br><b>Vuelo:</b> ${info.price}<br><b>Hotel:</b> ${info.hotel_price || 'N/A'}`;
+                        const destMarker = L.marker([info.lat, info.lon]).addTo(layers).bindPopup(popupContent);
+                        L.polyline([[data.origin.lat, data.origin.lon], [info.lat, info.lon]], {color: '#007bff', weight: 2, opacity: 0.6, dashArray: '5, 10'}).addTo(layers);
+                    }
+                });
+                
+                resultsDiv.innerHTML = resultsHtml;
+                map.fitBounds(layers.getLayers().map(l => l.getLatLng ? l.getLatLng() : null).filter(l => l));
+            } catch (error) {
+                console.error(error);
+                resultsDiv.innerHTML = `<p class="error">❌ Error de conexión: ${error.message}</p>`;
             } finally {
                 // 3. Ocultar loading y reactivar botón pase lo que pase
                 loading.style.display = 'none';
                 btn.disabled = false;
             }
         });
+
+        function openImgModal(src) {
+            imgModal.style.display = "block";
+            fullImg.src = src;
+        }
     </script>
 </body>
 </html>
