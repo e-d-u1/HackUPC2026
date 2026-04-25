@@ -1,67 +1,35 @@
 {
   "analyzed_images": [
     {
-      "image_path": "C:\\Users\\roger\\OneDrive\\Escritori\\src\\HackUPC\\V6\\uploads\\1777136090428_image3.jpg",
+      "image_path": "C:\\Users\\roger\\OneDrive\\Escritori\\src\\HackUPC\\V6\\uploads\\1777143594334_image1.jpg",
       "labels": [
         {
-          "description": "Daytime",
-          "score": 0.98143834
+          "description": "Tourist attraction",
+          "score": 0.8162285
         },
         {
-          "description": "City",
-          "score": 0.95867425
+          "description": "Column",
+          "score": 0.7226775
         },
         {
-          "description": "Urban area",
-          "score": 0.9583856
+          "description": "Ruins",
+          "score": 0.65755737
         },
         {
-          "description": "Metropolitan area",
-          "score": 0.9149429
+          "description": "Archaeological site",
+          "score": 0.5720876
         },
         {
-          "description": "Urban design",
-          "score": 0.8995746
-        },
-        {
-          "description": "Apartment",
-          "score": 0.88916683
-        },
-        {
-          "description": "Human settlement",
-          "score": 0.8858453
-        },
-        {
-          "description": "Commercial building",
-          "score": 0.8836987
-        },
-        {
-          "description": "Mixed-use",
-          "score": 0.8550425
-        },
-        {
-          "description": "Condominium",
-          "score": 0.8506163
-        },
-        {
-          "description": "Headquarters",
-          "score": 0.7356896
-        },
-        {
-          "description": "High-rise building",
-          "score": 0.65659755
-        },
-        {
-          "description": "Corporate headquarters",
-          "score": 0.62290376
+          "description": "Stairs",
+          "score": 0.5612293
         }
       ],
       "landmarks": [
         {
-          "description": "Duke Williams Stadium",
-          "lat": 41.6004164,
-          "lng": -93.5950355,
-          "score": 0.31569198
+          "description": "Elephanta Caves",
+          "lat": 18.9633474,
+          "lng": 72.93148640000001,
+          "score": 0.71969855
         }
       ],
       "logos": [],
@@ -75,44 +43,44 @@
       "text": "",
       "web_entities": [
         {
-          "description": "Bartzelonako Informatika Fakultatea",
-          "score": 1.8148185
+          "description": "Elephanta Caves",
+          "score": 1.669074
         },
         {
-          "description": "Universidad Politécnica de Cataluña",
-          "score": 0.9418201
+          "description": "Ajanta Caves",
+          "score": 1.0503
         },
         {
-          "description": "UPC",
-          "score": 0.77451
+          "description": "Ellora Caves",
+          "score": 0.78915
         },
         {
-          "description": "Computer Science",
-          "score": 0.7081
+          "description": "Cave",
+          "score": 0.7088
         },
         {
-          "description": "University",
-          "score": 0.7029
+          "description": "Mumbai Harbour",
+          "score": 0.6717
         },
         {
-          "description": "Informatics",
-          "score": 0.6275
+          "description": "World Heritage Site",
+          "score": 0.6311
         },
         {
-          "description": "Engineering",
-          "score": 0.5817
+          "description": "City of Caves",
+          "score": 0.57914996
         },
         {
-          "description": "Master's Degree",
-          "score": 0.5402
+          "description": "Rock-cut architecture",
+          "score": 0.5421
         },
         {
-          "description": "Faculty",
-          "score": 0.4928
+          "description": "Island",
+          "score": 0.5311
         },
         {
-          "description": "Computer Engineering",
-          "score": 0.492
+          "description": "Mumbai",
+          "score": 0.49394998
         }
       ]
     }
@@ -121,345 +89,157 @@
   "location_inference": {
     "candidate_locations": [
       {
-        "formatted_address": "Plaça de Catalunya, Eixample, 08002 Barcelona, Spain",
-        "latitude": 41.387015399999996,
-        "longitude": 2.1700471,
+        "formatted_address": "Gharapuri, Maharashtra 400021, India",
+        "latitude": 18.9633474,
+        "longitude": 72.9314864,
         "matched_visual_terms": [
-          "apartment",
-          "city",
-          "commercial building",
-          "condominium",
-          "daytime",
-          "high-rise building",
-          "human settlement",
-          "metropolitan area",
-          "mixed-use",
-          "urban area",
-          "urban design"
+          "archaeological site",
+          "column",
+          "elephanta caves",
+          "mumbai harbour",
+          "ruins",
+          "tourist attraction",
+          "world heritage site"
         ],
-        "name": "Plaça de Catalunya",
+        "name": "Elephanta Caves",
         "photos_checked": [
           {
             "matched_terms": [
-              "apartment",
-              "city",
-              "commercial building",
-              "condominium",
-              "daytime",
-              "high-rise building",
-              "human settlement",
-              "metropolitan area",
-              "mixed-use",
-              "urban area",
-              "urban design"
+              "archaeological site",
+              "column",
+              "elephanta caves",
+              "mumbai harbour",
+              "ruins",
+              "tourist attraction",
+              "world heritage site"
             ],
-            "photo_path": "tmp/place_photos/ChIJGUgrYPGipBIRS9ZgHK_C7B4_1.jpg",
-            "visual_similarity_score": 0.7051282051282051
+            "photo_path": "tmp/place_photos/ChIJL2CjfTDF5zsRP_WuGhsYq_Q_1.jpg",
+            "visual_similarity_score": 0.625
           }
         ],
-        "place_id": "ChIJGUgrYPGipBIRS9ZgHK_C7B4",
-        "query_used": "City tourist attraction",
+        "place_id": "ChIJL2CjfTDF5zsRP_WuGhsYq_Q",
+        "query_used": "Elephanta Caves",
         "ranking_filter": {
-          "dominant_candidate_filter_applied": false,
-          "removed_clearly_worse_candidates": 0,
+          "dominant_candidate_filter_applied": true,
+          "removed_clearly_worse_candidates": 9,
           "rule": "Si el mejor candidato tiene score >= 0.65, se eliminan candidatos con diferencia >= 0.22 o score <= 70% del mejor."
         },
-        "rating": 4.5,
-        "reasons": [
-          "Algunas fotos del lugar comparten pistas visuales con la imagen original."
-        ],
-        "scores": {
-          "best_photo_visual_similarity": 0.7051282051282051,
-          "final_confidence": 0.6473076923076924,
-          "vision_entity_match": 0.0
-        },
-        "types": [
-          "plaza",
-          "tourist_attraction",
-          "point_of_interest",
-          "establishment"
-        ]
-      },
-      {
-        "formatted_address": "Manuel Lardizabal pasealekua, 1, 20018 Donostia / San Sebastián, Guipúzcoa, Spain",
-        "latitude": 43.3072761,
-        "longitude": -2.0106851999999997,
-        "matched_visual_terms": [
-          "commercial building",
-          "corporate headquarters",
-          "headquarters",
-          "mixed-use"
-        ],
-        "name": "Computer science faculty EHU",
-        "photos_checked": [
-          {
-            "matched_terms": [
-              "commercial building",
-              "corporate headquarters",
-              "headquarters",
-              "mixed-use"
-            ],
-            "photo_path": "tmp/place_photos/ChIJDco8dXSwUQ0RePdRy3y3BGs_1.jpg",
-            "visual_similarity_score": 0.23255813953488372
-          }
-        ],
-        "place_id": "ChIJDco8dXSwUQ0RePdRy3y3BGs",
-        "query_used": "Bartzelonako Informatika Fakultatea tourist attraction",
-        "rating": 4.5,
+        "rating": 4.3,
         "reasons": [
           "El nombre/dirección del lugar coincide con entidades detectadas por Vision.",
           "Algunas fotos del lugar comparten pistas visuales con la imagen original."
         ],
         "scores": {
-          "best_photo_visual_similarity": 0.23255813953488372,
-          "final_confidence": 0.6147861627906976,
-          "vision_entity_match": 0.180135
+          "best_photo_visual_similarity": 0.625,
+          "final_confidence": 0.9679310999999999,
+          "vision_entity_match": 0.3566811
         },
         "types": [
-          "university",
-          "point_of_interest",
-          "educational_institution",
-          "establishment"
-        ]
-      },
-      {
-        "formatted_address": "Carrer de la Immaculada, 22, Sarrià-Sant Gervasi, 08017 Barcelona, Spain",
-        "latitude": 41.4057166,
-        "longitude": 2.1235394999999997,
-        "matched_visual_terms": [
-          "headquarters"
-        ],
-        "name": "UIC Barcelona International University of Catalonia",
-        "photos_checked": [
-          {
-            "matched_terms": [
-              "headquarters"
-            ],
-            "photo_path": "tmp/place_photos/ChIJPZESyBuRpBIRNCHW72wlmAw_1.jpg",
-            "visual_similarity_score": 0.07352941176470588
-          }
-        ],
-        "place_id": "ChIJPZESyBuRpBIRNCHW72wlmAw",
-        "query_used": "Bartzelonako Informatika Fakultatea Universidad Politécnica de Cataluña Daytime City travel destination",
-        "rating": 4.1,
-        "reasons": [
-          "El nombre/dirección del lugar coincide con entidades detectadas por Vision.",
-          "Algunas fotos del lugar comparten pistas visuales con la imagen original."
-        ],
-        "scores": {
-          "best_photo_visual_similarity": 0.07352941176470588,
-          "final_confidence": 0.46852323529411766,
-          "vision_entity_match": 0.10543499999999999
-        },
-        "types": [
-          "university",
-          "educational_institution",
-          "point_of_interest",
-          "establishment"
-        ]
-      },
-      {
-        "formatted_address": "Carretera de Sarrià a Vallvidrera, 115, Sarrià-Sant Gervasi, 08017 Barcelona, Spain",
-        "latitude": 41.4056071,
-        "longitude": 2.11,
-        "matched_visual_terms": [
-          "city",
-          "metropolitan area",
-          "urban area"
-        ],
-        "name": "Mirador Sarrià",
-        "photos_checked": [
-          {
-            "matched_terms": [
-              "city",
-              "metropolitan area",
-              "urban area"
-            ],
-            "photo_path": "tmp/place_photos/ChIJL385PTSYpBIROOXIasfwZ4E_1.jpg",
-            "visual_similarity_score": 0.19230769230769232
-          }
-        ],
-        "place_id": "ChIJL385PTSYpBIROOXIasfwZ4E",
-        "query_used": "Daytime tourist attraction",
-        "rating": 4.5,
-        "reasons": [
-          "Algunas fotos del lugar comparten pistas visuales con la imagen original."
-        ],
-        "scores": {
-          "best_photo_visual_similarity": 0.19230769230769232,
-          "final_confidence": 0.4165384615384616,
-          "vision_entity_match": 0.0
-        },
-        "types": [
-          "observation_deck",
+          "historical_place",
           "tourist_attraction",
-          "point_of_interest",
-          "establishment"
-        ]
-      },
-      {
-        "formatted_address": "Carrer de València, 103, Eixample, 08011 Barcelona, Spain",
-        "latitude": 41.3859583,
-        "longitude": 2.1541961,
-        "matched_visual_terms": [],
-        "name": "Open Swinger Club",
-        "photos_checked": [
-          {
-            "matched_terms": [],
-            "photo_path": "tmp/place_photos/ChIJ09KhCIaipBIRxuEnPClGXew_1.jpg",
-            "visual_similarity_score": 0.0
-          }
-        ],
-        "place_id": "ChIJ09KhCIaipBIRxuEnPClGXew",
-        "query_used": "Daytime travel destination",
-        "rating": 4.1,
-        "reasons": [
-          "Candidato generado a partir de las queries visuales, pero con evidencia débil."
-        ],
-        "scores": {
-          "best_photo_visual_similarity": 0.0,
-          "final_confidence": 0.33,
-          "vision_entity_match": 0.0
-        },
-        "types": [
-          "amusement_center",
-          "night_club",
-          "association_or_organization",
+          "historical_landmark",
           "point_of_interest",
           "establishment"
         ]
       }
     ],
-    "confidence_level": "medium",
-    "exact_location_found": false,
+    "confidence_level": "high",
+    "exact_location_found": true,
     "queries_generated": [
-      "Duke Williams Stadium",
-      "City tourist location",
-      "Bartzelonako Informatika Fakultatea Universidad Politécnica de Cataluña Daytime City tourist attraction",
-      "Bartzelonako Informatika Fakultatea Universidad Politécnica de Cataluña Daytime City travel destination",
-      "Bartzelonako Informatika Fakultatea Universidad Politécnica de Cataluña Daytime City scenic location",
-      "Bartzelonako Informatika Fakultatea tourist attraction",
-      "Bartzelonako Informatika Fakultatea travel destination",
-      "Universidad Politécnica de Cataluña tourist attraction",
-      "Universidad Politécnica de Cataluña travel destination",
-      "Daytime tourist attraction",
-      "Daytime travel destination",
-      "City tourist attraction",
-      "City travel destination",
-      "Urban area tourist attraction"
+      "Elephanta Caves",
+      "City of Caves",
+      "City of Caves tourist attraction",
+      "City of Caves location",
+      "Island",
+      "Island tourist attraction",
+      "Island location"
     ]
   },
   "media_type": "image",
   "note": "final_confidence es un score heurístico, no una probabilidad matemática exacta. En vídeos o imágenes sin pistas claras, los candidatos pueden ser lugares visualmente parecidos, no ubicaciones confirmadas.",
-  "source_file": "C:\\Users\\roger\\OneDrive\\Escritori\\src\\HackUPC\\V6\\uploads\\1777136090428_image3.jpg",
-  "source_input": "C:\\Users\\roger\\OneDrive\\Escritori\\src\\HackUPC\\V6\\uploads\\1777136090428_image3.jpg",
+  "source_file": "C:\\Users\\roger\\OneDrive\\Escritori\\src\\HackUPC\\V6\\uploads\\1777143594334_image1.jpg",
+  "source_input": "C:\\Users\\roger\\OneDrive\\Escritori\\src\\HackUPC\\V6\\uploads\\1777143594334_image1.jpg",
   "source_type": "local_file",
   "visual_summary": {
     "labels": [
       {
-        "description": "Daytime",
-        "score": 0.98143834
+        "description": "Tourist attraction",
+        "score": 0.8162285
       },
       {
-        "description": "City",
-        "score": 0.95867425
+        "description": "Column",
+        "score": 0.7226775
       },
       {
-        "description": "Urban area",
-        "score": 0.9583856
+        "description": "Ruins",
+        "score": 0.65755737
       },
       {
-        "description": "Metropolitan area",
-        "score": 0.9149429
+        "description": "Archaeological site",
+        "score": 0.5720876
       },
       {
-        "description": "Urban design",
-        "score": 0.8995746
-      },
-      {
-        "description": "Apartment",
-        "score": 0.88916683
-      },
-      {
-        "description": "Human settlement",
-        "score": 0.8858453
-      },
-      {
-        "description": "Commercial building",
-        "score": 0.8836987
-      },
-      {
-        "description": "Mixed-use",
-        "score": 0.8550425
-      },
-      {
-        "description": "Condominium",
-        "score": 0.8506163
-      },
-      {
-        "description": "Headquarters",
-        "score": 0.7356896
-      },
-      {
-        "description": "High-rise building",
-        "score": 0.65659755
-      },
-      {
-        "description": "Corporate headquarters",
-        "score": 0.62290376
+        "description": "Stairs",
+        "score": 0.5612293
       }
     ],
     "landmarks": [
       {
-        "description": "Duke Williams Stadium",
-        "lat": 41.6004164,
-        "lng": -93.5950355,
-        "score": 0.31569198
+        "description": "Elephanta Caves",
+        "lat": 18.9633474,
+        "lng": 72.93148640000001,
+        "score": 0.71969855
       }
     ],
     "logos": [],
     "text": "",
     "web_entities": [
       {
-        "description": "Bartzelonako Informatika Fakultatea",
-        "score": 1.8148185
+        "description": "Elephanta Caves",
+        "score": 1.669074
       },
       {
-        "description": "Universidad Politécnica de Cataluña",
-        "score": 0.9418201
+        "description": "Ajanta Caves",
+        "score": 1.0503
       },
       {
-        "description": "UPC",
-        "score": 0.77451
+        "description": "Ellora Caves",
+        "score": 0.78915
       },
       {
-        "description": "Computer Science",
-        "score": 0.7081
+        "description": "Cave",
+        "score": 0.7088
       },
       {
-        "description": "University",
-        "score": 0.7029
+        "description": "Mumbai Harbour",
+        "score": 0.6717
       },
       {
-        "description": "Informatics",
-        "score": 0.6275
+        "description": "World Heritage Site",
+        "score": 0.6311
       },
       {
-        "description": "Engineering",
-        "score": 0.5817
+        "description": "City of Caves",
+        "score": 0.57914996
       },
       {
-        "description": "Master's Degree",
-        "score": 0.5402
+        "description": "Rock-cut architecture",
+        "score": 0.5421
       },
       {
-        "description": "Faculty",
-        "score": 0.4928
+        "description": "Island",
+        "score": 0.5311
       },
       {
-        "description": "Computer Engineering",
-        "score": 0.492
+        "description": "Mumbai",
+        "score": 0.49394998
       }
     ]
+  },
+  "request_info": {
+    "user_ip": "::1",
+    "analyzed_at": "2026-04-25T18:59:54.343Z",
+    "input_method": "file_upload",
+    "original_filename": "image1.jpg"
   }
 }
