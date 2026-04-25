@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mapa de Vuelos Baratos</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>#map { height: 600px; width: 100%; borderRadius: 15px; }</style>
+</head>
+<body class="bg-slate-100 p-8">
+    <div class="max-w-6xl mx-auto">
+        <h1 class="text-3xl font-bold mb-6 text-slate-800">Explorador de Precios</h1>
+        
+        <div class="bg-white p-4 rounded-xl shadow-md mb-6 flex gap-4">
+            <input id="origin" type="text" placeholder="Origen (ej. Madrid)" class="border p-2 rounded w-full">
+            <input id="destinations" type="text" placeholder="Destinos (ej. Paris, Tokio, Roma)" class="border p-2 rounded w-full">
+            <button onclick="search()" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Buscar</button>
+        </div>
+
+        <div id="map" class="shadow-lg"></div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        const map = L.map('map').setView([40.41, -3.70], 4);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+
+        async function search() {
+            const origin = document.getElementById('origin').value;
+            const dests = document.getElementById('destinations').value;
+            
+            const response = await fetch(`/api/search?origin=${origin}&destinations=${dests}`);
+            const results = await response.json();
+
+            results.forEach(res => {
+                const marker = L.marker([res.lat, res.lon]).addTo(map);
+                
+                const popupContent = `
+                    <div class="w-64">
+                        <img src="${res.img}" class="rounded-lg mb-2">
+                        <h3 class="font-bold text-lg">${res.city}</h3>
+                        <p class="text-blue-600 font-bold text-xl">${res.price}</p>
+                        <p class="text-sm text-gray-500">Vuelo directo / 1 escala</p>
+                        <button class="bg-orange-500 text-white w-full mt-2 py-1 rounded">Ver Detalles</button>
+                    </div>
+                `;
+                marker.bindPopup(popupContent);
+                
+                // Tooltip con el precio siempre visible
+                marker.bindTooltip(res.price, {permanent: true, direction: 'top'}).openTooltip();
+            });
+        }
+    </script>
+</body>
+</html>
