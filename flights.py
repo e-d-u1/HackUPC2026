@@ -37,15 +37,26 @@ class SkyscannerOptimizer:
         """Obtiene el Entity ID de Skyscanner para una ciudad."""
         url = f"{self.base_url}/autosuggest/flights"
         payload = {
-            "searchTerm": city_name,
-            "locale": self.config["locale"],
-            "market": self.config["market"]
+            "query": {
+                "searchTerm": city_name,
+                "locale": self.config["locale"],
+                "market": self.config["market"]
+            }
         }
-        response = requests.post(url, json=payload, headers=self.headers)
+        try:
+            response = requests.post(url, json=payload, headers=self.headers)
+        except requests.exceptions.ConnectionError:
+            return None
+
         if response.status_code == 200:
-            places = response.json().get("places", [])
-            if places:
-                return places[0].get("entityId")
+            data = response.json()
+            results = data.get("content", {}).get("results", {})
+            places_data = results.get("places", data.get("places", []))
+            items = places_data.values() if isinstance(places_data, dict) else places_data
+            if items:
+                for p in items:
+                    eid = p.get("entityId")
+                    if eid: return eid
         return None
 
     def get_nearest_airports_fallback(self, city_name, radius_km=150):
@@ -113,7 +124,7 @@ class SkyscannerOptimizer:
         poll_url = f"{self.base_url}/flights/live/search/poll/{token}"
         for _ in range(5): # Máximo 5 intentos
             time.sleep(2)
-            poll_res = requests.post(poll_url, headers=self.headers)
+            poll_res = requests.get(poll_url, headers=self.headers)
             data = poll_res.json()
             
             if data.get("status") == "RESULT_STATUS_COMPLETE":
@@ -124,7 +135,7 @@ class SkyscannerOptimizer:
                 prices = []
                 for _, itin in itineraries.items():
                     for option in itin.get("pricingOptions", []):
-                        prices.append(float(option["price"]["amount"]) / 1000) # Formato Skyscanner
+                        prices.append(float(option["price"]["amount"])) 
                 
                 return min(prices) if prices else "Error en precios"
         
@@ -141,23 +152,25 @@ class SkyscannerOptimizer:
                 "queryLegs": [{
                     "originPlace": {"queryPlace": {"entityId": origin_id}},
                     "destinationPlace": {"queryPlace": {"entityId": dest_id}},
-                    "fixedDate": {"year": int(year), "month": int(month)}
+                    "fixedDate": {"year": int(year), "month": int(month), "day": 1}
                 }]
             }
         }
         res = requests.post(url, json=payload, headers=self.headers)
         if res.status_code == 200:
-            quotes = res.json().get("content", {}).get("results", {}).get("quotes", {})
+            data = res.json()
+            quotes = data.get("content", {}).get("results", {}).get("quotes", {})
+            
             if not quotes:
                 return "Sin datos para este mes"
             
             prices = []
-            for q in quotes.values():
-                if "minPrice" in q:
-                    prices.append(float(q["minPrice"]["amount"]) / 1000)
+            for q in (quotes.values() if isinstance(quotes, dict) else quotes):
+                amt = q.get("minPrice", {}).get("amount")
+                if amt: prices.append(float(amt))
             
             return min(prices) if prices else "Sin precios"
-        return f"Error API ({res.status_code})"
+        return f"Error API ({res.status_code}: {res.text[:50]})"
     
     def _get_best_price(self, origin_id, dest_id, date):
         """Determina qué búsqueda realizar según el formato: YYYY, YYYY-MM o YYYY-MM-DD."""
@@ -219,26 +232,27 @@ class SkyscannerOptimizer:
         return results
 
 # --- EJEMPLO DE USO ---
-MI_API_KEY = os.getenv("SKYSCANNER_API_KEY")
-if not MI_API_KEY:
-    print("❌ Error: No se encontró SKYSCANNER_API_KEY en el archivo .env")
-    exit()
+if __name__ == "__main__":
+    MI_API_KEY = os.getenv("SKYSCANNER_API_KEY")
+    if not MI_API_KEY:
+        print("❌ Error: No se encontró SKYSCANNER_API_KEY en el archivo .env")
+        exit()
 
-optimizer = SkyscannerOptimizer(MI_API_KEY)
+    optimizer = SkyscannerOptimizer(MI_API_KEY)
 
-# --- LÓGICA PARA FECHAS DINÁMICAS ---
-hoy = datetime.now()
-proximo_mes = (hoy.replace(day=28) + timedelta(days=4)).strftime("%Y-%m")
-el_anio_que_viene = hoy.replace(year=hoy.year + 1).strftime("%Y-%m")
+    # --- LÓGICA PARA FECHAS DINÁMICAS ---
+    hoy = datetime.now()
+    proximo_mes = (hoy.replace(day=28) + timedelta(days=4)).strftime("%Y-%m")
+    el_anio_que_viene = hoy.replace(year=hoy.year + 1).strftime("%Y-%m")
 
-ruta = ['Murcia', 'Tokio', 'Logroño']
+    ruta = ['Barcelona', 'Tokio', 'Paris', 'Nueva York']
 
-print(f"\n📅 BUSCANDO MEJORES PRECIOS PARA EL AÑO 2025:")
-informe_anual = optimizer.optimize_route(ruta, "2025")
-for ciudad, info in informe_anual.items():
-    print(f"- {ciudad}: {info}")
+    print(f"\n📅 BUSCANDO MEJORES PRECIOS PARA EL AÑO 2025:")
+    informe_anual = optimizer.optimize_route(ruta, "2025")
+    for ciudad, info in informe_anual.items():
+        print(f"- {ciudad}: {info}")
 
-print(f"\n🚀 BUSCANDO PARA EL MES PRÓXIMO ({proximo_mes}):")
-informe_mensual = optimizer.optimize_route(ruta, proximo_mes)
-for ciudad, info in informe_mensual.items():
-    print(f"- {ciudad}: {info}")
+    print(f"\n🚀 BUSCANDO PARA EL MES PRÓXIMO ({proximo_mes}):")
+    informe_mensual = optimizer.optimize_route(ruta, proximo_mes)
+    for ciudad, info in informe_mensual.items():
+        print(f"- {ciudad}: {info}")
