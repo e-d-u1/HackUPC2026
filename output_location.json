@@ -1,0 +1,245 @@
+{
+  "analyzed_images": [
+    {
+      "image_path": "C:\\Users\\roger\\OneDrive\\Escritori\\src\\HackUPC\\V6\\uploads\\1777143594334_image1.jpg",
+      "labels": [
+        {
+          "description": "Tourist attraction",
+          "score": 0.8162285
+        },
+        {
+          "description": "Column",
+          "score": 0.7226775
+        },
+        {
+          "description": "Ruins",
+          "score": 0.65755737
+        },
+        {
+          "description": "Archaeological site",
+          "score": 0.5720876
+        },
+        {
+          "description": "Stairs",
+          "score": 0.5612293
+        }
+      ],
+      "landmarks": [
+        {
+          "description": "Elephanta Caves",
+          "lat": 18.9633474,
+          "lng": 72.93148640000001,
+          "score": 0.71969855
+        }
+      ],
+      "logos": [],
+      "safe_search": {
+        "adult": "VERY_UNLIKELY",
+        "medical": "VERY_UNLIKELY",
+        "racy": "VERY_UNLIKELY",
+        "spoof": "VERY_UNLIKELY",
+        "violence": "VERY_UNLIKELY"
+      },
+      "text": "",
+      "web_entities": [
+        {
+          "description": "Elephanta Caves",
+          "score": 1.669074
+        },
+        {
+          "description": "Ajanta Caves",
+          "score": 1.0503
+        },
+        {
+          "description": "Ellora Caves",
+          "score": 0.78915
+        },
+        {
+          "description": "Cave",
+          "score": 0.7088
+        },
+        {
+          "description": "Mumbai Harbour",
+          "score": 0.6717
+        },
+        {
+          "description": "World Heritage Site",
+          "score": 0.6311
+        },
+        {
+          "description": "City of Caves",
+          "score": 0.57914996
+        },
+        {
+          "description": "Rock-cut architecture",
+          "score": 0.5421
+        },
+        {
+          "description": "Island",
+          "score": 0.5311
+        },
+        {
+          "description": "Mumbai",
+          "score": 0.49394998
+        }
+      ]
+    }
+  ],
+  "content_type": "image/jpeg",
+  "location_inference": {
+    "candidate_locations": [
+      {
+        "formatted_address": "Gharapuri, Maharashtra 400021, India",
+        "latitude": 18.9633474,
+        "longitude": 72.9314864,
+        "matched_visual_terms": [
+          "archaeological site",
+          "column",
+          "elephanta caves",
+          "mumbai harbour",
+          "ruins",
+          "tourist attraction",
+          "world heritage site"
+        ],
+        "name": "Elephanta Caves",
+        "photos_checked": [
+          {
+            "matched_terms": [
+              "archaeological site",
+              "column",
+              "elephanta caves",
+              "mumbai harbour",
+              "ruins",
+              "tourist attraction",
+              "world heritage site"
+            ],
+            "photo_path": "tmp/place_photos/ChIJL2CjfTDF5zsRP_WuGhsYq_Q_1.jpg",
+            "visual_similarity_score": 0.625
+          }
+        ],
+        "place_id": "ChIJL2CjfTDF5zsRP_WuGhsYq_Q",
+        "query_used": "Elephanta Caves",
+        "ranking_filter": {
+          "dominant_candidate_filter_applied": true,
+          "removed_clearly_worse_candidates": 9,
+          "rule": "Si el mejor candidato tiene score >= 0.65, se eliminan candidatos con diferencia >= 0.22 o score <= 70% del mejor."
+        },
+        "rating": 4.3,
+        "reasons": [
+          "El nombre/dirección del lugar coincide con entidades detectadas por Vision.",
+          "Algunas fotos del lugar comparten pistas visuales con la imagen original."
+        ],
+        "scores": {
+          "best_photo_visual_similarity": 0.625,
+          "final_confidence": 0.9679310999999999,
+          "vision_entity_match": 0.3566811
+        },
+        "types": [
+          "historical_place",
+          "tourist_attraction",
+          "historical_landmark",
+          "point_of_interest",
+          "establishment"
+        ]
+      }
+    ],
+    "confidence_level": "high",
+    "exact_location_found": true,
+    "queries_generated": [
+      "Elephanta Caves",
+      "City of Caves",
+      "City of Caves tourist attraction",
+      "City of Caves location",
+      "Island",
+      "Island tourist attraction",
+      "Island location"
+    ]
+  },
+  "media_type": "image",
+  "note": "final_confidence es un score heurístico, no una probabilidad matemática exacta. En vídeos o imágenes sin pistas claras, los candidatos pueden ser lugares visualmente parecidos, no ubicaciones confirmadas.",
+  "source_file": "C:\\Users\\roger\\OneDrive\\Escritori\\src\\HackUPC\\V6\\uploads\\1777143594334_image1.jpg",
+  "source_input": "C:\\Users\\roger\\OneDrive\\Escritori\\src\\HackUPC\\V6\\uploads\\1777143594334_image1.jpg",
+  "source_type": "local_file",
+  "visual_summary": {
+    "labels": [
+      {
+        "description": "Tourist attraction",
+        "score": 0.8162285
+      },
+      {
+        "description": "Column",
+        "score": 0.7226775
+      },
+      {
+        "description": "Ruins",
+        "score": 0.65755737
+      },
+      {
+        "description": "Archaeological site",
+        "score": 0.5720876
+      },
+      {
+        "description": "Stairs",
+        "score": 0.5612293
+      }
+    ],
+    "landmarks": [
+      {
+        "description": "Elephanta Caves",
+        "lat": 18.9633474,
+        "lng": 72.93148640000001,
+        "score": 0.71969855
+      }
+    ],
+    "logos": [],
+    "text": "",
+    "web_entities": [
+      {
+        "description": "Elephanta Caves",
+        "score": 1.669074
+      },
+      {
+        "description": "Ajanta Caves",
+        "score": 1.0503
+      },
+      {
+        "description": "Ellora Caves",
+        "score": 0.78915
+      },
+      {
+        "description": "Cave",
+        "score": 0.7088
+      },
+      {
+        "description": "Mumbai Harbour",
+        "score": 0.6717
+      },
+      {
+        "description": "World Heritage Site",
+        "score": 0.6311
+      },
+      {
+        "description": "City of Caves",
+        "score": 0.57914996
+      },
+      {
+        "description": "Rock-cut architecture",
+        "score": 0.5421
+      },
+      {
+        "description": "Island",
+        "score": 0.5311
+      },
+      {
+        "description": "Mumbai",
+        "score": 0.49394998
+      }
+    ]
+  },
+  "request_info": {
+    "user_ip": "::1",
+    "analyzed_at": "2026-04-25T18:59:54.343Z",
+    "input_method": "file_upload",
+    "original_filename": "image1.jpg"
+  }
+}
