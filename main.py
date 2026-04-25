@@ -16,7 +16,7 @@ optimizer = SkyscannerOptimizer(API_KEY)
 
 @app.get("/", response_class=HTMLResponse)
 async def read_root(request: Request):
-    return templates.TemplateResponse("index.html", {"request": request})
+    return templates.TemplateResponse(request=request, name="index.html")
 
 @app.get("/api/search")
 async def api_search(origin: str, destinations: str, date: str = "2025"): # Corregido: Eliminada la línea duplicada
