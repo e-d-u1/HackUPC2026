@@ -1,0 +1,971 @@
+city_name,city_ascii,lat,lng,country_name,country_code,iso3,admin_name,capital,population,id,continent
+Tokyo,Tokyo,35.687,139.7495,Japan,JP,JPN,Tōkyō,primary,37785000.0,1392685764,Asia
+Jakarta,Jakarta,-6.175,106.8275,Indonesia,ID,IDN,Jakarta,primary,33756000.0,1360771077,Asia
+Delhi,Delhi,28.61,77.23,India,IN,IND,Delhi,admin,32226000.0,1356872604,Asia
+Guangzhou,Guangzhou,23.13,113.26,China,CN,CHN,Guangdong,admin,26940000.0,1156237133,Asia
+Mumbai,Mumbai,19.0761,72.8775,India,IN,IND,Mahārāshtra,admin,24973000.0,1356226629,Asia
+Shanghai,Shanghai,31.2286,121.4747,China,CN,CHN,Shanghai,admin,24073000.0,1156073548,Asia
+Seoul,Seoul,37.5667,126.9833,"Korea, South",KR,KOR,Seoul,primary,23016000.0,1410836482,Asia
+Kolkāta,Kolkata,22.5675,88.37,India,IN,IND,West Bengal,admin,21747000.0,1356060520,Asia
+Dhaka,Dhaka,23.7289,90.3944,Bangladesh,BD,BGD,Dhaka,primary,19134000.0,1050529279,Asia
+Beijing,Beijing,39.9067,116.3975,China,CN,CHN,Beijing,primary,18522000.0,1156228865,Asia
+Shenzhen,Shenzhen,22.5415,114.0596,China,CN,CHN,Guangdong,minor,17619000.0,1156158707,Asia
+Bangalore,Bangalore,12.9789,77.5917,India,IN,IND,Karnātaka,admin,15386000.0,1356410365,Asia
+Ōsaka,Osaka,34.6939,135.5022,Japan,JP,JPN,Ōsaka,admin,15126000.0,1392419823,Asia
+Chengdu,Chengdu,30.66,104.0633,China,CN,CHN,Sichuan,admin,14645000.0,1156421555,Asia
+Istanbul,Istanbul,41.0136,28.955,Turkey,TR,TUR,İstanbul,admin,14441000.0,1792756324,Asia
+Chennai,Chennai,13.0825,80.275,India,IN,IND,Tamil Nādu,admin,12395000.0,1356374944,Asia
+Xi’an,Xi'an,34.2611,108.9422,China,CN,CHN,Shaanxi,admin,12328000.0,1156244079,Asia
+Chongqing,Chongqing,29.5637,106.5504,China,CN,CHN,Chongqing,admin,12135000.0,1156936556,Asia
+Linyi,Linyi,35.1038,118.3564,China,CN,CHN,Shandong,,10820000.0,1156086320,Asia
+Dongguan,Dongguan,23.021,113.752,China,CN,CHN,Guangdong,minor,10646000.0,1156478242,Asia
+Baoding,Baoding,38.874,115.464,China,CN,CHN,Hebei,minor,10546831.0,1156256829,Asia
+Hyderābād,Hyderabad,17.3617,78.4747,India,IN,IND,Telangāna,admin,10494000.0,1356871768,Asia
+Tianjin,Tianjin,39.1336,117.2054,China,CN,CHN,Tianjin,admin,10368000.0,1156174046,Asia
+Wuhan,Wuhan,30.5934,114.3046,China,CN,CHN,Hubei,admin,10251000.0,1156117184,Asia
+Nanyang,Nanyang,32.9902,112.5285,China,CN,CHN,Henan,,9577771.0,1156192287,Asia
+Hangzhou,Hangzhou,30.267,120.153,China,CN,CHN,Zhejiang,admin,9523000.0,1156275243,Asia
+Nagoya,Nagoya,35.1833,136.9,Japan,JP,JPN,Aichi,admin,9197000.0,1392407472,Asia
+Foshan,Foshan,23.0214,113.1216,China,CN,CHN,Guangdong,minor,9042500.0,1156738403,Asia
+Zhoukou,Zhoukou,33.6367,114.7014,China,CN,CHN,Henan,minor,8677800.0,1156272098,Asia
+Tongshan,Tongshan,34.261,117.1859,China,CN,CHN,Jiangsu,minor,8669000.0,1156241678,Asia
+Nanjing,Nanjing,32.0608,118.7789,China,CN,CHN,Jiangsu,admin,8422000.0,1156644065,Asia
+Heze,Heze,35.2343,115.4796,China,CN,CHN,Shandong,minor,8287693.0,1156225008,Asia
+Pune,Pune,18.5203,73.8567,India,IN,IND,Mahārāshtra,,8231000.0,1356081074,Asia
+Jining,Jining,35.4151,116.5871,China,CN,CHN,Shandong,,8081905.0,1156504601,Asia
+Ahmedabad,Ahmedabad,23.0225,72.5714,India,IN,IND,Gujarāt,minor,8009000.0,1356304381,Asia
+Shenyang,Shenyang,41.8025,123.4281,China,CN,CHN,Liaoning,admin,7964000.0,1156309382,Asia
+Fuyang,Fuyang,32.89,115.814,China,CN,CHN,Anhui,,7599913.0,1156248008,Asia
+Ganzhou,Ganzhou,25.831,114.933,China,CN,CHN,Jiangxi,minor,7396873.0,1156832475,Asia
+Shangqiu,Shangqiu,34.415,115.656,China,CN,CHN,Henan,,7325300.0,1156805441,Asia
+Cangzhou,Cangzhou,38.3047,116.8387,China,CN,CHN,Hebei,minor,7300783.0,1156698069,Asia
+Riyadh,Riyadh,24.65,46.71,Saudi Arabia,SA,SAU,Ar Riyāḑ,primary,7237000.0,1682999334,Asia
+Zhumadian,Zhumadian,33.014,114.022,China,CN,CHN,Henan,,7008427.0,1156184822,Asia
+Zhanjiang,Zhanjiang,21.2701,110.3575,China,CN,CHN,Guangdong,minor,6981236.0,1156502170,Asia
+Yancheng,Yancheng,33.35,120.1569,China,CN,CHN,Jiangsu,minor,6709629.0,1156995410,Asia
+Bijie,Bijie,27.284,105.292,China,CN,CHN,Guizhou,,6686100.0,1156018927,Asia
+Xingtai,Xingtai,37.0717,114.5048,China,CN,CHN,Hebei,minor,6645766.0,1156294952,Asia
+Hengyang,Hengyang,26.894,112.572,China,CN,CHN,Hunan,,6645243.0,1156696884,Asia
+Shaoyang,Shaoyang,27.2395,111.4679,China,CN,CHN,Hunan,,6563520.0,1156310366,Asia
+Surabaya,Surabaya,-7.2458,112.7378,Indonesia,ID,IDN,Jawa Timur,admin,6556000.0,1360484663,Asia
+Sūrat,Surat,21.205,72.84,India,IN,IND,Gujarāt,,6538000.0,1356758738,Asia
+Quanzhou,Quanzhou,24.8744,118.6757,China,CN,CHN,Fujian,minor,6480000.0,1156829655,Asia
+Shangrao,Shangrao,28.4551,117.9431,China,CN,CHN,Jiangxi,minor,6435300.0,1156405492,Asia
+Zunyi,Zunyi,27.722,107.031,China,CN,CHN,Guizhou,,6270700.0,1156539782,Asia
+Maoming,Maoming,21.6627,110.9255,China,CN,CHN,Guangdong,minor,6174050.0,1156568722,Asia
+Xinyang,Xinyang,32.149,114.091,China,CN,CHN,Henan,,6109106.0,1156273453,Asia
+Prayagraj,Prayagraj,25.4358,81.8464,India,IN,IND,Uttar Pradesh,,5954391.0,1356718332,Asia
+Huanggang,Huanggang,30.4537,114.8724,China,CN,CHN,Hubei,minor,5882719.0,1156200037,Asia
+Dalian,Dalian,38.9,121.6,China,CN,CHN,Liaoning,,5871474.0,1156175472,Asia
+Ankara,Ankara,39.93,32.85,Turkey,TR,TUR,Ankara,primary,5864049.0,1792572891,Asia
+Qingdao,Qingdao,36.0669,120.3827,China,CN,CHN,Shandong,minor,5818255.0,1156112588,Asia
+Yulin,Yulin,22.654,110.181,China,CN,CHN,Guangxi,minor,5796766.0,1156901312,Asia
+Liaocheng,Liaocheng,36.4559,115.9852,China,CN,CHN,Shandong,minor,5789863.0,1156006600,Asia
+Qujing,Qujing,25.491,103.796,China,CN,CHN,Yunnan,,5765775.0,1156747998,Asia
+Nangandao,Nangandao,35.3036,113.9268,China,CN,CHN,Henan,minor,5708191.0,1156127660,Asia
+Zhengzhou,Zhengzhou,34.764,113.684,China,CN,CHN,Henan,admin,5621593.0,1156183137,Asia
+Nanchong,Nanchong,30.8372,106.1106,China,CN,CHN,Sichuan,minor,5607565.0,1156762337,Asia
+Jinan,Jinan,36.6702,117.0207,China,CN,CHN,Shandong,admin,5606374.0,1156972469,Asia
+Jieyang,Jieyang,23.551,116.3727,China,CN,CHN,Guangdong,minor,5577814.0,1156260378,Asia
+Dezhou,Dezhou,37.436,116.359,China,CN,CHN,Shandong,minor,5568235.0,1156524080,Asia
+Tai’an,Tai'an,36.202,117.087,China,CN,CHN,Shandong,,5472217.0,1156095188,Asia
+Dazhou,Dazhou,31.2093,107.4678,China,CN,CHN,Sichuan,minor,5385422.0,1156834076,Asia
+Suzhou,Suzhou,33.648,116.964,China,CN,CHN,Anhui,,5324476.0,1156871297,Asia
+Yongzhou,Yongzhou,26.42,111.613,China,CN,CHN,Hunan,,5289824.0,1156694479,Asia
+Changde,Changde,29.031,111.699,China,CN,CHN,Hunan,minor,5279102.0,1156449091,Asia
+Xiangyang,Xiangyang,32.01,112.122,China,CN,CHN,Hubei,minor,5260951.0,1156107325,Asia
+Pudong,Pudong,31.2347,121.5064,China,CN,CHN,Shanghai,minor,5187200.0,1156644508,Asia
+Zhaotong,Zhaotong,27.338,103.717,China,CN,CHN,Yunnan,,5092611.0,1156924687,Asia
+Zhangzhou,Zhangzhou,24.513,117.647,China,CN,CHN,Fujian,minor,5054328.0,1156241637,Asia
+Yueyang,Yueyang,29.3647,113.1309,China,CN,CHN,Hunan,minor,5051922.0,1156586314,Asia
+Yichun,Yichun,27.816,114.417,China,CN,CHN,Jiangxi,minor,5007702.0,1156229590,Asia
+Guilin,Guilin,25.275,110.296,China,CN,CHN,Guangxi,minor,4931137.0,1156235364,Asia
+Pingdingshan,Pingdingshan,33.7666,113.1926,China,CN,CHN,Henan,,4904701.0,1156735124,Asia
+Bozhou,Bozhou,33.8463,115.7786,China,CN,CHN,Anhui,,4850657.0,1156356860,Asia
+Yuncheng,Yuncheng,35.0267,111.007,China,CN,CHN,Shanxi,,4774508.0,1156705644,Asia
+Changsha,Changsha,28.228,112.939,China,CN,CHN,Hunan,admin,4766296.0,1156961497,Asia
+Suqian,Suqian,33.963,118.275,China,CN,CHN,Jiangsu,,4719178.0,1156212349,Asia
+Jeddah,Jeddah,21.5428,39.1728,Saudi Arabia,SA,SAU,Makkah al Mukarramah,,4697000.0,1682926944,Asia
+Weinan,Weinan,34.5206,109.471,China,CN,CHN,Shaanxi,minor,4688744.0,1156903687,Asia
+Chenzhou,Chenzhou,25.77,113.016,China,CN,CHN,Hunan,minor,4667134.0,1156291915,Asia
+Jiangmen,Jiangmen,22.5789,113.0815,China,CN,CHN,Guangdong,minor,4630300.0,1156105613,Asia
+Mianyang,Mianyang,31.468,104.679,China,CN,CHN,Sichuan,minor,4613862.0,1156417758,Asia
+Jiujiang,Jiujiang,29.661,115.954,China,CN,CHN,Jiangxi,minor,4600276.0,1156206041,Asia
+Huaihua,Huaihua,27.5698,110.0016,China,CN,CHN,Hunan,,4587594.0,1156353465,Asia
+Huanglongsi,Huanglongsi,34.795,114.345,China,CN,CHN,Henan,,4564900.0,1156198356,Asia
+Taizhou,Taizhou,32.4567,119.9229,China,CN,CHN,Jiangsu,minor,4512762.0,1156119229,Asia
+Belāhi,Belahi,26.4,86.25,India,IN,IND,Bihār,,4487379.0,1356614886,Asia
+Yibin,Yibin,28.752,104.643,China,CN,CHN,Sichuan,minor,4471896.0,1156107603,Asia
+Ji’an,Ji'an,27.0912,114.9668,China,CN,CHN,Jiangxi,minor,4469176.0,1156278215,Asia
+Yangzhou,Yangzhou,32.3944,119.4128,China,CN,CHN,Jiangsu,,4459760.0,1156818601,Asia
+Kunming,Kunming,25.0464,102.7094,China,CN,CHN,Yunnan,admin,4422686.0,1156477539,Asia
+Changchun,Changchun,43.897,125.326,China,CN,CHN,Jilin,admin,4408154.0,1156078103,Asia
+Lu’an,Lu'an,31.736,116.52,China,CN,CHN,Anhui,minor,4393699.0,1156499624,Asia
+Xinpu,Xinpu,34.5966,119.2214,China,CN,CHN,Jiangsu,minor,4393482.0,1156035381,Asia
+Langfang,Langfang,39.5383,116.6835,China,CN,CHN,Hebei,minor,4358839.0,1156109017,Asia
+Ürümqi,Urumqi,43.8225,87.6125,China,CN,CHN,Xinjiang,admin,4335017.0,1156051276,Asia
+Guigang,Guigang,23.112,109.599,China,CN,CHN,Guangxi,minor,4316262.0,1156895251,Asia
+Shantou,Shantou,23.354,116.682,China,CN,CHN,Guangdong,minor,4312192.0,1156457499,Asia
+Jiangguanchi,Jiangguanchi,34.037,113.852,China,CN,CHN,Henan,minor,4307488.0,1156235735,Asia
+Xiaoganzhan,Xiaoganzhan,30.918,113.957,China,CN,CHN,Hubei,,4270371.0,1156002290,Asia
+Luzhou,Luzhou,28.871,105.442,China,CN,CHN,Sichuan,minor,4218427.0,1156582079,Asia
+Hefei,Hefei,31.8206,117.2273,China,CN,CHN,Anhui,admin,4216940.0,1156332710,Asia
+Hengshui,Hengshui,37.739,115.669,China,CN,CHN,Hebei,minor,4212933.0,1156803028,Asia
+Anqing,Anqing,30.5318,117.1153,China,CN,CHN,Anhui,minor,4165284.0,1156238875,Asia
+Zhangjiakou,Zhangjiakou,40.769,114.886,China,CN,CHN,Hebei,minor,4118908.0,1156800221,Asia
+Zhaoqing,Zhaoqing,23.05,112.4667,China,CN,CHN,Guangdong,minor,4113594.0,1156170144,Asia
+Shijiazhuang,Shijiazhuang,38.0425,114.51,China,CN,CHN,Hebei,admin,4098243.0,1156217541,Asia
+Ningbo,Ningbo,29.8603,121.6245,China,CN,CHN,Zhejiang,minor,4087523.0,1156170787,Asia
+Qiqihar,Qiqihar,47.3549,123.9182,China,CN,CHN,Heilongjiang,minor,4067489.0,1156775905,Asia
+Liuzhou,Liuzhou,24.3278,109.4278,China,CN,CHN,Guangxi,minor,4041700.0,1156360785,Asia
+Chifeng,Chifeng,42.255,118.8825,China,CN,CHN,Inner Mongolia,minor,4035967.0,1156277458,Asia
+Xiaoxita,Xiaoxita,30.692,111.287,China,CN,CHN,Hubei,minor,4017607.0,1156764447,Asia
+Linfen,Linfen,36.088,111.519,China,CN,CHN,Shanxi,,3976481.0,1156416074,Asia
+Xianyang,Xianyang,34.3299,108.7088,China,CN,CHN,Shaanxi,minor,3959842.0,1156120117,Asia
+Chuzhou,Chuzhou,32.256,118.333,China,CN,CHN,Anhui,,3937868.0,1156036420,Asia
+Zhuzhou,Zhuzhou,27.829,113.133,China,CN,CHN,Hunan,minor,3902738.0,1156041962,Asia
+Taiyuan,Taiyuan,37.8704,112.5497,China,CN,CHN,Shanxi,admin,3875053.0,1156632014,Asia
+Qingyuan,Qingyuan,23.682,113.056,China,CN,CHN,Guangdong,minor,3874000.0,1156135890,Asia
+Meizhou,Meizhou,24.289,116.122,China,CN,CHN,Guangdong,minor,3873239.0,1156361028,Asia
+Yiyang,Yiyang,28.5549,112.356,China,CN,CHN,Hunan,minor,3851564.0,1156218615,Asia
+Nanning,Nanning,22.8167,108.3275,China,CN,CHN,Guangxi,admin,3837978.0,1156605439,Asia
+Harbin,Harbin,45.7576,126.6409,China,CN,CHN,Heilongjiang,admin,3830000.0,1156241528,Asia
+Loudi,Loudi,27.6998,111.9944,China,CN,CHN,Hunan,,3826996.0,1156010654,Asia
+Yokohama,Yokohama,35.4442,139.6381,Japan,JP,JPN,Kanagawa,admin,3757630.0,1392118339,Asia
+Suihua,Suihua,46.654,126.969,China,CN,CHN,Heilongjiang,minor,3756167.0,1156235493,Asia
+Binzhou,Binzhou,37.383,117.971,China,CN,CHN,Shandong,,3748474.0,1156564962,Asia
+Zaozhuang,Zaozhuang,34.8109,117.3238,China,CN,CHN,Shandong,,3729140.0,1156796454,Asia
+Xiamen,Xiamen,24.4796,118.0889,China,CN,CHN,Fujian,minor,3707090.0,1156212809,Asia
+Fuzhou,Fuzhou,26.0743,119.2964,China,CN,CHN,Fujian,admin,3671192.0,1156188037,Asia
+Wuhu,Wuhu,31.3526,118.4331,China,CN,CHN,Anhui,minor,3644420.0,1156315512,Asia
+Medan,Medan,3.5894,98.6739,Indonesia,ID,IDN,Sumatera Utara,admin,3632000.0,1360543171,Asia
+Yulinshi,Yulinshi,38.2858,109.7341,China,CN,CHN,Shaanxi,,3624750.0,1156280672,Asia
+Wenzhou,Wenzhou,27.9938,120.6993,China,CN,CHN,Zhejiang,,3604446.0,1156188829,Asia
+Changzhou,Changzhou,31.811,119.974,China,CN,CHN,Jiangsu,minor,3601079.0,1156185511,Asia
+Puyang,Puyang,35.7627,115.0292,China,CN,CHN,Henan,minor,3598740.0,1156431924,Asia
+Nanchang,Nanchang,28.683,115.858,China,CN,CHN,Jiangxi,admin,3576547.0,1156198892,Asia
+Baicheng,Baicheng,23.903,106.619,China,CN,CHN,Guangxi,minor,3571505.0,1156981113,Asia
+Jiaozuo,Jiaozuo,35.2157,113.2419,China,CN,CHN,Henan,,3521078.0,1156157854,Asia
+Nādampālaiyam,Nadampalaiyam,11.0125,76.9714,India,IN,IND,Tamil Nādu,,3458045.0,1356163850,Asia
+Deyang,Deyang,31.127,104.398,China,CN,CHN,Sichuan,minor,3456161.0,1156127147,Asia
+Busan,Busan,35.18,129.075,"Korea, South",KR,KOR,Busan,admin,3453198.0,1410601465,Asia
+Hechi,Hechi,24.693,108.085,China,CN,CHN,Guangxi,minor,3417945.0,1156167204,Asia
+Tangshan,Tangshan,39.6294,118.1739,China,CN,CHN,Hebei,minor,3399231.0,1156904299,Asia
+Lucknow,Lucknow,26.85,80.95,India,IN,IND,Uttar Pradesh,admin,3382000.0,1356891790,Asia
+Anshan,Anshan,41.108,122.994,China,CN,CHN,Liaoning,,3325372.0,1156901825,Asia
+Guozhen,Guozhen,34.3609,107.1751,China,CN,CHN,Shaanxi,minor,3321853.0,1156084652,Asia
+Baojishi,Baojishi,34.363,107.238,China,CN,CHN,Shaanxi,,3321853.0,1156101096,Asia
+Qinzhou,Qinzhou,21.981,108.654,China,CN,CHN,Guangxi,minor,3302238.0,1156106602,Asia
+Guiyang,Guiyang,26.647,106.63,China,CN,CHN,Guizhou,admin,3299724.0,1156932620,Asia
+Wuxi,Wuxi,31.5667,120.2833,China,CN,CHN,Jiangsu,minor,3245179.0,1156019650,Asia
+Kannankulam,Kannankulam,10.52,76.21,India,IN,IND,Kerala,,3243170.0,1356335606,Asia
+Hanzhong,Hanzhong,33.0664,107.0232,China,CN,CHN,Shaanxi,,3211462.0,1156382678,Asia
+Shiyan,Shiyan,32.629,110.7987,China,CN,CHN,Hubei,minor,3209004.0,1156383921,Asia
+Guang’an,Guang'an,30.4564,106.6326,China,CN,CHN,Sichuan,minor,3205476.0,1156377302,Asia
+Changzhi,Changzhi,36.195,113.117,China,CN,CHN,Shanxi,minor,3180884.0,1156057944,Asia
+Tongren,Tongren,27.7316,109.1895,China,CN,CHN,Guizhou,,3168800.0,1156803442,Asia
+Bengbu,Bengbu,32.917,117.389,China,CN,CHN,Anhui,,3164467.0,1156440668,Asia
+Leshan,Leshan,29.552,103.766,China,CN,CHN,Sichuan,,3160168.0,1156203130,Asia
+Neijiang,Neijiang,29.5802,105.058,China,CN,CHN,Sichuan,minor,3140678.0,1156516335,Asia
+Zhenjiang,Zhenjiang,32.188,119.424,China,CN,CHN,Jiangsu,minor,3113384.0,1156934125,Asia
+Qinhuangdao,Qinhuangdao,39.8882,119.5202,China,CN,CHN,Hebei,minor,3107400.0,1156091093,Asia
+Bursa,Bursa,40.1833,29.05,Turkey,TR,TUR,Bursa,admin,3101833.0,1792903330,Asia
+Jaipur,Jaipur,26.9,75.8,India,IN,IND,Rājasthān,admin,3073350.0,1356293537,Asia
+Lanzhou,Lanzhou,36.0606,103.8268,China,CN,CHN,Gansu,admin,3067141.0,1156280566,Asia
+Qincheng,Qincheng,34.5815,105.7248,China,CN,CHN,Gansu,minor,2984659.0,1156104017,Asia
+İzmir,Izmir,38.42,27.14,Turkey,TR,TUR,İzmir,admin,2965900.0,1792725579,Asia
+Kottārasshēri,Kottarassheri,10.775,76.651,India,IN,IND,Kerala,,2952254.0,1356333889,Asia
+Meishan,Meishan,30.0771,103.8484,China,CN,CHN,Sichuan,,2950545.0,1156185501,Asia
+Incheon,Incheon,37.4833,126.6333,"Korea, South",KR,KOR,Incheon,admin,2936117.0,1410160313,Asia
+Ningde,Ningde,26.6662,119.5477,China,CN,CHN,Fujian,minor,2910000.0,1156909802,Asia
+Zhongshan,Zhongshan,22.517,113.3925,China,CN,CHN,Guangdong,minor,2909633.0,1156579621,Asia
+Putian,Putian,25.4526,119.0078,China,CN,CHN,Fujian,minor,2900000.0,1156811601,Asia
+Tongliao,Tongliao,43.654,122.243,China,CN,CHN,Inner Mongolia,minor,2873168.0,1156358686,Asia
+Chaoyang,Chaoyang,41.571,120.453,China,CN,CHN,Liaoning,,2872857.0,1156706927,Asia
+Hohhot,Hohhot,40.842,111.749,China,CN,CHN,Inner Mongolia,admin,2866615.0,1156210167,Asia
+Shaoguan,Shaoguan,24.811,113.597,China,CN,CHN,Guangdong,minor,2855131.0,1156617066,Asia
+Heyuan,Heyuan,23.7443,114.7002,China,CN,CHN,Guangdong,minor,2837686.0,1156665165,Asia
+Wuzhou,Wuzhou,23.4767,111.279,China,CN,CHN,Guangxi,minor,2820977.0,1156620133,Asia
+Suining,Suining,30.533,105.593,China,CN,CHN,Sichuan,minor,2814196.0,1156655650,Asia
+Weihai,Weihai,37.5133,122.1205,China,CN,CHN,Shandong,minor,2804771.0,1156473300,Asia
+Rizhao,Rizhao,35.417,119.527,China,CN,CHN,Shandong,minor,2801013.0,1156032841,Asia
+Malang,Malang,-7.98,112.62,Indonesia,ID,IDN,Jawa Timur,,2795209.0,1360141408,Asia
+Daqing,Daqing,46.589,125.104,China,CN,CHN,Heilongjiang,minor,2781562.0,1156403962,Asia
+Xiangtan,Xiangtan,27.8313,112.9454,China,CN,CHN,Hunan,,2726181.0,1156195684,Asia
+Bazhou,Bazhou,31.868,106.748,China,CN,CHN,Sichuan,minor,2712894.0,1156271365,Asia
+Handan,Handan,36.601,114.487,China,CN,CHN,Hebei,minor,2708015.0,1156957080,Asia
+Jinzhou,Jinzhou,41.129,121.148,China,CN,CHN,Liaoning,,2703853.0,1156157151,Asia
+Xinzhou,Xinzhou,38.416,112.734,China,CN,CHN,Shanxi,minor,2689668.0,1156617534,Asia
+Nanping,Nanping,26.6418,118.1774,China,CN,CHN,Fujian,minor,2680645.0,1156927445,Asia
+Gāzipura,Gazipura,23.9234,90.3959,Bangladesh,BD,BGD,Dhaka,,2674697.0,1050449249,Asia
+Shanwei,Shanwei,22.7872,115.3756,China,CN,CHN,Guangdong,minor,2672819.0,1156939010,Asia
+Moscow,Moscow,55.7506,37.6175,Russia,RU,RUS,Moskva,primary,17332000.0,1643318494,Europe
+London,London,51.5072,-0.1275,United Kingdom,GB,GBR,"London, City of",primary,11262000.0,1826645935,Europe
+Paris,Paris,48.8567,2.3522,France,FR,FRA,Île-de-France,primary,11060000.0,1250015082,Europe
+Madrid,Madrid,40.4169,-3.7033,Spain,ES,ESP,Madrid,primary,6211000.0,1724616994,Europe
+Saint Petersburg,Saint Petersburg,59.9375,30.3086,Russia,RU,RUS,Sankt-Peterburg,admin,5597763.0,1643616350,Europe
+Barcelona,Barcelona,41.3833,2.1833,Spain,ES,ESP,Catalonia,admin,4800000.0,1724594040,Europe
+Berlin,Berlin,52.52,13.405,Germany,DE,DEU,Berlin,primary,4679500.0,1276451290,Europe
+Stuttgart,Stuttgart,48.7775,9.18,Germany,DE,DEU,Baden-Württemberg,admin,2787724.0,1276171358,Europe
+Rome,Rome,41.8931,12.4828,Italy,IT,ITA,Lazio,primary,2748109.0,1380382862,Europe
+Munich,Munich,48.1375,11.575,Germany,DE,DEU,Bavaria,admin,2606021.0,1276692352,Europe
+Birmingham,Birmingham,52.48,-1.9025,United Kingdom,GB,GBR,Birmingham,,2590363.0,1826423213,Europe
+Hamburg,Hamburg,53.55,10.0,Germany,DE,DEU,Hamburg,admin,2496600.0,1276041799,Europe
+Vienna,Vienna,48.2083,16.3725,Austria,AT,AUT,Wien,primary,2223236.0,1040261752,Europe
+Novosibirsk,Novosibirsk,55.05,82.95,Russia,RU,RUS,Novosibirskaya Oblast’,admin,1633851.0,1643399240,Europe
+Valencia,Valencia,39.47,-0.3764,Spain,ES,ESP,Valencia,admin,1595000.0,1724981666,Europe
+Yekaterinburg,Yekaterinburg,56.8356,60.6128,Russia,RU,RUS,Sverdlovskaya Oblast’,admin,1468833.0,1643582706,Europe
+Milan,Milan,45.4669,9.19,Italy,IT,ITA,Lombardy,admin,1354196.0,1380724377,Europe
+Kazan,Kazan,55.7964,49.1089,Russia,RU,RUS,Tatarstan,admin,1259173.0,1643101260,Europe
+Brussels,Brussels,50.8467,4.3525,Belgium,BE,BEL,Brussels-Capital Region,primary,1249597.0,1056469830,Europe
+Nizhniy Novgorod,Nizhniy Novgorod,56.3269,44.0075,Russia,RU,RUS,Nizhegorodskaya Oblast’,admin,1204985.0,1643012126,Europe
+Chelyabinsk,Chelyabinsk,55.1547,61.3758,Russia,RU,RUS,Chelyabinskaya Oblast’,admin,1177058.0,1643224011,Europe
+Samara,Samara,53.2028,50.1408,Russia,RU,RUS,Samarskaya Oblast’,admin,1156659.0,1643205757,Europe
+Krasnodar,Krasnodar,45.0333,38.9667,Russia,RU,RUS,Krasnodarskiy Kray,admin,1138654.0,1643438227,Europe
+Rostov,Rostov,47.2225,39.71,Russia,RU,RUS,Rostovskaya Oblast’,admin,1135968.0,1643013518,Europe
+Ufa,Ufa,54.7261,55.9475,Russia,RU,RUS,Bashkortostan,admin,1128787.0,1643722928,Europe
+Omsk,Omsk,54.9833,73.3667,Russia,RU,RUS,Omskaya Oblast’,admin,1104485.0,1643360863,Europe
+Sevilla,Sevilla,37.39,-5.99,Spain,ES,ESP,Andalusia,admin,1100000.0,1724991838,Europe
+Krasnoyarsk,Krasnoyarsk,56.0089,92.8719,Russia,RU,RUS,Krasnoyarskiy Kray,admin,1092851.0,1643544975,Europe
+Cologne,Cologne,50.9364,6.9528,Germany,DE,DEU,North Rhine-Westphalia,,1087353.0,1276015998,Europe
+Voronezh,Voronezh,51.6717,39.2106,Russia,RU,RUS,Voronezhskaya Oblast’,admin,1051995.0,1643811064,Europe
+Perm,Perm,58.0,56.3167,Russia,RU,RUS,Permskiy Kray,admin,1026908.0,1643294442,Europe
+Volgograd,Volgograd,48.7086,44.5147,Russia,RU,RUS,Volgogradskaya Oblast’,admin,1004763.0,1643577201,Europe
+Stockholm,Stockholm,59.3275,18.0547,Sweden,SE,SWE,Stockholm,primary,995574.0,1752425602,Europe
+Bordeaux,Bordeaux,44.84,-0.58,France,FR,FRA,Nouvelle-Aquitaine,admin,994920.0,1250449238,Europe
+Málaga,Malaga,36.7194,-4.42,Spain,ES,ESP,Andalusia,minor,967250.0,1724397372,Europe
+Naples,Naples,40.8358,14.2486,Italy,IT,ITA,Campania,admin,913462.0,1380646673,Europe
+Marseille,Marseille,43.2964,5.37,France,FR,FRA,Provence-Alpes-Côte d’Azur,admin,877215.0,1250774071,Europe
+Tyumen,Tyumen,57.15,65.5333,Russia,RU,RUS,Tyumenskaya Oblast’,admin,861100.0,1643040435,Europe
+Portsmouth,Portsmouth,50.8058,-1.0872,United Kingdom,GB,GBR,Portsmouth,,855679.0,1826964096,Europe
+Southampton,Southampton,50.9025,-1.4042,United Kingdom,GB,GBR,Southampton,,855569.0,1826602892,Europe
+Turin,Turin,45.0792,7.6761,Italy,IT,ITA,Piedmont,admin,841600.0,1380244627,Europe
+Saratov,Saratov,51.53,46.035,Russia,RU,RUS,Saratovskaya Oblast’,admin,838042.0,1643556540,Europe
+Frankfurt,Frankfurt,50.1106,8.6822,Germany,DE,DEU,Hesse,minor,775790.0,1276054552,Europe
+Bilbao,Bilbao,43.2569,-2.9236,Spain,ES,ESP,Basque Country,minor,775000.0,1724331267,Europe
+Bristol,Bristol,51.4536,-2.5975,United Kingdom,GB,GBR,"Bristol, City of",,707412.0,1826921049,Europe
+Zaragoza,Zaragoza,41.65,-0.8833,Spain,ES,ESP,Aragon,admin,686986.0,1724907391,Europe
+Gothenburg,Gothenburg,57.7075,11.9675,Sweden,SE,SWE,Västra Götaland,admin,674529.0,1752059374,Europe
+Murcia,Murcia,37.9861,-1.1303,Spain,ES,ESP,Murcia,admin,672773.0,1724107739,Europe
+Tolyatti,Tolyatti,53.5089,49.4222,Russia,RU,RUS,Samarskaya Oblast’,,667956.0,1643256295,Europe
+Makhachkala,Makhachkala,42.9825,47.505,Russia,RU,RUS,Dagestan,admin,662660.0,1643580480,Europe
+Las Palmas,Las Palmas,28.1258,-15.4353,Spain,ES,ESP,Canary Islands,admin,635000.0,1724501748,Europe
+Düsseldorf,Dusseldorf,51.2256,6.7767,Germany,DE,DEU,North Rhine-Westphalia,admin,631217.0,1276615258,Europe
+Palermo,Palermo,38.1157,13.3613,Italy,IT,ITA,Sicilia,admin,630167.0,1380428434,Europe
+Glasgow,Glasgow,55.8611,-4.25,United Kingdom,GB,GBR,Glasgow City,,626410.0,1826836462,Europe
+Irkutsk,Irkutsk,52.2892,104.28,Russia,RU,RUS,Irkutskaya Oblast’,admin,623736.0,1643439037,Europe
+Barnaul,Barnaul,53.3486,83.7764,Russia,RU,RUS,Altayskiy Kray,admin,623057.0,1643318931,Europe
+Leipzig,Leipzig,51.34,12.375,Germany,DE,DEU,Saxony,minor,619879.0,1276563678,Europe
+Izhevsk,Izhevsk,56.8333,53.1833,Russia,RU,RUS,Udmurtiya,admin,618776.0,1643983138,Europe
+Khabarovsk,Khabarovsk,48.4833,135.0833,Russia,RU,RUS,Khabarovskiy Kray,admin,615570.0,1643175363,Europe
+Ulyanovsk,Ulyanovsk,54.3167,48.3667,Russia,RU,RUS,Ul’yanovskaya Oblast’,admin,613334.0,1643668944,Europe
+Dortmund,Dortmund,51.5139,7.4653,Germany,DE,DEU,North Rhine-Westphalia,minor,595471.0,1276562886,Europe
+Vladivostok,Vladivostok,43.115,131.8853,Russia,RU,RUS,Primorskiy Kray,admin,591628.0,1643832017,Europe
+Essen,Essen,51.4508,7.0131,Germany,DE,DEU,North Rhine-Westphalia,minor,586608.0,1276769247,Europe
+Bremen,Bremen,53.0758,8.8072,Germany,DE,DEU,Bremen,admin,577026.0,1276376509,Europe
+Yaroslavl,Yaroslavl,57.6167,39.85,Russia,RU,RUS,Yaroslavskaya Oblast’,admin,567443.0,1643338528,Europe
+Dresden,Dresden,51.05,13.74,Germany,DE,DEU,Saxony,admin,566222.0,1276561036,Europe
+Antwerp,Antwerp,51.2178,4.4003,Belgium,BE,BEL,Flanders,minor,565039.0,1056168623,Europe
+Genoa,Genoa,44.4072,8.934,Italy,IT,ITA,Liguria,admin,558745.0,1380716540,Europe
+Braunschweig,Braunschweig,52.2667,10.5167,Germany,DE,DEU,Lower Saxony,minor,551000.0,1276941443,Europe
+Palma,Palma,39.5667,2.65,Spain,ES,ESP,Balearic Islands,admin,550000.0,1724728111,Europe
+Hannover,Hannover,52.3667,9.7167,Germany,DE,DEU,Lower Saxony,admin,548186.0,1276457707,Europe
+Manchester,Manchester,53.479,-2.2452,United Kingdom,GB,GBR,Manchester,,547627.0,1826246335,Europe
+Tomsk,Tomsk,56.5,84.9667,Russia,RU,RUS,Tomskaya Oblast’,admin,545391.0,1643258928,Europe
+Kemerovo,Kemerovo,55.3667,86.0667,Russia,RU,RUS,Kemerovskaya Oblast’,admin,544600.0,1643216311,Europe
+Naberezhnyye Chelny,Naberezhnyye Chelny,55.6833,52.3167,Russia,RU,RUS,Tatarstan,,544383.0,1643008493,Europe
+Santa Cruz,Santa Cruz,28.4667,-16.25,Spain,ES,ESP,Canary Islands,admin,538000.0,1724813158,Europe
+Orenburg,Orenburg,51.7833,55.1,Russia,RU,RUS,Orenburgskaya Oblast’,admin,536862.0,1643685056,Europe
+Leeds,Leeds,53.7975,-1.5436,United Kingdom,GB,GBR,Leeds,,536280.0,1826343963,Europe
+Novokuznetsk,Novokuznetsk,53.7667,87.1333,Russia,RU,RUS,Kemerovskaya Oblast’,,531186.0,1643628717,Europe
+Balashikha,Balashikha,55.8167,37.9667,Russia,RU,RUS,Moskovskaya Oblast’,minor,530311.0,1643989845,Europe
+Nuremberg,Nuremberg,49.4539,11.0775,Germany,DE,DEU,Bavaria,minor,526091.0,1276166609,Europe
+Lyon,Lyon,45.76,4.84,France,FR,FRA,Auvergne-Rhône-Alpes,admin,520774.0,1250196189,Europe
+Ryazan,Ryazan,54.63,39.7425,Russia,RU,RUS,Ryazanskaya Oblast’,admin,520509.0,1643205787,Europe
+Sheffield,Sheffield,53.3808,-1.4703,United Kingdom,GB,GBR,Sheffield,,518090.0,1826289852,Europe
+Liverpool,Liverpool,53.4072,-2.9917,United Kingdom,GB,GBR,Liverpool,,513441.0,1826558678,Europe
+Toulouse,Toulouse,43.6045,1.444,France,FR,FRA,Occitanie,admin,511684.0,1250258110,Europe
+Duisburg,Duisburg,51.4347,6.7625,Germany,DE,DEU,North Rhine-Westphalia,minor,503707.0,1276977172,Europe
+Lipetsk,Lipetsk,52.6167,39.6,Russia,RU,RUS,Lipetskaya Oblast’,admin,496403.0,1643772906,Europe
+Cheboksary,Cheboksary,56.15,47.2333,Russia,RU,RUS,Chuvashiya,admin,496350.0,1643163382,Europe
+Kaliningrad,Kaliningrad,54.7003,20.4531,Russia,RU,RUS,Kaliningradskaya Oblast’,admin,489584.0,1643178106,Europe
+Penza,Penza,53.2,45.0,Russia,RU,RUS,Penzenskaya Oblast’,admin,488299.0,1643492830,Europe
+Edinburgh,Edinburgh,55.95,-3.1833,United Kingdom,GB,GBR,"Edinburgh, City of",,488050.0,1826492520,Europe
+Worthing,Worthing,50.8147,-0.3714,United Kingdom,GB,GBR,West Sussex,,474485.0,1826936965,Europe
+Kirov,Kirov,58.6,49.6833,Russia,RU,RUS,Kirovskaya Oblast’,admin,471754.0,1643106064,Europe
+Tula,Tula,54.2,37.6167,Russia,RU,RUS,Tul’skaya Oblast’,admin,466609.0,1643255206,Europe
+Astrakhan,Astrakhan,46.35,48.035,Russia,RU,RUS,Astrakhanskaya Oblast’,admin,465524.0,1643407929,Europe
+Leicester,Leicester,52.6361,-1.1331,United Kingdom,GB,GBR,Leicester,,464395.0,1826431946,Europe
+Stavropol,Stavropol,45.05,41.9833,Russia,RU,RUS,Stavropol’skiy Kray,admin,450680.0,1643947228,Europe
+Zürich,Zurich,47.3744,8.5411,Switzerland,CH,CHE,Zürich,admin,448664.0,1756539143,Europe
+Sochi,Sochi,43.5853,39.7203,Russia,RU,RUS,Krasnodarskiy Kray,minor,444989.0,1643009782,Europe
+Ulan-Ude,Ulan-Ude,51.8333,107.6,Russia,RU,RUS,Buryatiya,admin,439128.0,1643774900,Europe
+Kursk,Kursk,51.7167,36.1833,Russia,RU,RUS,Kurskaya Oblast’,admin,436678.0,1643011077,Europe
+Tver,Tver,56.8625,35.9242,Russia,RU,RUS,Tverskaya Oblast’,admin,424969.0,1643456559,Europe
+Tirana,Tirana,41.3272,19.8186,Albania,AL,ALB,Tiranë,primary,418495.0,1008162156,Europe
+Magnitogorsk,Magnitogorsk,53.3833,59.0333,Russia,RU,RUS,Chelyabinskaya Oblast’,minor,408715.0,1643987830,Europe
+Surgut,Surgut,61.25,73.4333,Russia,RU,RUS,Khanty-Mansiyskiy Avtonomnyy Okrug-Yugra,minor,395900.0,1643007475,Europe
+Bologna,Bologna,44.4939,11.3428,Italy,IT,ITA,Emilia-Romagna,admin,387971.0,1380202039,Europe
+Bryansk,Bryansk,53.2425,34.3667,Russia,RU,RUS,Bryanskaya Oblast’,admin,373310.0,1643208827,Europe
+Bochum,Bochum,51.4819,7.2158,Germany,DE,DEU,North Rhine-Westphalia,minor,366385.0,1276227288,Europe
+Coventry,Coventry,52.4081,-1.5106,United Kingdom,GB,GBR,Coventry,,362690.0,1826979198,Europe
+Ivanovo,Ivanovo,56.9967,40.9819,Russia,RU,RUS,Ivanovskaya Oblast’,admin,361644.0,1643297945,Europe
+Caerdydd,Caerdydd,51.4817,-3.1792,United Kingdom,GB,GBR,Cardiff,,361469.0,1826362422,Europe
+Florence,Florence,43.7714,11.2542,Italy,IT,ITA,Tuscany,admin,360930.0,1380726561,Europe
+Malmö,Malmo,55.5833,13.0333,Sweden,SE,SWE,Skåne,admin,360249.0,1752705818,Europe
+Wuppertal,Wuppertal,51.2667,7.1833,Germany,DE,DEU,North Rhine-Westphalia,minor,358938.0,1276004611,Europe
+Alicante,Alicante,38.3453,-0.4831,Spain,ES,ESP,Valencia,minor,358720.0,1724923163,Europe
+Nice,Nice,43.7034,7.2663,France,FR,FRA,Provence-Alpes-Côte d’Azur,minor,353701.0,1250774553,Europe
+Vladimir,Vladimir,56.1286,40.4058,Russia,RU,RUS,Vladimirskaya Oblast’,admin,352347.0,1643712167,Europe
+Arkhangelsk,Arkhangelsk,64.5431,40.5375,Russia,RU,RUS,Arkhangel’skaya Oblast’,admin,351488.0,1643797198,Europe
+Belfast,Belfast,54.5967,-5.93,United Kingdom,GB,GBR,Belfast,,345006.0,1826325087,Europe
+Bielefeld,Bielefeld,52.0211,8.5347,Germany,DE,DEU,North Rhine-Westphalia,minor,338410.0,1276112885,Europe
+Reading,Reading,51.4542,-0.9731,United Kingdom,GB,GBR,Reading,,337108.0,1826869043,Europe
+Bonn,Bonn,50.7353,7.1022,Germany,DE,DEU,North Rhine-Westphalia,minor,335789.0,1276807850,Europe
+Chita,Chita,52.05,113.4667,Russia,RU,RUS,Zabaykal’skiy Kray,admin,333159.0,1643036673,Europe
+Kaluga,Kaluga,54.55,36.2833,Russia,RU,RUS,Kaluzhskaya Oblast’,admin,331842.0,1643161747,Europe
+Nizhniy Tagil,Nizhniy Tagil,57.9167,59.9667,Russia,RU,RUS,Sverdlovskaya Oblast’,minor,330507.0,1643992310,Europe
+Belgorod,Belgorod,50.6,36.6,Russia,RU,RUS,Belgorodskaya Oblast’,admin,328482.0,1643407900,Europe
+Nantes,Nantes,47.2181,-1.5528,France,FR,FRA,Pays de la Loire,admin,325070.0,1250091495,Europe
+Córdoba,Cordoba,37.89,-4.78,Spain,ES,ESP,Andalusia,minor,323763.0,1724706440,Europe
+Münster,Munster,51.9625,7.6256,Germany,DE,DEU,North Rhine-Westphalia,minor,322904.0,1276714504,Europe
+Mannheim,Mannheim,49.4878,8.4661,Germany,DE,DEU,Baden-Württemberg,minor,316877.0,1276150104,Europe
+Bari,Bari,41.1253,16.8667,Italy,IT,ITA,Puglia,admin,316015.0,1380991126,Europe
+Volzhskiy,Volzhskiy,48.8056,44.7417,Russia,RU,RUS,Volgogradskaya Oblast’,minor,315220.0,1643875527,Europe
+Kingston upon Hull,Kingston upon Hull,53.7444,-0.3325,United Kingdom,GB,GBR,"Kingston upon Hull, City of",,314018.0,1826028894,Europe
+Podolsk,Podolsk,55.4311,37.5456,Russia,RU,RUS,Moskovskaya Oblast’,minor,312911.0,1643693800,Europe
+Smolensk,Smolensk,54.7828,32.0453,Russia,RU,RUS,Smolenskaya Oblast’,admin,312896.0,1643627051,Europe
+Vologda,Vologda,59.2167,39.9,Russia,RU,RUS,Vologodskaya Oblast’,admin,312420.0,1643013685,Europe
+Yakutsk,Yakutsk,62.03,129.73,Russia,RU,RUS,Sakha (Yakutiya),admin,311760.0,1643163546,Europe
+Catania,Catania,37.5027,15.0873,Italy,IT,ITA,Sicilia,minor,311584.0,1380562508,Europe
+Kurgan,Kurgan,55.4667,65.35,Russia,RU,RUS,Kurganskaya Oblast’,admin,310911.0,1643201853,Europe
+Saransk,Saransk,54.1833,45.1833,Russia,RU,RUS,Mordoviya,admin,310898.0,1643003229,Europe
+Karlsruhe,Karlsruhe,49.0092,8.404,Germany,DE,DEU,Baden-Württemberg,minor,309964.0,1276923210,Europe
+Montpellier,Montpellier,43.6119,3.8772,France,FR,FRA,Occitanie,minor,307101.0,1250819356,Europe
+Orël,Orel,52.9686,36.0694,Russia,RU,RUS,Orlovskaya Oblast’,admin,303696.0,1643703818,Europe
+Vladikavkaz,Vladikavkaz,43.04,44.6775,Russia,RU,RUS,North Ossetia,admin,303597.0,1643438348,Europe
+Augsburg,Augsburg,48.3689,10.8978,Germany,DE,DEU,Bavaria,minor,303150.0,1276314100,Europe
+Valladolid,Valladolid,41.6528,-4.7236,Spain,ES,ESP,Castille-Leon,admin,300618.0,1724133771,Europe
+Newcastle,Newcastle,54.978,-1.6102,United Kingdom,GB,GBR,Newcastle upon Tyne,,300196.0,1826292220,Europe
+Cherepovets,Cherepovets,59.1167,37.9,Russia,RU,RUS,Vologodskaya Oblast’,,298790.0,1643937680,Europe
+Stockport,Stockport,53.4083,-2.1494,United Kingdom,GB,GBR,Stockport,,294773.0,1826228303,Europe
+Vigo,Vigo,42.2314,-8.7124,Spain,ES,ESP,Galicia,,293977.0,1724045676,Europe
+Bradford,Bradford,53.8,-1.75,United Kingdom,GB,GBR,Bradford,,293277.0,1826687116,Europe
+Graz,Graz,47.0708,15.4386,Austria,AT,AUT,Steiermark,admin,292630.0,1040184559,Europe
+Strasbourg,Strasbourg,48.5833,7.7458,France,FR,FRA,Grand Est,admin,291709.0,1250789140,Europe
+Groznyy,Groznyy,43.3125,45.6986,Russia,RU,RUS,Chechnya,admin,291687.0,1643049853,Europe
+Tambov,Tambov,52.7231,41.4539,Russia,RU,RUS,Tambovskaya Oblast’,admin,289701.0,1643802687,Europe
+Nottingham,Nottingham,52.9561,-1.1512,United Kingdom,GB,GBR,Nottingham,,289301.0,1826122597,Europe
+Wiesbaden,Wiesbaden,50.0825,8.24,Germany,DE,DEU,Hesse,admin,285522.0,1276652118,Europe
+Bolton,Bolton,53.5783,-2.43,United Kingdom,GB,GBR,Bolton,,285372.0,1826628353,Europe
+Nizhnevartovsk,Nizhnevartovsk,60.95,76.6,Russia,RU,RUS,Khanty-Mansiyskiy Avtonomnyy Okrug-Yugra,minor,283256.0,1643786132,Europe
+Petrozavodsk,Petrozavodsk,61.7833,34.3333,Russia,RU,RUS,Kareliya,admin,279190.0,1643319966,Europe
+Sunderland,Sunderland,54.906,-1.381,United Kingdom,GB,GBR,Sunderland,,277417.0,1826736387,Europe
+Sterlitamak,Sterlitamak,53.6333,55.95,Russia,RU,RUS,Bashkortostan,minor,277410.0,1643812452,Europe
+Mytishchi,Mytishchi,55.9167,37.7667,Russia,RU,RUS,Moskovskaya Oblast’,minor,275313.0,1643322494,Europe
+Yoshkar-Ola,Yoshkar-Ola,56.65,47.8833,Russia,RU,RUS,Mariy-El,admin,274715.0,1643701904,Europe
+Mönchengladbach,Monchengladbach,51.2,6.4333,Germany,DE,DEU,North Rhine-Westphalia,minor,268943.0,1276982173,Europe
+Gijón,Gijon,43.5333,-5.7,Spain,ES,ESP,Asturias,,268561.0,1724170659,Europe
+Plymouth,Plymouth,50.3714,-4.1422,United Kingdom,GB,GBR,Plymouth,,267918.0,1826947183,Europe
+Kostroma,Kostroma,57.7681,40.9269,Russia,RU,RUS,Kostromskaya Oblast’,admin,267481.0,1643869304,Europe
+Murmansk,Murmansk,68.9706,33.075,Russia,RU,RUS,Murmanskaya Oblast’,admin,267422.0,1643755251,Europe
+Gelsenkirchen,Gelsenkirchen,51.5167,7.1,Germany,DE,DEU,North Rhine-Westphalia,minor,265885.0,1276788537,Europe
+Nalchik,Nalchik,43.4833,43.6167,Russia,RU,RUS,Kabardino-Balkariya,admin,265162.0,1643746064,Europe
+Gent,Gent,51.0536,3.7253,Belgium,BE,BEL,Flanders,minor,265086.0,1056062897,Europe
+Milton Keynes,Milton Keynes,52.04,-0.76,United Kingdom,GB,GBR,Milton Keynes,,264349.0,1826291745,Europe
+Novorossiysk,Novorossiysk,44.7167,37.7833,Russia,RU,RUS,Krasnodarskiy Kray,minor,261937.0,1643087180,Europe
+Engels,Engels,51.5017,46.1222,Russia,RU,RUS,Saratovskaya Oblast’,,260190.0,1643653861,Europe
+Vitoria-Gasteiz,Vitoria-Gasteiz,42.85,-2.6833,Spain,ES,ESP,Basque Country,admin,257968.0,1724975338,Europe
+Khimki,Khimki,55.8892,37.445,Russia,RU,RUS,Moskovskaya Oblast’,minor,256684.0,1643601857,Europe
+Verona,Verona,45.4386,10.9928,Italy,IT,ITA,Veneto,minor,255588.0,1380324879,Europe
+Derby,Derby,52.9247,-1.478,United Kingdom,GB,GBR,Derby,,255394.0,1826333435,Europe
+Westminster,Westminster,51.4947,-0.1353,United Kingdom,GB,GBR,Westminster,,255324.0,1826759011,Europe
+Aachen,Aachen,50.7756,6.0836,Germany,DE,DEU,North Rhine-Westphalia,minor,252769.0,1276805572,Europe
+Wolverhampton,Wolverhampton,52.5833,-2.1333,United Kingdom,GB,GBR,Wolverhampton,,250970.0,1826636841,Europe
+Chemnitz,Chemnitz,50.8333,12.9167,Germany,DE,DEU,Saxony,minor,250681.0,1276519956,Europe
+Venice,Venice,45.4397,12.3319,Italy,IT,ITA,Veneto,admin,250369.0,1380660414,Europe
+A Coruña,A Coruna,43.365,-8.41,Spain,ES,ESP,Galicia,minor,249261.0,1724417375,Europe
+Kiel,Kiel,54.3233,10.1394,Germany,DE,DEU,Schleswig-Holstein,admin,248873.0,1276305306,Europe
+Abertawe,Abertawe,51.6167,-3.95,United Kingdom,GB,GBR,Swansea,,246700.0,1826574888,Europe
+Barnsley,Barnsley,53.5547,-1.4791,United Kingdom,GB,GBR,Barnsley,,245199.0,1826597621,Europe
+Syktyvkar,Syktyvkar,61.6667,50.8167,Russia,RU,RUS,Komi,admin,245083.0,1643573386,Europe
+Stoke-on-Trent,Stoke-on-Trent,53.0255,-2.1761,United Kingdom,GB,GBR,Stoke-on-Trent,,245000.0,1826799578,Europe
+Elche,Elche,38.2669,-0.6983,Spain,ES,ESP,Valencia,,243128.0,1724611437,Europe
+Halle,Halle,51.4828,11.9697,Germany,DE,DEU,Saxony-Anhalt,minor,242172.0,1276167077,Europe
+Taganrog,Taganrog,47.2167,38.9167,Russia,RU,RUS,Rostovskaya Oblast’,,241557.0,1643228316,Europe
+Nizhnekamsk,Nizhnekamsk,55.6333,51.8167,Russia,RU,RUS,Tatarstan,,240379.0,1643493938,Europe
+Magdeburg,Magdeburg,52.1317,11.6392,Germany,DE,DEU,Saxony-Anhalt,admin,240114.0,1276418236,Europe
+Blagoveshchensk,Blagoveshchensk,50.25,127.5333,Russia,RU,RUS,Amurskaya Oblast’,admin,239864.0,1643308239,Europe
+Lille,Lille,50.6278,3.0583,France,FR,FRA,Hauts-de-France,admin,238695.0,1250071961,Europe
+Freiburg im Breisgau,Freiburg im Breisgau,47.995,7.85,Germany,DE,DEU,Baden-Württemberg,minor,237244.0,1276371228,Europe
+Lyubertsy,Lyubertsy,55.6783,37.8944,Russia,RU,RUS,Moskovskaya Oblast’,minor,236339.0,1643024284,Europe
+Cairo,Cairo,30.0444,31.2358,Egypt,EG,EGY,Al Qāhirah,primary,20296000.0,1818253931,Africa
+Lagos,Lagos,6.455,3.3841,Nigeria,NG,NGA,Lagos,minor,16637000.0,1566593751,Africa
+Johannesburg,Johannesburg,-26.2044,28.0456,South Africa,ZA,ZAF,Gauteng,admin,7860781.0,1710550792,Africa
+Giza,Giza,29.987,31.2118,Egypt,EG,EGY,Al Jīzah,admin,5598402.0,1818925479,Africa
+Alexandria,Alexandria,31.1975,29.8925,Egypt,EG,EGY,Al Iskandarīyah,admin,4870000.0,1818695837,Africa
+Cape Town,Cape Town,-33.9253,18.4239,South Africa,ZA,ZAF,Western Cape,primary,4770313.0,1710680650,Africa
+Kabul,Kabul,34.5253,69.1783,Afghanistan,AF,AFG,Kābul,primary,4273156.0,1004993580,Africa
+Kano,Kano,12.0,8.5167,Nigeria,NG,NGA,Kano,admin,4224966.0,1566422868,Africa
+Abuja,Abuja,9.0667,7.4833,Nigeria,NG,NGA,Federal Capital Territory,primary,3770000.0,1566342270,Africa
+Ibadan,Ibadan,7.3964,3.9167,Nigeria,NG,NGA,Oyo,admin,3552000.0,1566366407,Africa
+Pretoria,Pretoria,-25.7461,28.1881,South Africa,ZA,ZAF,Gauteng,primary,2818100.0,1710176249,Africa
+Algiers,Algiers,36.7325,3.0872,Algeria,DZ,DZA,Alger,primary,2364230.0,1012973369,Africa
+Awka,Awka,6.2069,7.0678,Nigeria,NG,NGA,Anambra,admin,2171900.0,1566560581,Africa
+Port Harcourt,Port Harcourt,4.8242,7.0336,Nigeria,NG,NGA,Rivers,admin,1865000.0,1566070649,Africa
+Benin City,Benin City,6.3333,5.6222,Nigeria,NG,NGA,Edo,admin,1780000.0,1566080151,Africa
+Onitsha,Onitsha,6.1667,6.7833,Nigeria,NG,NGA,Anambra,minor,1483000.0,1566593483,Africa
+Soweto,Soweto,-26.2678,27.8585,South Africa,ZA,ZAF,Gauteng,,1271628.0,1710627007,Africa
+Maiduguri,Maiduguri,11.8372,13.1542,Nigeria,NG,NGA,Borno,admin,1197497.0,1566540296,Africa
+Aba,Aba,5.1167,7.3667,Nigeria,NG,NGA,Abia,minor,1160000.0,1566262000,Africa
+Shagamu,Shagamu,6.8333,3.65,Nigeria,NG,NGA,Ogun,minor,1132270.0,1566202131,Africa
+Ikare,Ikare,7.5167,5.75,Nigeria,NG,NGA,Ondo,minor,1099931.0,1566683694,Africa
+Ogbomoso,Ogbomoso,8.1333,4.25,Nigeria,NG,NGA,Oyo,minor,1032000.0,1566373448,Africa
+Enugu,Enugu,6.5,7.5,Nigeria,NG,NGA,Enugu,admin,1029400.0,1566212729,Africa
+Shubrā al Khaymah,Shubra al Khaymah,30.1286,31.2422,Egypt,EG,EGY,Al Qalyūbīyah,,1025569.0,1818909612,Africa
+Āqchah,Aqchah,36.9114,66.1858,Afghanistan,AF,AFG,Jowzjān,minor,1012000.0,1004364776,Africa
+Gqeberha,Gqeberha,-33.9581,25.6,South Africa,ZA,ZAF,Eastern Cape,,967677.0,1710918997,Africa
+Mushin,Mushin,6.5333,3.35,Nigeria,NG,NGA,Lagos,minor,935400.0,1566329100,Africa
+Owerri,Owerri,5.485,7.035,Nigeria,NG,NGA,Imo,admin,908109.0,1566679132,Africa
+Ashmūn,Ashmun,30.2974,30.9764,Egypt,EG,EGY,Al Minūfīyah,,901191.0,1818251892,Africa
+Abeokuta,Abeokuta,7.1608,3.3483,Nigeria,NG,NGA,Ogun,admin,888924.0,1566979497,Africa
+Ikeja,Ikeja,6.6,3.35,Nigeria,NG,NGA,Lagos,admin,861300.0,1566486388,Africa
+Akure,Akure,7.25,5.195,Nigeria,NG,NGA,Ondo,admin,847903.0,1566568277,Africa
+Ilorin,Ilorin,8.5,4.55,Nigeria,NG,NGA,Kwara,admin,847582.0,1566480168,Africa
+Pietermaritzburg,Pietermaritzburg,-29.6167,30.3833,South Africa,ZA,ZAF,KwaZulu-Natal,admin,839327.0,1710690280,Africa
+Durban,Durban,-29.8833,31.05,South Africa,ZA,ZAF,KwaZulu-Natal,,838634.0,1710149138,Africa
+Oran,Oran,35.6969,-0.6331,Algeria,DZ,DZA,Oran,admin,803329.0,1012126319,Africa
+Kaduna,Kaduna,10.5167,7.4333,Nigeria,NG,NGA,Kaduna,admin,760084.0,1566368729,Africa
+Osogbo,Osogbo,7.7667,4.5667,Nigeria,NG,NGA,Osun,admin,731000.0,1566395088,Africa
+Bauchi,Bauchi,10.5,10.0,Nigeria,NG,NGA,Bauchi,admin,693700.0,1566483284,Africa
+Sinnūris,Sinnuris,29.4072,30.8667,Egypt,EG,EGY,Al Fayyūm,,692701.0,1818442898,Africa
+Lokoja,Lokoja,7.8019,6.7442,Nigeria,NG,NGA,Kogi,admin,692050.0,1566772925,Africa
+Agege,Agege,6.6219,3.3258,Nigeria,NG,NGA,Lagos,minor,683600.0,1566564887,Africa
+Nneyi-Umuleri,Nneyi-Umuleri,6.3333,6.8333,Nigeria,NG,NGA,Anambra,,660821.0,1566349733,Africa
+Jalingo,Jalingo,8.9,11.3667,Nigeria,NG,NGA,Taraba,admin,660213.0,1566732241,Africa
+Dayrūţ,Dayrut,27.5564,30.8106,Egypt,EG,EGY,Asyūţ,,653847.0,1818248895,Africa
+Ţūkh,Tukh,30.3549,31.2011,Egypt,EG,EGY,Al Qalyūbīyah,,627290.0,1818411967,Africa
+Jos,Jos,9.9167,8.8903,Nigeria,NG,NGA,Plateau,admin,622802.0,1566773679,Africa
+Al Manşūrah,Al Mansurah,31.05,31.3833,Egypt,EG,EGY,Ad Daqahlīyah,admin,621953.0,1818255319,Africa
+Ḩalwān,Halwan,29.8493,31.3327,Egypt,EG,EGY,Al Qāhirah,,619293.0,1818000039,Africa
+Kandahār,Kandahar,31.62,65.7158,Afghanistan,AF,AFG,Kandahār,admin,614254.0,1004003059,Africa
+Somolu,Somolu,6.5408,3.3872,Nigeria,NG,NGA,Lagos,minor,597400.0,1566609760,Africa
+Al Maḩallah al Kubrá,Al Mahallah al Kubra,30.9667,31.1667,Egypt,EG,EGY,Al Gharbīyah,,592573.0,1818406471,Africa
+Shibīn al Qanāţir,Shibin al Qanatir,30.3127,31.3202,Egypt,EG,EGY,Al Qalyūbīyah,,570868.0,1818406704,Africa
+Abū Ḩummuş,Abu Hummus,31.0931,30.3142,Egypt,EG,EGY,Al Buḩayrah,,569157.0,1818221429,Africa
+Herāt,Herat,34.3419,62.2031,Afghanistan,AF,AFG,Herāt,admin,556205.0,1004237782,Africa
+Uyo,Uyo,5.0333,7.9275,Nigeria,NG,NGA,Akwa Ibom,admin,554906.0,1566061694,Africa
+Rustenburg,Rustenburg,-25.6667,27.2428,South Africa,ZA,ZAF,North West,,549575.0,1710326039,Africa
+Port Said,Port Said,31.2625,32.3061,Egypt,EG,EGY,Būr Sa‘īd,admin,524433.0,1818628574,Africa
+Al Fayyūm,Al Fayyum,29.3,30.8333,Egypt,EG,EGY,Al Fayyūm,admin,519047.0,1818281002,Africa
+Suez,Suez,29.9667,32.5333,Egypt,EG,EGY,As Suways,admin,516959.0,1818495972,Africa
+Abū Ţisht,Abu Tisht,26.1204,32.0954,Egypt,EG,EGY,Qinā,,514535.0,1818097618,Africa
+Al Fashn,Al Fashn,28.8231,30.899,Egypt,EG,EGY,Banī Suwayf,,512242.0,1818503615,Africa
+Newcastle,Newcastle,-27.7464,29.9328,South Africa,ZA,ZAF,KwaZulu-Natal,,507710.0,1710031016,Africa
+Ile-Ife,Ile-Ife,7.4833,4.5592,Nigeria,NG,NGA,Osun,minor,501952.0,1566756897,Africa
+Farāh,Farah,32.3436,62.1194,Afghanistan,AF,AFG,Farāh,admin,500000.0,1004523791,Africa
+Asaba,Asaba,6.1833,6.7333,Nigeria,NG,NGA,Delta,admin,500000.0,1566322425,Africa
+Akhmīm,Akhmim,26.5667,31.75,Egypt,EG,EGY,Sūhāj,,482666.0,1818295057,Africa
+Mazār-e Sharīf,Mazar-e Sharif,36.7,67.1167,Afghanistan,AF,AFG,Balkh,admin,469247.0,1004436363,Africa
+Katlehong,Katlehong,-26.3333,28.15,South Africa,ZA,ZAF,Gauteng,,467890.0,1710975690,Africa
+Constantine,Constantine,36.35,6.6,Algeria,DZ,DZA,Constantine,admin,448374.0,1012275076,Africa
+Zebediela,Zebediela,-24.31,29.27,South Africa,ZA,ZAF,Limpopo,,448000.0,1710272814,Africa
+Ado-Ekiti,Ado-Ekiti,7.6211,5.2214,Nigeria,NG,NGA,Ekiti,admin,446749.0,1566196391,Africa
+Al Marāghah,Al Maraghah,26.6998,31.6046,Egypt,EG,EGY,Sūhāj,,432678.0,1818170583,Africa
+Ismailia,Ismailia,30.5833,32.2667,Egypt,EG,EGY,Al Ismā‘īlīyah,admin,429465.0,1818532766,Africa
+Sokoto,Sokoto,13.0833,5.25,Nigeria,NG,NGA,Sokoto,admin,427760.0,1566574518,Africa
+Al Bājūr,Al Bajur,30.4305,31.0368,Egypt,EG,EGY,Al Minūfīyah,,427017.0,1818896076,Africa
+Ugep,Ugep,5.8,8.0833,Nigeria,NG,NGA,Cross River,minor,420000.0,1566000091,Africa
+Awsīm,Awsim,30.1222,31.1333,Egypt,EG,EGY,Al Jīzah,,415735.0,1818167257,Africa
+Talā,Tala,30.6798,30.9436,Egypt,EG,EGY,Al Minūfīyah,,413839.0,1818590732,Africa
+Ţalkhā,Talkha,31.0592,31.3767,Egypt,EG,EGY,Ad Daqahlīyah,,413584.0,1818821824,Africa
+Zaria,Zaria,11.0667,7.7,Nigeria,NG,NGA,Kaduna,minor,408198.0,1566287704,Africa
+Igboho,Igboho,8.8333,3.75,Nigeria,NG,NGA,Oyo,minor,400000.0,1566640824,Africa
+Ijebu-Ode,Ijebu-Ode,6.8208,3.9208,Nigeria,NG,NGA,Ogun,minor,394246.0,1566495747,Africa
+Yola,Yola,9.23,12.46,Nigeria,NG,NGA,Adamawa,admin,392854.0,1566782065,Africa
+Khayelitsha,Khayelitsha,-34.0403,18.6778,South Africa,ZA,ZAF,Western Cape,,391749.0,1710736316,Africa
+Nnewi,Nnewi,6.0167,6.9167,Nigeria,NG,NGA,Anambra,minor,391227.0,1566097410,Africa
+Asyūţ,Asyut,27.1869,31.1714,Egypt,EG,EGY,Asyūţ,admin,389307.0,1818456592,Africa
+Gwoza,Gwoza,11.0861,13.6914,Nigeria,NG,NGA,Borno,minor,388600.0,1566834535,Africa
+Saki,Saki,8.6667,3.4,Nigeria,NG,NGA,Oyo,minor,388225.0,1566404680,Africa
+Oyo,Oyo,7.8417,3.9306,Nigeria,NG,NGA,Oyo,minor,386723.0,1566930579,Africa
+Ilesa,Ilesa,7.6167,4.7167,Nigeria,NG,NGA,Osun,minor,384334.0,1566937414,Africa
+Gusau,Gusau,12.15,6.6667,Nigeria,NG,NGA,Zamfara,admin,383162.0,1566383682,Africa
+Madīnat as Sādis min Uktūbar,Madinat as Sadis min Uktubar,29.9361,30.9269,Egypt,EG,EGY,Al Jīzah,,376302.0,1818735651,Africa
+Dikirnis,Dikirnis,31.089,31.5948,Egypt,EG,EGY,Ad Daqahlīyah,,372871.0,1818065059,Africa
+Warri,Warri,5.5167,5.75,Nigeria,NG,NGA,Delta,minor,363382.0,1566325734,Africa
+Umuahia,Umuahia,5.5333,7.4833,Nigeria,NG,NGA,Abia,admin,359230.0,1566217980,Africa
+Ash Shuhadā’,Ash Shuhada',30.5968,30.8993,Egypt,EG,EGY,Al Minūfīyah,,358486.0,1818906012,Africa
+Ondo,Ondo,7.0833,4.8333,Nigeria,NG,NGA,Ondo,minor,358430.0,1566993724,Africa
+Gwagwalada,Gwagwalada,8.9392,7.0758,Nigeria,NG,NGA,Federal Capital Territory,minor,346000.0,1566419265,Africa
+Randburg,Randburg,-26.0936,28.0064,South Africa,ZA,ZAF,Gauteng,,337053.0,1710279034,Africa
+Birkat as Sab‘,Birkat as Sab`,30.6291,31.0824,Egypt,EG,EGY,Al Minūfīyah,,330847.0,1818672478,Africa
+Lafia,Lafia,8.4917,8.5167,Nigeria,NG,NGA,Nasarawa,admin,330712.0,1566042542,Africa
+Roodepoort,Roodepoort,-26.1625,27.8725,South Africa,ZA,ZAF,Gauteng,,326416.0,1710090212,Africa
+Minna,Minna,9.6139,6.5569,Nigeria,NG,NGA,Niger,admin,322163.0,1566285237,Africa
+Okene,Okene,7.5619,6.2411,Nigeria,NG,NGA,Kogi,minor,320260.0,1566909987,Africa
+Katsina,Katsina,12.25,7.5,Nigeria,NG,NGA,Katsina,admin,318459.0,1566777297,Africa
+Mitchells Plain,Mitchells Plain,-34.0506,18.6181,South Africa,ZA,ZAF,Western Cape,,310485.0,1710549821,Africa
+Az Zaqāzīq,Az Zaqaziq,30.5667,31.5,Egypt,EG,EGY,Ash Sharqīyah,admin,302840.0,1818017750,Africa
+Al Waqf,Al Waqf,26.0866,32.4226,Egypt,EG,EGY,Qinā,,301486.0,1818448534,Africa
+Al ‘Ajamī,Al `Ajami,31.1227,29.7838,Egypt,EG,EGY,Al Iskandarīyah,,300000.0,1818001525,Africa
+Al Maţarīyah,Al Matariyah,31.1833,32.0333,Egypt,EG,EGY,Ad Daqahlīyah,,300000.0,1818621008,Africa
+Shubrākhīt,Shubrakhit,31.0279,30.7149,Egypt,EG,EGY,Al Buḩayrah,,295777.0,1818459935,Africa
+Kafr Şaqr,Kafr Saqr,30.7934,31.6257,Egypt,EG,EGY,Ash Sharqīyah,,294765.0,1818242505,Africa
+Paarl,Paarl,-33.7242,18.9558,South Africa,ZA,ZAF,Western Cape,,294457.0,1710440011,Africa
+Mahikeng,Mahikeng,-25.8656,25.6436,South Africa,ZA,ZAF,North West,admin,291527.0,1710965423,Africa
+Batna,Batna,35.55,6.1667,Algeria,DZ,DZA,Batna,admin,290645.0,1012093229,Africa
+Sétif,Setif,36.19,5.41,Algeria,DZ,DZA,Sétif,admin,288461.0,1012981116,Africa
+Qillīn,Qillin,31.0475,30.8549,Egypt,EG,EGY,Kafr ash Shaykh,,284853.0,1818166178,Africa
+Kaura Namoda,Kaura Namoda,12.6,6.5897,Nigeria,NG,NGA,Zamfara,minor,281367.0,1566455111,Africa
+Lashkar Gāh,Lashkar Gah,31.5831,64.3692,Afghanistan,AF,AFG,Helmand,admin,276831.0,1004765445,Africa
+Nguru,Nguru,12.8792,10.4525,Nigeria,NG,NGA,Yobe,minor,270632.0,1566737779,Africa
+Kunduz,Kunduz,36.7286,68.8681,Afghanistan,AF,AFG,Kunduz,admin,268893.0,1004227517,Africa
+Shibīn al Kawm,Shibin al Kawm,30.55,31.0,Egypt,EG,EGY,Al Minūfīyah,admin,267945.0,1818787044,Africa
+Aswān,Aswan,24.0889,32.8997,Egypt,EG,EGY,Aswān,admin,267913.0,1818262512,Africa
+East London,East London,-33.0175,27.9047,South Africa,ZA,ZAF,Eastern Cape,,267007.0,1710178149,Africa
+Jalālābād,Jalalabad,34.4342,70.4478,Afghanistan,AF,AFG,Nangarhār,admin,263312.0,1004315012,Africa
+Hong,Hong,10.2317,12.9303,Nigeria,NG,NGA,Adamawa,minor,260900.0,1566033629,Africa
+Boksburg,Boksburg,-26.2125,28.2625,South Africa,ZA,ZAF,Gauteng,,260321.0,1710932183,Africa
+Tāluqān,Taluqan,36.7167,69.5167,Afghanistan,AF,AFG,Takhār,admin,258758.0,1004687194,Africa
+Annaba,Annaba,36.9,7.7667,Algeria,DZ,DZA,Annaba,admin,257359.0,1012600001,Africa
+Bloemfontein,Bloemfontein,-29.1167,26.2167,South Africa,ZA,ZAF,Free State,primary,256185.0,1710495933,Africa
+Germiston,Germiston,-26.2178,28.1672,South Africa,ZA,ZAF,Gauteng,,255863.0,1710366382,Africa
+Ţanţā,Tanta,30.7833,31.0,Egypt,EG,EGY,Al Gharbīyah,admin,253600.0,1818501770,Africa
+Al ‘Āshir min Ramaḑān,Al `Ashir min Ramadan,30.2964,31.7463,Egypt,EG,EGY,Ash Sharqīyah,,246148.0,1818297014,Africa
+Damanhūr,Damanhur,31.05,30.4667,Egypt,EG,EGY,Al Buḩayrah,admin,244043.0,1818708838,Africa
+Sapele,Sapele,5.9,5.6667,Nigeria,NG,NGA,Delta,minor,242652.0,1566310893,Africa
+Centurion,Centurion,-25.8603,28.1894,South Africa,ZA,ZAF,Gauteng,,236580.0,1710138774,Africa
+Al Minyā,Al Minya,28.0833,30.75,Egypt,EG,EGY,Al Minyā,admin,236043.0,1818607968,Africa
+Iseyin,Iseyin,7.9667,3.6,Nigeria,NG,NGA,Oyo,minor,236000.0,1566714777,Africa
+Damboa,Damboa,11.15,12.75,Nigeria,NG,NGA,Borno,minor,233500.0,1566264329,Africa
+Biyalā,Biyala,31.1742,31.2218,Egypt,EG,EGY,Kafr ash Shaykh,,231569.0,1818176148,Africa
+Sāqultah,Saqultah,26.6582,31.6714,Egypt,EG,EGY,Sūhāj,,227719.0,1818878774,Africa
+Sandton,Sandton,-26.107,28.0517,South Africa,ZA,ZAF,Gauteng,,222415.0,1710113163,Africa
+Owo,Owo,7.1961,5.5864,Nigeria,NG,NGA,Ondo,minor,222262.0,1566833788,Africa
+Osisioma,Osisioma,5.1497,7.3303,Nigeria,NG,NGA,Abia,minor,219632.0,1566203950,Africa
+Apapa,Apapa,6.45,3.3667,Nigeria,NG,NGA,Lagos,minor,217362.0,1566625487,Africa
+Sidi Aïssa,Sidi Aissa,36.5,4.2978,Algeria,DZ,DZA,M’sila,,215000.0,1012091250,Africa
+Al Ghardaqah,Al Ghardaqah,27.2578,33.8117,Egypt,EG,EGY,Al Baḩr al Aḩmar,admin,214247.0,1818666245,Africa
+Sidi Bel Abbès,Sidi Bel Abbes,35.1939,-0.6414,Algeria,DZ,DZA,Sidi Bel Abbès,admin,212935.0,1012123414,Africa
+Mallawī,Mallawi,27.7306,30.8425,Egypt,EG,EGY,Al Minyā,,212628.0,1818284236,Africa
+Kuje,Kuje,8.8822,7.2203,Nigeria,NG,NGA,Federal Capital Territory,minor,212100.0,1566591024,Africa
+Burutu,Burutu,5.35,5.5167,Nigeria,NG,NGA,Delta,minor,209666.0,1566686777,Africa
+Farshūţ,Farshut,26.055,32.1627,Egypt,EG,EGY,Qinā,,207547.0,1818845921,Africa
+Damietta,Damietta,31.4167,31.8214,Egypt,EG,EGY,Dumyāţ,admin,206664.0,1818333966,Africa
+Biskra,Biskra,34.85,5.7333,Algeria,DZ,DZA,Biskra,admin,204661.0,1012947247,Africa
+Kukawa,Kukawa,12.9167,13.5667,Nigeria,NG,NGA,Borno,minor,203864.0,1566891739,Africa
+Luxor,Luxor,25.6967,32.6444,Egypt,EG,EGY,Al Uqşur,admin,202232.0,1818948225,Africa
+Timayy al Imdīd,Timayy al Imdid,30.9438,31.5293,Egypt,EG,EGY,Ad Daqahlīyah,,201956.0,1818481287,Africa
+Qinā,Qina,26.1667,32.7167,Egypt,EG,EGY,Qinā,admin,201191.0,1818868450,Africa
+Mai’Adua,Mai'Adua,13.1906,8.2117,Nigeria,NG,NGA,Katsina,minor,201178.0,1566695464,Africa
+Şidfā,Sidfa,26.9664,31.3795,Egypt,EG,EGY,Asyūţ,,200977.0,1818711089,Africa
+Isanlu,Isanlu,8.1667,5.8,Nigeria,NG,NGA,Kogi,minor,200000.0,1566562770,Africa
+Baure,Baure,12.7833,8.7667,Nigeria,NG,NGA,Katsina,minor,197425.0,1566183701,Africa
+Tébessa,Tebessa,35.4,8.1167,Algeria,DZ,DZA,Tébessa,admin,194461.0,1012196375,Africa
+Sūhāj,Suhaj,26.5606,31.6917,Egypt,EG,EGY,Sūhāj,admin,193931.0,1818460403,Africa
+Banī Suwayf,Bani Suwayf,29.0667,31.0833,Egypt,EG,EGY,Banī Suwayf,admin,193048.0,1818902849,Africa
+Iwo,Iwo,7.6333,4.1833,Nigeria,NG,NGA,Osun,minor,191377.0,1566462707,Africa
+Ouargla,Ouargla,31.95,5.3167,Algeria,DZ,DZA,Ouargla,admin,191136.0,1012425687,Africa
+Klerksdorp,Klerksdorp,-26.8667,26.6667,South Africa,ZA,ZAF,North West,,186515.0,1710416691,Africa
+Malumfashi,Malumfashi,11.8,7.6167,Nigeria,NG,NGA,Katsina,minor,182920.0,1566616936,Africa
+Bethelsdorp,Bethelsdorp,-33.8833,25.5,South Africa,ZA,ZAF,Eastern Cape,,182012.0,1710792781,Africa
+Epe,Epe,6.5833,3.9833,Nigeria,NG,NGA,Lagos,minor,181409.0,1566461573,Africa
+Inisa,Inisa,7.9833,4.65,Nigeria,NG,NGA,Osun,,180533.0,1566568743,Africa
+Funtua,Funtua,11.5204,7.32,Nigeria,NG,NGA,Katsina,minor,180475.0,1566877863,Africa
+Calabar,Calabar,4.9767,8.3383,Nigeria,NG,NGA,Cross River,admin,179392.0,1566495489,Africa
+El Khroub,El Khroub,36.2667,6.7,Algeria,DZ,DZA,Constantine,,179033.0,1012245786,Africa
+Tiaret,Tiaret,35.3667,1.3167,Algeria,DZ,DZA,Tiaret,admin,178915.0,1012785868,Africa
+Al ‘Arīsh,Al `Arish,31.1249,33.8006,Egypt,EG,EGY,Shamāl Sīnā’,admin,178651.0,1818291145,Africa
+Ar Raḩmānīyah,Ar Rahmaniyah,31.1048,30.6414,Egypt,EG,EGY,Al Buḩayrah,,176315.0,1818669069,Africa
+Bejaïa,Bejaia,36.7511,5.0642,Algeria,DZ,DZA,Bejaïa,admin,176139.0,1012140298,Africa
+Biu,Biu,10.6111,12.195,Nigeria,NG,NGA,Borno,minor,176072.0,1566675681,Africa
+Shibirghān,Shibirghan,36.665,65.752,Afghanistan,AF,AFG,Jowzjān,admin,175599.0,1004805783,Africa
+Ada,Ada,7.8956,4.7094,Nigeria,NG,NGA,Osun,,174152.0,1566487740,Africa
+Bida,Bida,9.0804,6.01,Nigeria,NG,NGA,Niger,minor,173849.0,1566468363,Africa
+Bir el Djir,Bir el Djir,35.7367,-0.5542,Algeria,DZ,DZA,Oran,,171883.0,1012283284,Africa
+Kempton Park,Kempton Park,-26.1,28.2333,South Africa,ZA,ZAF,Gauteng,,171575.0,1710287070,Africa
+Makurdi,Makurdi,7.7333,8.5,Nigeria,NG,NGA,Benue,admin,170925.0,1566873994,Africa
+Nqutu,Nqutu,-28.232,30.566,South Africa,ZA,ZAF,KwaZulu-Natal,,170307.0,1710983407,Africa
+Kroonstad,Kroonstad,-27.65,27.2333,South Africa,ZA,ZAF,Free State,,168762.0,1710508288,Africa
+Bordj Bou Arreridj,Bordj Bou Arreridj,36.0667,4.7667,Algeria,DZ,DZA,Bordj Bou Arréridj,admin,168346.0,1012016677,Africa
+Offa,Offa,8.147,4.72,Nigeria,NG,NGA,Kwara,minor,166112.0,1566192714,Africa
+Béchar,Bechar,31.6167,-2.2167,Algeria,DZ,DZA,Béchar,admin,165627.0,1012371820,Africa
+Skikda,Skikda,36.8667,6.9,Algeria,DZ,DZA,Skikda,admin,163318.0,1012619903,Africa
+Zaranj,Zaranj,30.96,61.86,Afghanistan,AF,AFG,Nīmrōz,admin,160902.0,1004504986,Africa
+Khōst,Khost,33.3331,69.9169,Afghanistan,AF,AFG,Khōst,admin,160214.0,1004919977,Africa
+Ede,Ede,7.7389,4.4361,Nigeria,NG,NGA,Osun,minor,159866.0,1566336253,Africa
+Benoni,Benoni,-26.1883,28.3206,South Africa,ZA,ZAF,Gauteng,,158777.0,1710880986,Africa
+Djelfa,Djelfa,34.6667,3.25,Algeria,DZ,DZA,Djelfa,admin,158679.0,1012268984,Africa
+Banhā,Banha,30.4628,31.1797,Egypt,EG,EGY,Al Qalyūbīyah,admin,157701.0,1818596265,Africa
+George,George,-33.9667,22.45,South Africa,ZA,ZAF,Western Cape,,157394.0,1710164136,Africa
+Mexico City,Mexico City,19.4333,-99.1333,Mexico,MX,MEX,Ciudad de México,primary,21804000.0,1484247881,North America
+New York,New York,40.6943,-73.9249,United States,US,USA,New York,,18832416.0,1840034016,North America
+Los Angeles,Los Angeles,34.1141,-118.4068,United States,US,USA,California,,11885717.0,1840020491,North America
+Chicago,Chicago,41.8375,-87.6866,United States,US,USA,Illinois,,8489066.0,1840000494,North America
+Miami,Miami,25.784,-80.2101,United States,US,USA,Florida,,6113982.0,1840015149,North America
+Houston,Houston,29.786,-95.3885,United States,US,USA,Texas,,6046392.0,1840020925,North America
+Dallas,Dallas,32.7935,-96.7667,United States,US,USA,Texas,,5843632.0,1840019440,North America
+Philadelphia,Philadelphia,40.0077,-75.1339,United States,US,USA,Pennsylvania,,5696588.0,1840000673,North America
+Toronto,Toronto,43.7417,-79.3733,Canada,CA,CAN,Ontario,admin,5647656.0,1124279679,North America
+Guadalajara,Guadalajara,20.6767,-103.3475,Mexico,MX,MEX,Jalisco,admin,5525000.0,1484950208,North America
+Monterrey,Monterrey,25.6844,-100.3181,Mexico,MX,MEX,Nuevo León,admin,5324281.0,1484559591,North America
+Atlanta,Atlanta,33.7628,-84.422,United States,US,USA,Georgia,admin,5211164.0,1840013660,North America
+Washington,Washington,38.9047,-77.0163,United States,US,USA,District of Columbia,primary,5146120.0,1840006060,North America
+Boston,Boston,42.3188,-71.0852,United States,US,USA,Massachusetts,admin,4355184.0,1840000455,North America
+Phoenix,Phoenix,33.5722,-112.0892,United States,US,USA,Arizona,admin,4065338.0,1840020568,North America
+Detroit,Detroit,42.3834,-83.1024,United States,US,USA,Michigan,,3716929.0,1840003971,North America
+Montréal,Montreal,45.5089,-73.5617,Canada,CA,CAN,Quebec,,3675219.0,1124586170,North America
+Seattle,Seattle,47.6211,-122.3244,United States,US,USA,Washington,,3555253.0,1840021117,North America
+San Francisco,San Francisco,37.7558,-122.4449,United States,US,USA,California,,3364862.0,1840021543,North America
+San Diego,San Diego,32.8313,-117.1222,United States,US,USA,California,,3057778.0,1840021990,North America
+Minneapolis,Minneapolis,44.9635,-93.2678,United States,US,USA,Minnesota,,2906807.0,1840007830,North America
+Tampa,Tampa,27.9945,-82.4447,United States,US,USA,Florida,,2906035.0,1840015982,North America
+Brooklyn,Brooklyn,40.6501,-73.9496,United States,US,USA,New York,,2736074.0,1840034030,North America
+Denver,Denver,39.762,-104.8758,United States,US,USA,Colorado,admin,2691349.0,1840018789,North America
+Toluca,Toluca,19.2925,-99.6569,Mexico,MX,MEX,México,admin,2476689.0,1484124846,North America
+Vancouver,Vancouver,49.25,-123.1,Canada,CA,CAN,British Columbia,,2426160.0,1124825478,North America
+Queens,Queens,40.7498,-73.7976,United States,US,USA,New York,,2405464.0,1840034002,North America
+Riverside,Riverside,33.9381,-117.3949,United States,US,USA,California,,2288508.0,1840020551,North America
+Las Vegas,Las Vegas,36.2333,-115.2654,United States,US,USA,Nevada,,2256509.0,1840020364,North America
+Baltimore,Baltimore,39.3051,-76.6144,United States,US,USA,Maryland,,2189589.0,1840001592,North America
+St. Louis,St. Louis,38.6359,-90.2451,United States,US,USA,Missouri,,2127843.0,1840001651,North America
+Portland,Portland,45.5371,-122.65,United States,US,USA,Oregon,,2084045.0,1840019941,North America
+San Antonio,San Antonio,29.4632,-98.5238,United States,US,USA,Texas,,2069843.0,1840022220,North America
+Tijuana,Tijuana,32.525,-117.0333,Mexico,MX,MEX,Baja California,minor,2002000.0,1484708778,North America
+Sacramento,Sacramento,38.5677,-121.4685,United States,US,USA,California,admin,1962998.0,1840021491,North America
+Austin,Austin,30.3005,-97.7522,United States,US,USA,Texas,admin,1915031.0,1840019590,North America
+Orlando,Orlando,28.4773,-81.337,United States,US,USA,Florida,,1913597.0,1840015099,North America
+San Jose,San Jose,37.3012,-121.848,United States,US,USA,California,,1771563.0,1840021570,North America
+Indianapolis,Indianapolis,39.7771,-86.1458,United States,US,USA,Indiana,admin,1740984.0,1840030084,North America
+Pittsburgh,Pittsburgh,40.4397,-79.9763,United States,US,USA,Pennsylvania,,1712828.0,1840001254,North America
+Cincinnati,Cincinnati,39.1413,-84.506,United States,US,USA,Ohio,,1704916.0,1840003814,North America
+Manhattan,Manhattan,40.7834,-73.9662,United States,US,USA,New York,,1694263.0,1840034000,North America
+Kansas City,Kansas City,39.1238,-94.5541,United States,US,USA,Missouri,,1686807.0,1840008535,North America
+Cleveland,Cleveland,41.4764,-81.6805,United States,US,USA,Ohio,,1679247.0,1840000596,North America
+Ecatepec,Ecatepec,19.6097,-99.06,Mexico,MX,MEX,México,minor,1655015.0,1484003694,North America
+León de los Aldama,Leon de los Aldama,21.1167,-101.6833,Mexico,MX,MEX,Guanajuato,minor,1579803.0,1484811199,North America
+Columbus,Columbus,39.9862,-82.9855,United States,US,USA,Ohio,admin,1578153.0,1840003760,North America
+Puebla,Puebla,19.0333,-98.1833,Mexico,MX,MEX,Puebla,admin,1576259.0,1484416394,North America
+Zapopan,Zapopan,20.7167,-103.4,Mexico,MX,MEX,Jalisco,minor,1476491.0,1484198680,North America
+Bronx,Bronx,40.8501,-73.8662,United States,US,USA,New York,,1472654.0,1840033999,North America
+Charlotte,Charlotte,35.2083,-80.8303,United States,US,USA,North Carolina,,1436613.0,1840014557,North America
+Virginia Beach,Virginia Beach,36.7335,-76.0435,United States,US,USA,Virginia,,1431821.0,1840003871,North America
+Juárez,Juarez,31.745,-106.485,Mexico,MX,MEX,Chihuahua,minor,1321004.0,1484840083,North America
+Calgary,Calgary,51.05,-114.0667,Canada,CA,CAN,Alberta,,1306784.0,1124690423,North America
+Jacksonville,Jacksonville,30.3322,-81.6749,United States,US,USA,Florida,,1303156.0,1840015031,North America
+Milwaukee,Milwaukee,43.0642,-87.9675,United States,US,USA,Wisconsin,,1290221.0,1840003046,North America
+Providence,Providence,41.823,-71.4187,United States,US,USA,Rhode Island,admin,1270529.0,1840003289,North America
+Nashville,Nashville,36.1715,-86.7842,United States,US,USA,Tennessee,admin,1178679.0,1840036155,North America
+Salt Lake City,Salt Lake City,40.7776,-111.9311,United States,US,USA,Utah,admin,1169033.0,1840021383,North America
+Edmonton,Edmonton,53.5344,-113.4903,Canada,CA,CAN,Alberta,admin,1151635.0,1124290735,North America
+Raleigh,Raleigh,35.8324,-78.6429,United States,US,USA,North Carolina,admin,1150010.0,1840014497,North America
+Mexicali,Mexicali,32.6633,-115.4678,Mexico,MX,MEX,Baja California,admin,1102342.0,1484788702,North America
+Richmond,Richmond,37.5295,-77.4756,United States,US,USA,Virginia,admin,1081248.0,1840001698,North America
+Nezahualcóyotl,Nezahualcoyotl,19.4081,-99.0186,Mexico,MX,MEX,México,minor,1077208.0,1484074285,North America
+Ciudad Nezahualcóyotl,Ciudad Nezahualcoyotl,19.4006,-99.0148,Mexico,MX,MEX,México,,1072676.0,1484016661,North America
+Ottawa,Ottawa,45.4247,-75.695,Canada,CA,CAN,Ontario,primary,1068821.0,1124399363,North America
+Memphis,Memphis,35.1087,-89.9663,United States,US,USA,Tennessee,,1033394.0,1840015457,North America
+Morelia,Morelia,19.7683,-101.1894,Mexico,MX,MEX,Michoacán,admin,1002461.0,1484669072,North America
+Oklahoma City,Oklahoma City,35.4676,-97.5136,United States,US,USA,Oklahoma,admin,1000207.0,1840020428,North America
+Hartford,Hartford,41.7661,-72.6834,United States,US,USA,Connecticut,admin,969171.0,1840004773,North America
+Louisville,Louisville,38.1663,-85.6485,United States,US,USA,Kentucky,,965005.0,1840030815,North America
+Buffalo,Buffalo,42.9018,-78.8487,United States,US,USA,New York,,949547.0,1840000386,North America
+Fort Worth,Fort Worth,32.7817,-97.3474,United States,US,USA,Texas,,941311.0,1840020696,North America
+Aguascalientes,Aguascalientes,21.876,-102.296,Mexico,MX,MEX,Aguascalientes,admin,934424.0,1484666646,North America
+Chihuahua,Chihuahua,28.6369,-106.0769,Mexico,MX,MEX,Chihuahua,admin,925762.0,1484335603,North America
+Bridgeport,Bridgeport,41.1918,-73.1954,United States,US,USA,Connecticut,,921660.0,1840004836,North America
+New Orleans,New Orleans,30.0687,-89.9288,United States,US,USA,Louisiana,,918752.0,1840001839,North America
+Naucalpan de Juárez,Naucalpan de Juarez,19.4753,-99.2378,Mexico,MX,MEX,México,minor,910407.0,1484850125,North America
+Mérida,Merida,20.9667,-89.6167,Mexico,MX,MEX,Yucatán,admin,892363.0,1484396779,North America
+Cancún,Cancun,21.1606,-86.8475,Mexico,MX,MEX,Quintana Roo,minor,888797.0,1484010310,North America
+Tucson,Tucson,32.1541,-110.8787,United States,US,USA,Arizona,,879871.0,1840022101,North America
+Saltillo,Saltillo,25.4231,-100.9919,Mexico,MX,MEX,Coahuila,admin,864431.0,1484107245,North America
+El Paso,El Paso,31.8476,-106.43,United States,US,USA,Texas,,862494.0,1840023252,North America
+Hermosillo,Hermosillo,29.0989,-110.9542,Mexico,MX,MEX,Sonora,admin,855563.0,1484015319,North America
+Omaha,Omaha,41.2627,-96.0529,United States,US,USA,Nebraska,,826161.0,1840009315,North America
+McAllen,McAllen,26.2252,-98.2467,United States,US,USA,Texas,,810034.0,1840021024,North America
+Culiacán,Culiacan,24.8069,-107.3939,Mexico,MX,MEX,Sinaloa,admin,808416.0,1484516810,North America
+Querétaro,Queretaro,20.5875,-100.3928,Mexico,MX,MEX,Querétaro,admin,794789.0,1484604775,North America
+Hempstead,Hempstead,40.6629,-73.6089,United States,US,USA,New York,,789177.0,1840005293,North America
+Birmingham,Birmingham,33.5279,-86.7971,United States,US,USA,Alabama,,778756.0,1840006507,North America
+San Luis Potosí,San Luis Potosi,22.1511,-100.9761,Mexico,MX,MEX,San Luis Potosí,admin,772828.0,1484583620,North America
+Albuquerque,Albuquerque,35.1054,-106.6465,United States,US,USA,New Mexico,,767499.0,1840019176,North America
+Winnipeg,Winnipeg,49.8844,-97.1464,Canada,CA,CAN,Manitoba,admin,758515.0,1124224963,North America
+Tulsa,Tulsa,36.1283,-95.9042,United States,US,USA,Oklahoma,,740620.0,1840021672,North America
+Quebec City,Quebec City,46.8139,-71.2081,Canada,CA,CAN,Quebec,admin,733156.0,1124823933,North America
+Hamilton,Hamilton,43.2567,-79.8692,Canada,CA,CAN,Ontario,,729560.0,1124567288,North America
+Charleston,Charleston,32.8168,-79.9687,United States,US,USA,South Carolina,,726389.0,1840015163,North America
+Fresno,Fresno,36.783,-119.7939,United States,US,USA,California,,724547.0,1840020319,North America
+Mississauga,Mississauga,43.6,-79.65,Canada,CA,CAN,Ontario,,717961.0,1124112672,North America
+Rochester,Rochester,43.168,-77.6162,United States,US,USA,New York,,694707.0,1840000373,North America
+Guadalupe,Guadalupe,25.6775,-100.2597,Mexico,MX,MEX,Nuevo León,minor,691931.0,1484002410,North America
+Acapulco de Juárez,Acapulco de Juarez,16.8636,-99.8825,Mexico,MX,MEX,Guerrero,minor,673478.0,1484463183,North America
+Dayton,Dayton,39.7805,-84.2003,United States,US,USA,Ohio,,667936.0,1840034249,North America
+Tlaquepaque,Tlaquepaque,20.6167,-103.3167,Mexico,MX,MEX,Jalisco,minor,664193.0,1484087945,North America
+Brampton,Brampton,43.6833,-79.7667,Canada,CA,CAN,Ontario,,656480.0,1124625989,North America
+Cape Coral,Cape Coral,26.6443,-81.9957,United States,US,USA,Florida,,656464.0,1840015130,North America
+Durango,Durango,24.025,-104.6675,Mexico,MX,MEX,Durango,admin,654876.0,1484854616,North America
+Tlalnepantla,Tlalnepantla,19.5367,-99.1947,Mexico,MX,MEX,México,minor,653410.0,1484861603,North America
+Provo,Provo,40.2457,-111.6457,United States,US,USA,Utah,,639820.0,1840020174,North America
+Colorado Springs,Colorado Springs,38.8674,-104.7605,United States,US,USA,Colorado,,638421.0,1840018825,North America
+Mission Viejo,Mission Viejo,33.6096,-117.6551,United States,US,USA,California,,634674.0,1840020580,North America
+Allentown,Allentown,40.5961,-75.4756,United States,US,USA,Pennsylvania,,632175.0,1840001044,North America
+Baton Rouge,Baton Rouge,30.442,-91.1311,United States,US,USA,Louisiana,admin,630063.0,1840013941,North America
+Ogden,Ogden,41.2279,-111.9682,United States,US,USA,Utah,,623688.0,1840020135,North America
+Knoxville,Knoxville,35.9692,-83.9496,United States,US,USA,Tennessee,,618226.0,1840014486,North America
+Chimalhuacán,Chimalhuacan,19.4131,-98.9839,Mexico,MX,MEX,México,minor,614453.0,1484504936,North America
+Grand Rapids,Grand Rapids,42.9619,-85.6562,United States,US,USA,Michigan,,611480.0,1840002928,North America
+Columbia,Columbia,34.0378,-80.9036,United States,US,USA,South Carolina,admin,605083.0,1840014730,North America
+Albany,Albany,42.6664,-73.7987,United States,US,USA,New York,admin,602242.0,1840000417,North America
+Irapuato,Irapuato,20.6667,-101.35,Mexico,MX,MEX,Guanajuato,minor,592953.0,1484625454,North America
+Reynosa,Reynosa,26.0922,-98.2778,Mexico,MX,MEX,Tamaulipas,minor,589466.0,1484737671,North America
+Tuxtla,Tuxtla,16.7528,-93.1167,Mexico,MX,MEX,Chiapas,admin,578830.0,1484832519,North America
+Bakersfield,Bakersfield,35.3529,-119.0359,United States,US,USA,California,,578542.0,1840019148,North America
+Tonalá,Tonala,20.6167,-103.2333,Mexico,MX,MEX,Jalisco,minor,569913.0,1484750897,North America
+Surrey,Surrey,49.19,-122.8489,Canada,CA,CAN,British Columbia,,568322.0,1124001454,North America
+New Haven,New Haven,41.3113,-72.9246,United States,US,USA,Connecticut,,565056.0,1840004850,North America
+Des Moines,Des Moines,41.5725,-93.6105,United States,US,USA,Iowa,admin,560170.0,1840007069,North America
+Ensenada,Ensenada,31.8578,-116.6058,Mexico,MX,MEX,Baja California,minor,557430.0,1484714297,North America
+Palm Bay,Palm Bay,27.9631,-80.6593,United States,US,USA,Florida,,547659.0,1840015094,North America
+Ixtapaluca,Ixtapaluca,19.3186,-98.8822,Mexico,MX,MEX,México,minor,542211.0,1484452937,North America
+Heroica Matamoros,Heroica Matamoros,25.8797,-97.5042,Mexico,MX,MEX,Tamaulipas,minor,541979.0,1484614906,North America
+Akron,Akron,41.0798,-81.5219,United States,US,USA,Ohio,,538659.0,1840000791,North America
+Concord,Concord,37.9722,-122.0016,United States,US,USA,California,,525233.0,1840018905,North America
+Ciudad Apodaca,Ciudad Apodaca,25.7817,-100.1886,Mexico,MX,MEX,Nuevo León,minor,523370.0,1484855080,North America
+Kitchener,Kitchener,43.4186,-80.4728,Canada,CA,CAN,Ontario,,522888.0,1124158530,North America
+Tultitlán de Mariano Escobedo,Tultitlan de Mariano Escobedo,19.645,-99.1694,Mexico,MX,MEX,México,minor,520557.0,1484562374,North America
+Mesa,Mesa,33.4015,-111.7178,United States,US,USA,Arizona,,507478.0,1840020566,North America
+Wichita,Wichita,37.6895,-97.3443,United States,US,USA,Kansas,,501760.0,1840001686,North America
+Mazatlán,Mazatlan,23.2167,-106.4167,Mexico,MX,MEX,Sinaloa,minor,501441.0,1484841466,North America
+Harrisburg,Harrisburg,40.2752,-76.8843,United States,US,USA,Pennsylvania,admin,499494.0,1840001288,North America
+Staten Island,Staten Island,40.5834,-74.1496,United States,US,USA,New York,,495747.0,1840034032,North America
+Toledo,Toledo,41.6638,-83.5827,United States,US,USA,Ohio,,492076.0,1840000572,North America
+Ciudad López Mateos,Ciudad Lopez Mateos,19.55,-99.2833,Mexico,MX,MEX,México,minor,489937.0,1484363879,North America
+Brookhaven,Brookhaven,40.832,-72.9517,United States,US,USA,New York,,487817.0,1840057464,North America
+Worcester,Worcester,42.2705,-71.8079,United States,US,USA,Massachusetts,,487014.0,1840000434,North America
+Port St. Lucie,Port St. Lucie,27.2796,-80.3884,United States,US,USA,Florida,,473733.0,1840015119,North America
+Little Rock,Little Rock,34.7256,-92.3577,United States,US,USA,Arkansas,admin,467846.0,1840015509,North America
+Madison,Madison,43.0822,-89.393,United States,US,USA,Wisconsin,admin,460255.0,1840002915,North America
+Spokane,Spokane,47.6671,-117.433,United States,US,USA,Washington,,458988.0,1840021093,North America
+Long Beach,Long Beach,33.7977,-118.167,United States,US,USA,California,,458491.0,1840020490,North America
+São Paulo,Sao Paulo,-23.5504,-46.6339,Brazil,BR,BRA,São Paulo,admin,23086000.0,1076532519,South America
+Buenos Aires,Buenos Aires,-34.6036,-58.3814,Argentina,AR,ARG,"Buenos Aires, Ciudad Autónoma de",primary,16710000.0,1032717330,South America
+Rio de Janeiro,Rio de Janeiro,-22.9111,-43.2056,Brazil,BR,BRA,Rio de Janeiro,admin,12592000.0,1076887657,South America
+Bogotá,Bogota,4.7111,-74.0722,Colombia,CO,COL,Bogotá,primary,8034649.0,1170483426,South America
+Belo Horizonte,Belo Horizonte,-19.9281,-43.9419,Brazil,BR,BRA,Minas Gerais,admin,5328000.0,1076967355,South America
+Fortaleza,Fortaleza,-3.7275,-38.5275,Brazil,BR,BRA,Ceará,admin,4167996.0,1076567885,South America
+Cali,Cali,3.4206,-76.5222,Colombia,CO,COL,Valle del Cauca,admin,2838333.0,1170417589,South America
+Medellín,Medellin,6.2308,-75.5906,Colombia,CO,COL,Antioquia,admin,2529403.0,1170680389,South America
+Salvador,Salvador,-12.9831,-38.4928,Brazil,BR,BRA,Bahia,admin,2417678.0,1076923789,South America
+Córdoba,Cordoba,-31.4167,-64.1833,Argentina,AR,ARG,Córdoba,admin,2106734.0,1032803249,South America
+Curitiba,Curitiba,-25.4297,-49.2719,Brazil,BR,BRA,Paraná,admin,1773718.0,1076701712,South America
+Recife,Recife,-8.0539,-34.8808,Brazil,BR,BRA,Pernambuco,admin,1488920.0,1076137337,South America
+Porto Alegre,Porto Alegre,-30.0328,-51.23,Brazil,BR,BRA,Rio Grande do Sul,admin,1332845.0,1076658221,South America
+Barranquilla,Barranquilla,10.9833,-74.8019,Colombia,CO,COL,Atlántico,admin,1326588.0,1170179113,South America
+Guarulhos,Guarulhos,-23.4667,-46.5333,Brazil,BR,BRA,São Paulo,minor,1324781.0,1076730420,South America
+Belém,Belem,-1.4558,-48.5039,Brazil,BR,BRA,Pará,admin,1280614.0,1076646823,South America
+Rosario,Rosario,-32.9575,-60.6394,Argentina,AR,ARG,Santa Fe,minor,1276000.0,1032770677,South America
+Campinas,Campinas,-22.9009,-47.0573,Brazil,BR,BRA,São Paulo,minor,1213792.0,1076145766,South America
+Goiânia,Goiania,-16.6806,-49.2564,Brazil,BR,BRA,Goiás,admin,1093007.0,1076034054,South America
+São Luís,Sao Luis,-2.53,-44.3028,Brazil,BR,BRA,Maranhão,admin,1037775.0,1076819308,South America
+Maceió,Maceio,-9.6658,-35.735,Brazil,BR,BRA,Alagoas,admin,957916.0,1076440479,South America
+Cartagena,Cartagena,10.4,-75.5,Colombia,CO,COL,Bolívar,admin,914552.0,1170886102,South America
+Santiago del Estero,Santiago del Estero,-27.7833,-64.2667,Argentina,AR,ARG,Santiago del Estero,admin,911506.0,1032492280,South America
+La Plata,La Plata,-34.9211,-57.9544,Argentina,AR,ARG,Buenos Aires,admin,904789.0,1032403831,South America
+São Gonçalo,Sao Goncalo,-22.8269,-43.0539,Brazil,BR,BRA,Rio de Janeiro,minor,896744.0,1076485783,South America
+Bucaramanga,Bucaramanga,7.1333,-73.0,Colombia,CO,COL,Santander,admin,893040.0,1170940590,South America
+Teresina,Teresina,-5.0903,-42.8167,Brazil,BR,BRA,Piauí,admin,868075.0,1076727667,South America
+João Pessoa,Joao Pessoa,-7.12,-34.88,Brazil,BR,BRA,Paraíba,admin,833932.0,1076922014,South America
+São Bernardo do Campo,Sao Bernardo do Campo,-23.6939,-46.565,Brazil,BR,BRA,São Paulo,minor,810729.0,1076793227,South America
+Cúcuta,Cucuta,7.8942,-72.5039,Colombia,CO,COL,Norte de Santander,admin,806378.0,1170743755,South America
+Palermo,Palermo,2.8917,-75.4375,Colombia,CO,COL,Huila,minor,800000.0,1170614290,South America
+Natal,Natal,-5.795,-35.2089,Brazil,BR,BRA,Rio Grande do Norte,admin,751300.0,1076697777,South America
+Santo André,Santo Andre,-23.6533,-46.528,Brazil,BR,BRA,São Paulo,minor,748919.0,1076625886,South America
+Sorocaba,Sorocaba,-23.5019,-47.4578,Brazil,BR,BRA,São Paulo,minor,723574.0,1076758708,South America
+Mar del Plata,Mar del Plata,-38.0,-57.55,Argentina,AR,ARG,Buenos Aires,minor,682605.0,1032456103,South America
+Soledad,Soledad,10.9167,-74.75,Colombia,CO,COL,Atlántico,minor,676014.0,1170765625,South America
+Aracaju,Aracaju,-10.9111,-37.0717,Brazil,BR,BRA,Sergipe,admin,664908.0,1076527830,South America
+Villavicencio,Villavicencio,4.15,-73.6333,Colombia,CO,COL,Meta,admin,664148.0,1170426927,South America
+Campo Grande,Campo Grande,-20.4686,-54.6222,Brazil,BR,BRA,Mato Grosso do Sul,admin,663621.0,1076660445,South America
+Osasco,Osasco,-23.5328,-46.7919,Brazil,BR,BRA,São Paulo,minor,652593.0,1076786452,South America
+San Miguel de Tucumán,San Miguel de Tucuman,-26.8167,-65.2167,Argentina,AR,ARG,Tucumán,admin,605767.0,1032233996,South America
+Pereira,Pereira,4.8143,-75.6946,Colombia,CO,COL,Risaralda,admin,590554.0,1170386718,South America
+Jaboatão dos Guararapes,Jaboatao dos Guararapes,-8.1128,-35.015,Brazil,BR,BRA,Pernambuco,minor,581556.0,1076003460,South America
+Bello,Bello,6.3333,-75.5667,Colombia,CO,COL,Antioquia,minor,561955.0,1170423489,South America
+Ibagué,Ibague,4.4333,-75.2333,Colombia,CO,COL,Tolima,admin,546003.0,1170245063,South America
+Valledupar,Valledupar,10.4833,-73.25,Colombia,CO,COL,Cesar,admin,544134.0,1170481949,South America
+Juiz de Fora,Juiz de Fora,-21.7642,-43.3503,Brazil,BR,BRA,Minas Gerais,minor,540756.0,1076006144,South America
+São José dos Campos,Sao Jose dos Campos,-23.1789,-45.8869,Brazil,BR,BRA,São Paulo,minor,539313.0,1076783887,South America
+Contagem,Contagem,-19.9319,-44.0539,Brazil,BR,BRA,Minas Gerais,minor,538017.0,1076845191,South America
+Salta,Salta,-24.7833,-65.4167,Argentina,AR,ARG,Salta,admin,535303.0,1032926124,South America
+Soacha,Soacha,4.5872,-74.2214,Colombia,CO,COL,Cundinamarca,minor,522442.0,1170512000,South America
+Santa Marta,Santa Marta,11.2419,-74.2053,Colombia,CO,COL,Magdalena,admin,515556.0,1170715594,South America
+Macapá,Macapa,0.033,-51.05,Brazil,BR,BRA,Amapá,admin,512902.0,1076189884,South America
+Campos,Campos,-21.7523,-41.3304,Brazil,BR,BRA,Rio de Janeiro,minor,511168.0,1076606365,South America
+Ribeirão Prêto,Ribeirao Preto,-21.1776,-47.8101,Brazil,BR,BRA,São Paulo,minor,504923.0,1076524478,South America
+Uberlândia,Uberlandia,-18.9189,-48.2769,Brazil,BR,BRA,Minas Gerais,minor,501214.0,1076495001,South America
+Niterói,Niteroi,-22.8833,-43.1036,Brazil,BR,BRA,Rio de Janeiro,minor,496696.0,1076501425,South America
+Cuiabá,Cuiaba,-15.5958,-56.0969,Brazil,BR,BRA,Mato Grosso,admin,483346.0,1076112309,South America
+Feira de Santana,Feira de Santana,-12.2669,-38.9669,Brazil,BR,BRA,Bahia,minor,480949.0,1076892244,South America
+Ananindeua,Ananindeua,-1.3658,-48.3719,Brazil,BR,BRA,Pará,minor,478778.0,1076025295,South America
+Vila Velha,Vila Velha,-20.3364,-40.2936,Brazil,BR,BRA,Espírito Santo,minor,472762.0,1076404077,South America
+San Juan,San Juan,-31.5342,-68.5261,Argentina,AR,ARG,San Juan,admin,471389.0,1032869625,South America
+Lanús,Lanus,-34.7,-58.4,Argentina,AR,ARG,Buenos Aires,minor,459263.0,1032009573,South America
+Manizales,Manizales,5.0675,-75.51,Colombia,CO,COL,Caldas,admin,454494.0,1170930654,South America
+Mogi das Cruzes,Mogi das Cruzes,-23.5228,-46.1931,Brazil,BR,BRA,São Paulo,minor,450785.0,1076857883,South America
+Londrina,Londrina,-23.31,-51.1628,Brazil,BR,BRA,Paraná,minor,447065.0,1076723241,South America
+Joinvile,Joinvile,-26.3039,-48.8458,Brazil,BR,BRA,Santa Catarina,minor,429604.0,1076050637,South America
+Buenaventura,Buenaventura,3.8772,-77.0267,Colombia,CO,COL,Valle del Cauca,minor,423927.0,1170287988,South America
+Piracicaba,Piracicaba,-22.7252,-47.6493,Brazil,BR,BRA,São Paulo,minor,423323.0,1076166252,South America
+Campina Grande,Campina Grande,-7.2306,-35.8811,Brazil,BR,BRA,Paraíba,minor,419379.0,1076218697,South America
+Santos,Santos,-23.9608,-46.3339,Brazil,BR,BRA,São Paulo,minor,418608.0,1076033299,South America
+Mauá,Maua,-23.6678,-46.4608,Brazil,BR,BRA,São Paulo,minor,418261.0,1076477498,South America
+Boa Vista,Boa Vista,2.82,-60.6719,Brazil,BR,BRA,Roraima,admin,413486.0,1076621300,South America
+Pasto,Pasto,1.2078,-77.2772,Colombia,CO,COL,Nariño,admin,410835.0,1170320545,South America
+Maringá,Maringa,-23.425,-51.9389,Brazil,BR,BRA,Paraná,minor,409657.0,1076013378,South America
+Santa Fe,Santa Fe,-31.6333,-60.7,Argentina,AR,ARG,Santa Fe,admin,405683.0,1032817575,South America
+Jundiaí,Jundiai,-23.1864,-46.8842,Brazil,BR,BRA,São Paulo,minor,401896.0,1076998392,South America
+Montería,Monteria,8.75,-75.8833,Colombia,CO,COL,Córdoba,admin,400000.0,1170855299,South America
+Diadema,Diadema,-23.6858,-46.6228,Brazil,BR,BRA,São Paulo,minor,393237.0,1076867279,South America
+Neiva,Neiva,2.9345,-75.2809,Colombia,CO,COL,Huila,admin,380019.0,1170159963,South America
+Itaquaquecetuba,Itaquaquecetuba,-23.4864,-46.3486,Brazil,BR,BRA,São Paulo,minor,375011.0,1076942224,South America
+Bauru,Bauru,-22.3147,-49.0606,Brazil,BR,BRA,São Paulo,minor,366992.0,1076905338,South America
+Rio Branco,Rio Branco,-9.9781,-67.8117,Brazil,BR,BRA,Acre,admin,364756.0,1076391263,South America
+Blumenau,Blumenau,-26.9189,-49.0658,Brazil,BR,BRA,Santa Catarina,minor,361261.0,1076618665,South America
+Caxias do Sul,Caxias do Sul,-29.1678,-51.1789,Brazil,BR,BRA,Rio Grande do Sul,minor,360419.0,1076809957,South America
+Palmira,Palmira,3.5833,-76.25,Colombia,CO,COL,Valle del Cauca,minor,358895.0,1170969619,South America
+São José do Rio Prêto,Sao Jose do Rio Preto,-20.82,-49.3789,Brazil,BR,BRA,São Paulo,minor,358523.0,1076760827,South America
+Caucaia,Caucaia,-3.7328,-38.6558,Brazil,BR,BRA,Ceará,minor,355679.0,1076870058,South America
+Corrientes,Corrientes,-27.4833,-58.8167,Argentina,AR,ARG,Corrientes,admin,352646.0,1032173097,South America
+Olinda,Olinda,-8.0089,-34.855,Brazil,BR,BRA,Pernambuco,minor,349976.0,1076784718,South America
+Praia Grande,Praia Grande,-24.0058,-46.4028,Brazil,BR,BRA,São Paulo,minor,349935.0,1076548222,South America
+Cascavel,Cascavel,-24.9558,-53.4553,Brazil,BR,BRA,Paraná,minor,348051.0,1076509946,South America
+Canoas,Canoas,-29.92,-51.18,Brazil,BR,BRA,Rio Grande do Sul,minor,347657.0,1076009922,South America
+Carapicuíba,Carapicuiba,-23.5228,-46.8358,Brazil,BR,BRA,São Paulo,minor,344596.0,1076874103,South America
+Florianópolis,Florianopolis,-27.5933,-48.553,Brazil,BR,BRA,Santa Catarina,admin,342315.0,1076190259,South America
+Paulista,Paulista,-7.9408,-34.8728,Brazil,BR,BRA,Pernambuco,minor,342167.0,1076183876,South America
+Vitória da Conquista,Vitoria da Conquista,-14.8661,-40.8394,Brazil,BR,BRA,Bahia,minor,341128.0,1076812020,South America
+Porto Velho,Porto Velho,-8.7619,-63.9039,Brazil,BR,BRA,Rondônia,admin,334661.0,1076045591,South America
+Santarém,Santarem,-2.4431,-54.7083,Brazil,BR,BRA,Pará,,331937.0,1076256494,South America
+Ribeirão das Neves,Ribeirao das Neves,-19.7669,-44.0869,Brazil,BR,BRA,Minas Gerais,minor,329794.0,1076482220,South America
+Cariacica,Cariacica,-20.2639,-40.42,Brazil,BR,BRA,Espírito Santo,minor,324285.0,1076479479,South America
+Pelotas,Pelotas,-31.7719,-52.3428,Brazil,BR,BRA,Rio Grande do Sul,minor,323158.0,1076815692,South America
+Vitória,Vitoria,-20.3106,-40.2972,Brazil,BR,BRA,Espírito Santo,admin,322869.0,1076376829,South America
+San Salvador de Jujuy,San Salvador de Jujuy,-24.1833,-65.3,Argentina,AR,ARG,Jujuy,admin,321789.0,1032815808,South America
+Serra,Serra,-20.1289,-40.3078,Brazil,BR,BRA,Espírito Santo,minor,321181.0,1076191325,South America
+Taubaté,Taubate,-23.0333,-45.55,Brazil,BR,BRA,São Paulo,minor,317915.0,1076146252,South America
+Fontibón,Fontibon,4.6786,-74.1411,Colombia,CO,COL,Bogotá,,317179.0,1170780941,South America
+Barueri,Barueri,-23.5111,-46.8764,Brazil,BR,BRA,São Paulo,minor,316473.0,1076211114,South America
+Usme,Usme,4.4464,-74.1522,Colombia,CO,COL,Bogotá,,314431.0,1170556074,South America
+Guarujá,Guaruja,-23.9936,-46.2564,Brazil,BR,BRA,São Paulo,minor,311230.0,1076832747,South America
+Montes Claros,Montes Claros,-16.7322,-43.8636,Brazil,BR,BRA,Minas Gerais,minor,306947.0,1076113275,South America
+Betim,Betim,-19.9678,-44.1978,Brazil,BR,BRA,Minas Gerais,minor,306675.0,1076953384,South America
+São Vicente,Sao Vicente,-23.9664,-46.3861,Brazil,BR,BRA,São Paulo,minor,303551.0,1076857089,South America
+Palmas,Palmas,-10.1886,-48.3336,Brazil,BR,BRA,Tocantins,admin,302692.0,1076052802,South America
+Bahía Blanca,Bahia Blanca,-38.7167,-62.2667,Argentina,AR,ARG,Buenos Aires,minor,301572.0,1032795766,South America
+Armenia,Armenia,4.53,-75.68,Colombia,CO,COL,Quindío,admin,301226.0,1170398459,South America
+Popayán,Popayan,2.4542,-76.6092,Colombia,CO,COL,Cauca,admin,300837.0,1170764265,South America
+Várzea Grande,Varzea Grande,-15.6469,-56.1328,Brazil,BR,BRA,Mato Grosso,minor,300078.0,1076359879,South America
+Barrancabermeja,Barrancabermeja,7.0667,-73.85,Colombia,CO,COL,Santander,minor,300000.0,1170362340,South America
+Resistencia,Resistencia,-27.4514,-58.9867,Argentina,AR,ARG,Chaco,admin,298611.0,1032720891,South America
+Floridablanca,Floridablanca,7.2167,-73.0667,Colombia,CO,COL,Santander,minor,295724.0,1170331200,South America
+Neuquén,Neuquen,-38.9525,-68.0642,Argentina,AR,ARG,Neuquén,admin,288896.0,1032525768,South America
+Anápolis,Anapolis,-16.3269,-48.9528,Brazil,BR,BRA,Goiás,minor,288085.0,1076208869,South America
+Franca,Franca,-20.5389,-47.4008,Brazil,BR,BRA,São Paulo,minor,287737.0,1076740256,South America
+Sincelejo,Sincelejo,9.295,-75.3961,Colombia,CO,COL,Sucre,admin,286716.0,1170364198,South America
+Juazeiro do Norte,Juazeiro do Norte,-7.2128,-39.315,Brazil,BR,BRA,Ceará,minor,286120.0,1076912078,South America
+Foz do Iguaçu,Foz do Iguacu,-25.54,-54.5875,Brazil,BR,BRA,Paraná,minor,285415.0,1076025805,South America
+Petrópolis,Petropolis,-22.505,-43.1789,Brazil,BR,BRA,Rio de Janeiro,minor,278881.0,1076352504,South America
+Itagüí,Itagui,6.1667,-75.6167,Colombia,CO,COL,Antioquia,minor,276744.0,1170708072,South America
+Posadas,Posadas,-27.3667,-55.9,Argentina,AR,ARG,Misiones,admin,275988.0,1032970696,South America
+Ponta Grossa,Ponta Grossa,-25.095,-50.1619,Brazil,BR,BRA,Paraná,minor,273616.0,1076716439,South America
+Taboão da Serra,Taboao da Serra,-23.6019,-46.7528,Brazil,BR,BRA,São Paulo,minor,273542.0,1076000585,South America
+Imperatriz,Imperatriz,-5.5258,-47.4758,Brazil,BR,BRA,Maranhão,minor,273110.0,1076486025,South America
+Paraná,Parana,-31.7331,-60.5297,Argentina,AR,ARG,Entre Ríos,admin,268889.0,1032266693,South America
+Sumaré,Sumare,-22.8219,-47.2669,Brazil,BR,BRA,São Paulo,minor,265955.0,1076684312,South America
+Mossoró,Mossoro,-5.1878,-37.3439,Brazil,BR,BRA,Rio Grande do Norte,minor,264577.0,1076461194,South America
+Itajaí,Itajai,-26.9078,-48.6619,Brazil,BR,BRA,Santa Catarina,minor,264054.0,1076348188,South America
+Quilmes,Quilmes,-34.7167,-58.2667,Argentina,AR,ARG,Buenos Aires,minor,262379.0,1032880202,South America
+Indaiatuba,Indaiatuba,-23.0903,-47.2181,Brazil,BR,BRA,São Paulo,minor,256223.0,1076347789,South America
+São Carlos,Sao Carlos,-22.0178,-47.8908,Brazil,BR,BRA,São Paulo,minor,254484.0,1076673445,South America
+Caruaru,Caruaru,-8.2828,-35.9758,Brazil,BR,BRA,Pernambuco,minor,253634.0,1076397475,South America
+Parnamirim,Parnamirim,-5.9158,-35.2628,Brazil,BR,BRA,Rio Grande do Norte,minor,252716.0,1076600360,South America
+Uberaba,Uberaba,-19.7478,-47.9319,Brazil,BR,BRA,Minas Gerais,minor,252051.0,1076230331,South America
+Limeira,Limeira,-22.5647,-47.4017,Brazil,BR,BRA,São Paulo,minor,249046.0,1076508566,South America
+Governador Valadares,Governador Valadares,-18.8508,-41.9489,Brazil,BR,BRA,Minas Gerais,minor,247131.0,1076271003,South America
+Macaé,Macae,-22.3708,-41.7869,Brazil,BR,BRA,Rio de Janeiro,minor,246391.0,1076074287,South America
+São José de Ribamar,Sao Jose de Ribamar,-2.5619,-44.0539,Brazil,BR,BRA,Maranhão,minor,244579.0,1076976057,South America
+Merlo,Merlo,-34.6653,-58.7275,Argentina,AR,ARG,Buenos Aires,minor,244168.0,1032232613,South America
+Santa Maria,Santa Maria,-29.6839,-53.8069,Brazil,BR,BRA,Rio Grande do Sul,minor,243611.0,1076178738,South America
+Araraquara,Araraquara,-21.7939,-48.1758,Brazil,BR,BRA,São Paulo,minor,242228.0,1076251019,South America
+Volta Redonda,Volta Redonda,-22.5231,-44.1042,Brazil,BR,BRA,Rio de Janeiro,minor,242063.0,1076343513,South America
+Americana,Americana,-22.7392,-47.3314,Brazil,BR,BRA,São Paulo,minor,242018.0,1076922153,South America
+Sete Lagoas,Sete Lagoas,-19.4658,-44.2469,Brazil,BR,BRA,Minas Gerais,minor,241835.0,1076863850,South America
+Marília,Marilia,-22.2139,-49.9458,Brazil,BR,BRA,São Paulo,minor,240590.0,1076042151,South America
+Jacareí,Jacarei,-23.305,-45.9658,Brazil,BR,BRA,São Paulo,minor,240275.0,1076592769,South America
+González Catán,Gonzalez Catan,-34.7667,-58.6167,Argentina,AR,ARG,Buenos Aires,,238067.0,1032883563,South America
+Arapiraca,Arapiraca,-9.7525,-36.6611,Brazil,BR,BRA,Alagoas,minor,234696.0,1076615737,South America
+Maracanaú,Maracanau,-3.8769,-38.6258,Brazil,BR,BRA,Ceará,minor,234509.0,1076848743,South America
+Formosa,Formosa,-26.1833,-58.1833,Argentina,AR,ARG,Formosa,admin,234000.0,1032802536,South America
+Gravataí,Gravatai,-29.9433,-50.9939,Brazil,BR,BRA,Rio Grande do Sul,minor,232629.0,1076919841,South America
+Divinópolis,Divinopolis,-20.1389,-44.8839,Brazil,BR,BRA,Minas Gerais,minor,231091.0,1076716552,South America
+Envigado,Envigado,6.1667,-75.5667,Colombia,CO,COL,Antioquia,minor,228848.0,1170785909,South America
+Suzano,Suzano,-23.5428,-46.3108,Brazil,BR,BRA,São Paulo,minor,228690.0,1076830201,South America
+Magé,Mage,-22.6528,-43.0408,Brazil,BR,BRA,Rio de Janeiro,minor,228127.0,1076385139,South America
+Ipatinga,Ipatinga,-19.4678,-42.5369,Brazil,BR,BRA,Minas Gerais,minor,227731.0,1076484921,South America
+Rio Verde,Rio Verde,-17.7978,-50.9278,Brazil,BR,BRA,Goiás,minor,225696.0,1076844683,South America
+Presidente Prudente,Presidente Prudente,-22.1258,-51.3889,Brazil,BR,BRA,São Paulo,minor,225668.0,1076239965,South America
+Itaboraí,Itaborai,-22.7475,-42.8558,Brazil,BR,BRA,Rio de Janeiro,minor,224267.0,1076964860,South America
+Viamão,Viamao,-30.0808,-51.0228,Brazil,BR,BRA,Rio Grande do Sul,minor,224112.0,1076314777,South America
+Chapecó,Chapeco,-27.0958,-52.6178,Brazil,BR,BRA,Santa Catarina,minor,224013.0,1076258255,South America
+Banfield,Banfield,-34.75,-58.3833,Argentina,AR,ARG,Buenos Aires,,223898.0,1032997685,South America
+Itapevi,Itapevi,-23.5489,-46.9342,Brazil,BR,BRA,São Paulo,minor,223404.0,1076008789,South America
+Santa Luzia,Santa Luzia,-19.7697,-43.8514,Brazil,BR,BRA,Minas Gerais,minor,220444.0,1076123204,South America
+Tuluá,Tulua,4.0833,-76.2,Colombia,CO,COL,Valle del Cauca,minor,219138.0,1170721938,South America
+Petrolina,Petrolina,-9.3928,-40.5078,Brazil,BR,BRA,Pernambuco,minor,218538.0,1076843988,South America
+José C. Paz,Jose C. Paz,-34.5167,-58.7667,Argentina,AR,ARG,Buenos Aires,minor,216637.0,1032741145,South America
+Hortolândia,Hortolandia,-22.8583,-47.22,Brazil,BR,BRA,São Paulo,minor,215819.0,1076591779,South America
+San Rafael,San Rafael,-34.6,-68.3333,Argentina,AR,ARG,Mendoza,minor,215020.0,1032221516,South America
+Tumaco,Tumaco,1.8067,-78.7647,Colombia,CO,COL,Nariño,minor,212692.0,1170504978,South America
+Criciúma,Criciuma,-28.6775,-49.3697,Brazil,BR,BRA,Santa Catarina,minor,211369.0,1076000206,South America
+Sobral,Sobral,-3.6861,-40.3497,Brazil,BR,BRA,Ceará,minor,210711.0,1076577102,South America
+Santo Agostinho,Santo Agostinho,-8.29,-35.03,Brazil,BR,BRA,Pernambuco,,208944.0,1076363089,South America
+São José dos Pinhais,Sao Jose dos Pinhais,-25.535,-49.2058,Brazil,BR,BRA,Paraná,minor,204316.0,1076174955,South America
+Rio Claro,Rio Claro,-22.4108,-47.5608,Brazil,BR,BRA,São Paulo,minor,201418.0,1076411428,South America
+Comodoro Rivadavia,Comodoro Rivadavia,-45.8647,-67.4808,Argentina,AR,ARG,Chubut,minor,201228.0,1032042035,South America
+Araçatuba,Aracatuba,-21.2089,-50.4328,Brazil,BR,BRA,São Paulo,minor,200124.0,1076630308,South America
+Río Cuarto,Rio Cuarto,-33.1333,-64.35,Argentina,AR,ARG,Córdoba,minor,200000.0,1032552145,South America
+Concordia,Concordia,-31.4,-58.0333,Argentina,AR,ARG,Entre Ríos,minor,199634.0,1032923957,South America
+Uripa,Uripa,11.9167,-72.0,Colombia,CO,COL,La Guajira,,198890.0,1170417561,South America
+San Lorenzo,San Lorenzo,-32.75,-60.7333,Argentina,AR,ARG,Santa Fe,,196568.0,1032944740,South America
+Zipaquirá,Zipaquira,5.0333,-74.0,Colombia,CO,COL,Cundinamarca,minor,196409.0,1170798590,South America
+São Leopoldo,Sao Leopoldo,-29.76,-51.1469,Brazil,BR,BRA,Rio Grande do Sul,minor,193547.0,1076834293,South America
+Nossa Senhora do Socorro,Nossa Senhora do Socorro,-10.855,-37.1258,Brazil,BR,BRA,Sergipe,minor,192330.0,1076881156,South America
+Rio Grande,Rio Grande,-32.035,-52.0989,Brazil,BR,BRA,Rio Grande do Sul,minor,191900.0,1076567920,South America
+Florencia,Florencia,1.6139,-75.6128,Colombia,CO,COL,Caquetá,admin,191867.0,1170606634,South America
+Godoy Cruz,Godoy Cruz,-32.9167,-68.8333,Argentina,AR,ARG,Mendoza,minor,191299.0,1032263200,South America
+Isidro Casanova,Isidro Casanova,-34.7,-58.5833,Argentina,AR,ARG,Buenos Aires,,190696.0,1032715964,South America
+Las Heras,Las Heras,-32.85,-68.8167,Argentina,AR,ARG,Mendoza,minor,189067.0,1032781204,South America
+Itabuna,Itabuna,-14.7858,-39.28,Brazil,BR,BRA,Bahia,minor,186708.0,1076003792,South America
+Ferraz de Vasconcelos,Ferraz de Vasconcelos,-23.5411,-46.3689,Brazil,BR,BRA,São Paulo,minor,184700.0,1076173995,South America
+Melbourne,Melbourne,-37.8142,144.9631,Australia,AU,AUS,Victoria,admin,5031195.0,1036533631,Oceania
+Sydney,Sydney,-33.8667,151.2,Australia,AU,AUS,New South Wales,admin,4840600.0,1036074917,Oceania
+Brisbane,Brisbane,-27.4678,153.0281,Australia,AU,AUS,Queensland,admin,2706966.0,1036192929,Oceania
+Perth,Perth,-31.9558,115.8597,Australia,AU,AUS,Western Australia,admin,2141834.0,1036178956,Oceania
+Adelaide,Adelaide,-34.9275,138.6,Australia,AU,AUS,South Australia,admin,1387290.0,1036538171,Oceania
+Gold Coast,Gold Coast,-28.0167,153.4,Australia,AU,AUS,Queensland,,607665.0,1036153217,Oceania
+Cranbourne,Cranbourne,-38.0996,145.2834,Australia,AU,AUS,Victoria,,460491.0,1036685862,Oceania
+Canberra,Canberra,-35.2931,149.1269,Australia,AU,AUS,Australian Capital Territory,primary,381488.0,1036142029,Oceania
+Central Coast,Central Coast,-33.3,151.2,Australia,AU,AUS,New South Wales,,346596.0,1036067845,Oceania
+Wollongong,Wollongong,-34.4331,150.8831,Australia,AU,AUS,New South Wales,,261896.0,1036502269,Oceania
+Ipswich,Ipswich,-27.6144,152.7608,Australia,AU,AUS,Queensland,,232930.0,1036244388,Oceania
+Hobart,Hobart,-42.8806,147.325,Australia,AU,AUS,Tasmania,admin,197451.0,1036679838,Oceania
+Geelong,Geelong,-38.15,144.35,Australia,AU,AUS,Victoria,,180239.0,1036870987,Oceania
+Townsville,Townsville,-19.25,146.8167,Australia,AU,AUS,Queensland,,173724.0,1036500020,Oceania
+Newcastle,Newcastle,-32.9306,151.7542,Australia,AU,AUS,New South Wales,,152984.0,1036468001,Oceania
+Cairns,Cairns,-16.92,145.78,Australia,AU,AUS,Queensland,,146778.0,1036016939,Oceania
+Darwin,Darwin,-12.4381,130.8411,Australia,AU,AUS,Northern Territory,admin,139902.0,1036497565,Oceania
+Ballarat,Ballarat,-37.5608,143.8475,Australia,AU,AUS,Victoria,,116201.0,1036567186,Oceania
+Toowoomba,Toowoomba,-27.5667,151.95,Australia,AU,AUS,Queensland,,108398.0,1036765315,Oceania
+Bendigo,Bendigo,-36.75,144.2667,Australia,AU,AUS,Victoria,,103034.0,1036537913,Oceania

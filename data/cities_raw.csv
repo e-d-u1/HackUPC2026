@@ -1,0 +1,20 @@
+wikidata_id,name,country,country_code,lat,lon,population,continent,wiki_title,wiki_url,description,extract_length,needs_manual_review,review_reason
+Q2725364,Pampas,Peru,PE,-12.3989,-74.8667,44399835,,,,,0,True,missing_wiki_title
+Q11725,Chongqing,People's Republic of China,CN,29.55,106.506944444,32054159,Asia,,,,0,True,missing_wiki_title
+Q1353,Delhi,India,IN,28.666666666,77.216666666,26495000,Asia,,,,0,True,missing_wiki_title
+Q8686,Shanghai,People's Republic of China,CN,31.2325,121.469166666,24870895,Asia,,,,0,True,missing_wiki_title
+Q665894,Greater Mexico City,Mexico,MX,19.432519444,-99.133158333,21905000,,,,,0,True,missing_wiki_title
+Q956,Beijing,People's Republic of China,CN,39.90403,116.407526,21893095,Asia,,,,0,True,missing_wiki_title
+Q30002,Chengdu,People's Republic of China,CN,30.66,104.063333333,20937757,Asia,,,,0,True,missing_wiki_title
+Q683705,New York metropolitan area,United States,US,40.808611111,-74.020277777,19940274,,,,,0,True,missing_wiki_title
+Q16572,Guangzhou,People's Republic of China,CN,23.13,113.26,18676605,Asia,,,,0,True,missing_wiki_title
+Q15174,Shenzhen,People's Republic of China,CN,22.546666666,114.054444444,17494398,Asia,,,,0,True,missing_wiki_title
+Q1354,Dhaka,Bangladesh,BD,23.728888888,90.394444444,16800000,Asia,,,,0,True,missing_wiki_title
+Q406,Istanbul,Turkey,TR,41.01,28.960277777,15655924,Europe,,,,0,True,missing_wiki_title
+Q1156,Mumbai,India,IN,19.075833333,72.8775,15414288,Asia,,,,0,True,missing_wiki_title
+Q8673,Lagos,Nigeria,NG,6.456111111,3.393611111,15070000,Africa,,,,0,True,missing_wiki_title
+Q8660,Karachi,Pakistan,PK,24.86,67.01,14910352,Asia,,,,0,True,missing_wiki_title
+Q3838,Kinshasa,Democratic Republic of the Congo,CD,-4.321944444,15.311944444,14565700,Africa,,,,0,True,missing_wiki_title
+Q1490,Tokyo,Japan,JP,35.689444444,139.691666666,14264798,Asia,,,,0,True,missing_wiki_title
+Q1854,Ho Chi Minh City,Vietnam,VN,10.775555555,106.701944444,14002598,Asia,,,,0,True,missing_wiki_title
+Q13580,Metro Manila,Philippines,PH,14.583333333,121.0,14001751,,,,,0,True,missing_wiki_title

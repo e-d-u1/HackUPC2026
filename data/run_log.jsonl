@@ -1,0 +1,2 @@
+{"ts": "2026-04-25T12:17:00.893879+00:00", "event": "run_start", "limit": 20, "resume": true, "dry_run": false, "wiki_mode": "summary", "continent": "europe"}
+{"ts": "2026-04-25T12:17:04.448519+00:00", "event": "run_complete", "elapsed_s": 3.6, "cities_processed": 19, "total": 19, "with_extract": 0, "stubs_flagged": 19, "countries": 13, "continents": 3, "data_dir": "C:\\Users\\oriol\\OneDrive\\Escritorio\\personal\\HackUPC2026\\data"}
