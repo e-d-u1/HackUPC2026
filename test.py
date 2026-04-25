@@ -1,6 +1,5 @@
 # test_api.py
-import requests
-import json
+import requests, json
 
 place_data = {
     "name": "Mirador Sarrià",
@@ -10,14 +9,24 @@ place_data = {
     "matched_visual_terms": ["city", "metropolitan area", "urban area"],
     "types": ["observation_deck", "tourist_attraction"],
     "rating": 4.5,
-    "reasons": ["Algunas fotos del lugar comparten pistas visuales con la imagen original."]
+    "reasons": []
 }
 
-with open("audio_prueba.mp3", "rb") as audio_file:
-    response = requests.post(
+# --- FASE 1 ---
+print("=== FASE 1: Solo lugar ===")
+r1 = requests.post(
+    "http://localhost:8000/api/recommendations",
+    json=place_data
+)
+print(r1.json()["recommendations"])
+
+# --- FASE 2 ---
+print("\n=== FASE 2: Con audio ===")
+with open("audioIshak.mp3", "rb") as f:
+    r2 = requests.post(
         "http://localhost:8000/api/recommendations/audio",
-        files={"audio": ("audio_prueba.mp3", audio_file, "audio/mpeg")},
+        files={"audio": ("audioIshak.mp3", f, "audio/mpeg")},
         data={"place_data": json.dumps(place_data)}
     )
-
-print(response.json())
+print(r2.json()["transcript"])
+print(r2.json()["recommendations"])
