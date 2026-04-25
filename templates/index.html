@@ -1,54 +1,98 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Mapa de Vuelos Baratos</title>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>#map { height: 600px; width: 100%; borderRadius: 15px; }</style>
-</head>
-<body class="bg-slate-100 p-8">
-    <div class="max-w-6xl mx-auto">
-        <h1 class="text-3xl font-bold mb-6 text-slate-800">Explorador de Precios</h1>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skyscanner Route Optimizer</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.6; color: #333; }
+        h1 { color: #0056b3; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .container { background: #f9f9f9; padding: 25px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .form-group { margin-bottom: 20px; }
+        label { display: block; margin-bottom: 8px; font-weight: bold; }
+        input { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 4px; font-size: 16px; box-sizing: border-box; }
+        button { background-color: #007bff; color: white; padding: 12px 24px; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; transition: background 0.3s; width: 100%; }
+        button:hover { background-color: #0056b3; }
+        button:disabled { background-color: #a0c4ff; cursor: not-allowed; }
         
-        <div class="bg-white p-4 rounded-xl shadow-md mb-6 flex gap-4">
-            <input id="origin" type="text" placeholder="Origen (ej. Madrid)" class="border p-2 rounded w-full">
-            <input id="destinations" type="text" placeholder="Destinos (ej. Paris, Tokio, Roma)" class="border p-2 rounded w-full">
-            <button onclick="search()" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Buscar</button>
+        /* Estilos del Loading Spinner */
+        #loading { display: none; margin: 20px 0; text-align: center; font-weight: bold; color: #555; }
+        .spinner {
+            border: 4px solid rgba(0, 0, 0, 0.1);
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            border-left-color: #007bff;
+            animation: spin 1s linear infinite;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+        #results { margin-top: 30px; }
+        .card { background: white; padding: 15px; border-left: 5px solid #007bff; margin-bottom: 10px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-radius: 4px; }
+        .error { color: #dc3545; font-weight: bold; background: #f8d7da; padding: 10px; border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <h1>✈️ Skyscanner Optimizer</h1>
+    <div class="container">
+        <div class="form-group">
+            <label for="origin">Ciudad de Origen:</label>
+            <input type="text" id="origin" placeholder="Ej: Barcelona" value="Madrid">
+        </div>
+        <div class="form-group">
+            <label for="destinations">Ciudades de Destino (separadas por comas):</label>
+            <input type="text" id="destinations" placeholder="Ej: Tokio, Paris, New York" value="Paris">
+        </div>
+        <div class="form-group">
+            <label for="date">Fecha (Año '2025', Mes '2025-06' o Día '2025-06-15'):</label>
+            <input type="text" id="date" placeholder="Ej: 2025" value="2025">
+        </div>
+        <button id="searchBtn">Buscar Mejores Precios</button>
+
+        <!-- Este div se mostrará solo durante la búsqueda -->
+        <div id="loading">
+            <div class="spinner"></div> <span>Analizando rutas con Skyscanner... esto puede tardar unos segundos.</span>
         </div>
 
-        <div id="map" class="shadow-lg"></div>
+        <div id="results"></div>
     </div>
 
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
-        const map = L.map('map').setView([40.41, -3.70], 4);
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+        const btn = document.getElementById('searchBtn');
+        const loading = document.getElementById('loading');
+        const resultsDiv = document.getElementById('results');
 
-        async function search() {
+        btn.addEventListener('click', async () => {
             const origin = document.getElementById('origin').value;
-            const dests = document.getElementById('destinations').value;
-            
-            const response = await fetch(`/api/search?origin=${origin}&destinations=${dests}`);
-            const results = await response.json();
+            const destinations = document.getElementById('destinations').value;
+            const date = document.getElementById('date').value;
 
-            results.forEach(res => {
-                const marker = L.marker([res.lat, res.lon]).addTo(map);
-                
-                const popupContent = `
-                    <div class="w-64">
-                        <img src="${res.img}" class="rounded-lg mb-2">
-                        <h3 class="font-bold text-lg">${res.city}</h3>
-                        <p class="text-blue-600 font-bold text-xl">${res.price}</p>
-                        <p class="text-sm text-gray-500">Vuelo directo / 1 escala</p>
-                        <button class="bg-orange-500 text-white w-full mt-2 py-1 rounded">Ver Detalles</button>
-                    </div>
-                `;
-                marker.bindPopup(popupContent);
-                
-                // Tooltip con el precio siempre visible
-                marker.bindTooltip(res.price, {permanent: true, direction: 'top'}).openTooltip();
-            });
-        }
+            // 1. Mostrar loading, bloquear botón y limpiar resultados anteriores
+            loading.style.display = 'block';
+            btn.disabled = true;
+            resultsDiv.innerHTML = '';
+
+            try {
+                const url = `/api/search?origin=${encodeURIComponent(origin)}&destinations=${encodeURIComponent(destinations)}&date=${encodeURIComponent(date)}`;
+                const response = await fetch(url);
+                const data = await response.json();
+
+                // 2. Renderizar resultados
+                resultsDiv.innerHTML = '<h2>Resultados de la búsqueda:</h2>';
+                for (const [dest, price] of Object.entries(data)) {
+                    resultsDiv.innerHTML += `<div class="card"><strong>${dest}:</strong> ${price}</div>`;
+                }
+            } catch (e) {
+                resultsDiv.innerHTML = '<p class="error">❌ Hubo un error al conectar con el servidor. Revisa la consola o el estado de tu red.</p>';
+            } finally {
+                // 3. Ocultar loading y reactivar botón pase lo que pase
+                loading.style.display = 'none';
+                btn.disabled = false;
+            }
+        });
     </script>
 </body>
 </html>
