@@ -6,6 +6,7 @@ Este proyecto es un optimizador de rutas de vuelo que utiliza la API de Skyscann
 
 *   Python 3.8 o superior.
 *   Una clave de API de Skyscanner (Partners API).
+*   Una clave de API de Pixabay (Gratuita, para fotos reales).
 
 ## 🛠️ Configuración del Proyecto
 
@@ -37,6 +38,7 @@ pip install -r requirements.txt
 Crea un archivo llamado `.env` en la raíz del proyecto y añade tu API Key:
 ```text
 SKYSCANNER_API_KEY=tu_clave_aqui
+PIXABAY_API_KEY=tu_clave_pixabay_aqui
 ```
 
 ## 💻 Ejecución
@@ -60,7 +62,7 @@ El servidor estará disponible en `http://localhost:8000`.
     *   **Parámetros:**
         *   `origin`: Ciudad de origen (ej: Murcia).
         *   `destinations`: Lista separada por comas (ej: Tokio,Paris).
-        *   `date`: Puede ser un año (`2025`), un mes (`2025-06`) o un día (`2025-06-15`).
+        *   `date`: Puede ser un año (`2025`) o un mes (`2025-06`).
     *   **Ejemplo:** `http://localhost:8000/api/search?origin=Madrid&destinations=Londres,Roma&date=2025-10`
 
 ## 📁 Estructura del Proyecto
