@@ -71,51 +71,60 @@ class SkyscannerOptimizer:
         return None
 
     def get_nearest_airports_fallback(self, city_name, radius_km=300):
-        """Busca aeropuertos cercanos con soporte para múltiples formatos de JSON."""
+        """Busca aeropuertos cercanos usando una base local de aeropuertos para mayor precisión."""
+        import json
+        import os
+        
         location = self.geolocator.geocode(city_name, language=self.config["locale"][:2])
         if not location:
             print(f"❌ Geopy no encontró coordenadas para {city_name}")
             return None
 
-        url = f"{self.base_url}/geo/hierarchy/flights/nearest"
-        payload = {
-            "locator": {
-                "coordinates": {
-                    "latitude": location.latitude,
-                    "longitude": location.longitude
-                }
-            },
-            "locale": self.config["locale"]
-        }
+        airport_file = "airports_cache.json"
         
+        if not os.path.exists(airport_file):
+            print("⏳ Descargando base de datos de aeropuertos para búsqueda global...")
+            try:
+                import requests
+                r = requests.get("https://raw.githubusercontent.com/mwgg/Airports/master/airports.json", timeout=10)
+                if r.status_code == 200:
+                    with open(airport_file, "w") as f:
+                        f.write(r.text)
+            except Exception as e:
+                print(f"⚠️ Error descargando aeropuertos: {e}")
+                return None
+
         try:
-            response = requests.post(url, json=payload, headers=self.headers, timeout=10)
-            if response.status_code == 200:
-                data = response.json()
-                results = data.get("content", {}).get("results", {})
-                places_data = results.get("places", data.get("places", []))
-                
-                items = places_data.values() if isinstance(places_data, dict) else places_data
-                
-                valid_airports = []
-                for p in items:
-                    if p.get("type") == "PLACE_TYPE_AIRPORT":
-                        coords = p.get("coordinates", {})
-                        if not coords: continue
-                        
-                        dist = self.haversine(location.latitude, location.longitude, 
-                                              coords.get("latitude"), coords.get("longitude"))
-                        if dist <= radius_km:
-                            valid_airports.append({
-                                "entityId": p.get("entityId"),
-                                "name": p.get("name"),
-                                "distance": dist
-                            })
-                
-                return sorted(valid_airports, key=lambda x: x['distance'])
+            with open(airport_file, "r") as f:
+                airports_db = json.load(f)
         except Exception as e:
-            print(f"⚠️ Error en fallback para {city_name}: {e}")
-        return None
+            print(f"⚠️ Error leyendo aeropuertos: {e}")
+            return None
+
+        valid_airports = []
+        for k, v in airports_db.items():
+            if v.get("iata") and v.get("lat") and v.get("lon") and v.get("iata") != "\\N":
+                dist = self.haversine(location.latitude, location.longitude, float(v["lat"]), float(v["lon"]))
+                if dist <= radius_km:
+                    valid_airports.append({
+                        "iata": v["iata"],
+                        "name": v["name"],
+                        "distance": dist
+                    })
+
+        valid_airports.sort(key=lambda x: x["distance"])
+        
+        final_airports = []
+        for ap in valid_airports[:5]:
+            eid = self.get_city_entity(ap["iata"])
+            if eid:
+                final_airports.append({
+                    "entityId": eid,
+                    "name": f"{ap['name']} ({ap['iata']})",
+                    "distance": ap["distance"]
+                })
+        
+        return final_airports if final_airports else None
 
     def search_indicative_cheapest(self, origin_id, dest_id, year, month, day=1):
         """Busca el precio más barato usando datos de caché (Indicative)."""
