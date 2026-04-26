@@ -266,7 +266,7 @@ class SkyscannerOptimizer:
             "confidence": None,
         }
 
-    def get_nearest_airports_from_coordinates(self, latitude, longitude, radius_km=350):
+    def get_nearest_airports_from_coordinates(self, latitude, longitude, radius_km=3000):
         """Busca aeropuertos cercanos usando coordenadas ya conocidas del lugar visual."""
         lat = self._to_float(latitude, None)
         lon = self._to_float(longitude, None)
