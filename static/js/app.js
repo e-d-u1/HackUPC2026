@@ -31,7 +31,12 @@
   // Phase 1
   const dropzone = $("#dropzone");
   const fileInput = $("#fileInput");
+  const urlInput = $("#urlInput");
   const imagePreview = $("#imagePreview");
+  const videoPreview = $("#videoPreview");
+  const dropzoneIcon = $("#dropzoneIcon");
+  const dropzoneText = $("#dropzoneText");
+  const dropzoneHint = $("#dropzoneHint");
   const btnAnalyze = $("#btnAnalyze");
   const originBadge = $("#originBadge");
   const originCity = $("#originCity");
@@ -72,12 +77,11 @@
     }).setView([30, 10], 3);
 
     // Dark tile layer
-    L.tileLayer(
-      "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
-      {
-        maxZoom: 19,
-      }
-    ).addTo(map);
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+      subdomains: 'abcd',
+      maxZoom: 20
+    }).addTo(map);
 
     mapLayers = L.layerGroup().addTo(map);
   }
@@ -180,50 +184,84 @@
     dropzone.classList.remove("drag-over");
   });
 
+  function handleMedia(file, url) {
+    state.imageFile = undefined;
+    state.imageUrl = undefined;
+    
+    // Hide placeholders
+    dropzoneIcon.style.display = "none";
+    dropzoneText.style.display = "none";
+    dropzoneHint.style.display = "none";
+    dropzone.classList.add("has-image");
+
+    if (file) {
+      state.imageFile = file;
+      if (file.type.startsWith("video/")) {
+        imagePreview.style.display = "none";
+        imagePreview.src = "";
+        videoPreview.style.display = "block";
+        videoPreview.src = URL.createObjectURL(file);
+      } else {
+        videoPreview.style.display = "none";
+        videoPreview.src = "";
+        imagePreview.style.display = "block";
+        const reader = new FileReader();
+        reader.onload = (e) => { imagePreview.src = e.target.result; };
+        reader.readAsDataURL(file);
+      }
+      urlInput.value = "";
+    } else if (url) {
+      state.imageUrl = url;
+      fileInput.value = "";
+      if (url.match(/\.(mp4|webm|mov)$/i)) {
+        imagePreview.style.display = "none";
+        imagePreview.src = "";
+        videoPreview.style.display = "block";
+        videoPreview.src = url;
+      } else {
+        videoPreview.style.display = "none";
+        videoPreview.src = "";
+        imagePreview.style.display = "block";
+        imagePreview.src = url;
+      }
+    }
+    btnAnalyze.classList.add("visible");
+  }
+
+  // Handle URL change
+  urlInput.addEventListener("input", (e) => {
+    if (e.target.value.trim().length > 5) {
+      handleMedia(null, e.target.value.trim());
+    }
+  });
+
   dropzone.addEventListener("drop", (e) => {
     e.preventDefault();
     dropzone.classList.remove("drag-over");
     if (e.dataTransfer.files.length > 0) {
-      handleFile(e.dataTransfer.files[0]);
+      handleMedia(e.dataTransfer.files[0], null);
     }
   });
 
   fileInput.addEventListener("change", (e) => {
     if (e.target.files.length > 0) {
-      handleFile(e.target.files[0]);
+      handleMedia(e.target.files[0], null);
     }
   });
 
-  function handleFile(file) {
-    if (!file.type.startsWith("image/")) {
-      alert("Por favor, selecciona una imagen.");
-      return;
-    }
-
-    state.imageFile = file;
-
-    const reader = new FileReader();
-    reader.onload = (e) => {
-      imagePreview.src = e.target.result;
-      imagePreview.classList.add("visible");
-      dropzone.classList.add("has-image");
-      btnAnalyze.classList.add("visible");
-    };
-    reader.readAsDataURL(file);
-  }
-
   // Analyze button
   btnAnalyze.addEventListener("click", async () => {
-    if (!state.imageFile) return;
+    if (!state.imageFile && !state.imageUrl) return;
 
     btnAnalyze.disabled = true;
-    showLoading("Analizando imagen con IA...");
+    showLoading("Analizando contenido con IA...");
 
     try {
       const formData = new FormData();
-      formData.append("image", state.imageFile);
+      if (state.imageFile) formData.append("media", state.imageFile);
+      if (state.imageUrl) formData.append("url", state.imageUrl);
 
-      const res = await fetch("/api/analyze-image", { method: "POST", body: formData });
+      const res = await fetch("/api/analyze-media", { method: "POST", body: formData });
 
       if (!res.ok) {
         const err = await res.json();
@@ -277,8 +315,11 @@
     });
   }
 
-  // Microphone recording
-  micBtn.addEventListener("click", async () => {
+  // Microphone recording — Web Speech API
+  const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+  let recognition = null;
+
+  micBtn.addEventListener("click", () => {
     if (state.isRecording) {
       stopRecording();
     } else {
@@ -286,58 +327,62 @@
     }
   });
 
-  async function startRecording() {
-    try {
-      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
-      state.audioChunks = [];
-      state.mediaRecorder = new MediaRecorder(stream, {
-        mimeType: MediaRecorder.isTypeSupported("audio/webm;codecs=opus")
-          ? "audio/webm;codecs=opus"
-          : "audio/webm",
-      });
-
-      state.mediaRecorder.ondataavailable = (e) => {
-        if (e.data.size > 0) state.audioChunks.push(e.data);
-      };
-
-      state.mediaRecorder.onstop = () => {
-        stream.getTracks().forEach((t) => t.stop());
-        processAudioRecording();
-      };
-
-      state.mediaRecorder.start();
-      state.isRecording = true;
-      micBtn.classList.add("recording");
-      micBtn.innerHTML = "⏹";
-      micStatus.textContent = "Grabando... Pulsa para detener";
-      micStatus.className = "mic-status recording";
-    } catch (e) {
-      console.error("Mic error:", e);
-      alert(
-        "No se pudo acceder al micrófono. Asegúrate de dar permiso."
-      );
+  function startRecording() {
+    if (!SpeechRecognition) {
+      alert("Tu navegador no soporta reconocimiento de voz. Usa Chrome o Edge.");
+      return;
     }
+
+    recognition = new SpeechRecognition();
+    recognition.lang = "es-ES";
+    recognition.interimResults = false;
+    recognition.maxAlternatives = 1;
+
+    recognition.onresult = async (event) => {
+      const transcript = event.results[0][0].transcript;
+      await sendTranscriptToBackend(transcript);
+    };
+
+    recognition.onerror = (event) => {
+      console.error("Speech error:", event.error);
+      alert("Error al reconocer voz: " + event.error);
+      resetMicUI();
+    };
+
+    recognition.onend = () => {
+      state.isRecording = false;
+      resetMicUI();
+    };
+
+    recognition.start();
+    state.isRecording = true;
+    micBtn.classList.add("recording");
+    micBtn.innerHTML = "⏹";
+    micStatus.textContent = "Escuchando... Pulsa para detener";
+    micStatus.className = "mic-status recording";
   }
 
   function stopRecording() {
-    if (state.mediaRecorder && state.mediaRecorder.state === "recording") {
-      state.mediaRecorder.stop();
-      state.isRecording = false;
-      micBtn.classList.remove("recording");
-      micBtn.innerHTML = "🎙️";
-      micStatus.textContent = "Procesando audio...";
-      micStatus.className = "mic-status processing";
+    if (recognition) {
+      recognition.stop();
     }
+    state.isRecording = false;
+    resetMicUI();
   }
 
-  async function processAudioRecording() {
-    const blob = new Blob(state.audioChunks, { type: "audio/webm" });
+  function resetMicUI() {
+    micBtn.classList.remove("recording");
+    micBtn.innerHTML = "🎙️";
+    micStatus.textContent = "Pulsa para grabar";
+    micStatus.className = "mic-status";
+  }
 
-    showLoading("Transcribiendo y refinando destinos...");
+  async function sendTranscriptToBackend(transcript) {
+    showLoading("Refinando destinos...");
 
     try {
       const formData = new FormData();
-      formData.append("audio", blob, "recording.webm");
+      formData.append("transcript", transcript);
       formData.append("locations", JSON.stringify(state.locations));
 
       const res = await fetch("/api/voice-validate", {
@@ -352,11 +397,9 @@
 
       const data = await res.json();
 
-      // Show transcript
       transcriptText.textContent = data.transcript || "(sin transcripción)";
       transcriptBox.classList.add("visible");
 
-      // Update locations
       if (data.locations && data.locations.length > 0) {
         state.locations = data.locations;
         renderLocationCards();
@@ -368,8 +411,6 @@
     } catch (e) {
       console.error("Voice validation error:", e);
       alert("Error al procesar el audio: " + e.message);
-      micStatus.textContent = "Pulsa para grabar";
-      micStatus.className = "mic-status";
       hideLoading();
     }
   }
@@ -445,7 +486,7 @@
 
       const destIcon = L.divIcon({
         className: "",
-        html: `<div class="price-marker">✈️ ${priceLabel}</div>`,
+        html: `<div class="price-marker">${priceLabel}</div>`,
         iconSize: [0, 0],
         iconAnchor: [0, 0],
       });
@@ -522,15 +563,25 @@
   // Restart button
   btnRestart.addEventListener("click", () => {
     // Reset state
-    state.imageFile = null;
+    state.imageFile = undefined;
+    state.imageUrl = undefined;
     state.locations = [];
     state.confirmedLocations = [];
     state.flightResults = null;
 
     // Reset UI
-    imagePreview.classList.remove("visible");
+    imagePreview.style.display = "none";
     imagePreview.src = "";
+    videoPreview.style.display = "none";
+    videoPreview.src = "";
+    dropzoneIcon.style.display = "block";
+    dropzoneText.style.display = "block";
+    dropzoneHint.style.display = "block";
     dropzone.classList.remove("has-image");
+    
+    urlInput.value = "";
+    fileInput.value = "";
+
     btnAnalyze.classList.remove("visible");
     btnAnalyze.disabled = false;
     btnConfirm.disabled = false;
