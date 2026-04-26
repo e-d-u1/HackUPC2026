@@ -6,10 +6,12 @@ import requests as http_requests
 
 router = APIRouter(prefix="/api")
 
-
 import tempfile
 import urllib.request
 import os
+from pathlib import Path
+
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
 # ---------- PHASE 1: Media Analysis ----------
 
@@ -18,40 +20,82 @@ async def analyze_media(
     media: UploadFile = File(None),
     url: str = Form(None)
 ):
-    """Receives an image/video file or URL, analyzes it with Gemini multimodal, returns candidate locations."""
+    """
+    Receives an image/video file or URL.
+
+    New flow:
+    - Google Vision extracts labels, landmarks, OCR text and web entities.
+    - Videos are sampled into 3 frames before analysis.
+    - Google Places searches possible real locations with coordinates.
+    - Google Places photos are downloaded and checked visually with Vision terms.
+    - Saves vision_features.json, output_location.json and output_locations_simple.json in the project root.
+    """
     if not media and not url:
         raise HTTPException(status_code=400, detail="Must provide either media file or url")
 
     tmp_file = None
     try:
-        # Create a temporary file
-        fd, tmp_path = tempfile.mkstemp()
-        os.close(fd)
-        tmp_file = tmp_path
-
+        suffix = ""
         mime_type = "image/jpeg"
+        source_input = None
+        source_type = "local_file"
+
         if media:
+            filename = media.filename or "uploaded_media"
+            suffix = Path(filename).suffix or ""
+            fd, tmp_path = tempfile.mkstemp(suffix=suffix)
+            os.close(fd)
+            tmp_file = tmp_path
+
             content = await media.read()
             with open(tmp_path, "wb") as f:
                 f.write(content)
             if media.content_type:
                 mime_type = media.content_type
+            source_input = filename
+            source_type = "file_upload"
+
         elif url:
-            # Download URL
-            req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
-            with urllib.request.urlopen(req) as response:
+            source_input = url
+            source_type = "url"
+            lower_url = url.lower().split("?")[0]
+            if lower_url.endswith(".mp4"):
+                suffix, mime_type = ".mp4", "video/mp4"
+            elif lower_url.endswith(".mov"):
+                suffix, mime_type = ".mov", "video/quicktime"
+            elif lower_url.endswith(".webm"):
+                suffix, mime_type = ".webm", "video/webm"
+            elif lower_url.endswith(".png"):
+                suffix, mime_type = ".png", "image/png"
+            elif lower_url.endswith(".webp"):
+                suffix, mime_type = ".webp", "image/webp"
+            else:
+                suffix, mime_type = ".jpg", "image/jpeg"
+
+            fd, tmp_path = tempfile.mkstemp(suffix=suffix)
+            os.close(fd)
+            tmp_file = tmp_path
+
+            req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+            with urllib.request.urlopen(req, timeout=30) as response:
                 content = response.read()
+                header_content_type = response.headers.get("Content-Type")
+                if header_content_type:
+                    mime_type = header_content_type.split(";")[0].strip() or mime_type
             with open(tmp_path, "wb") as f:
                 f.write(content)
-            # guess mime from URL extending
-            if url.lower().endswith(".mp4"): mime_type = "video/mp4"
-            elif url.lower().endswith(".png"): mime_type = "image/png"
-            elif url.lower().endswith(".webm"): mime_type = "video/webm"
-            else: mime_type = "image/jpeg"
 
-        # Pass file path to the LLM function
-        from app.llm import analyze_media_for_locations
-        result = analyze_media_for_locations(tmp_path, mime_type)
+        from app.vision_places import analyze_media_with_vision_places
+
+        result = analyze_media_with_vision_places(
+            tmp_file,
+            mime_type=mime_type,
+            source_input=source_input,
+            source_type=source_type,
+            max_candidates=int(os.getenv("MAX_CANDIDATES", "5")),
+            photos_per_place=int(os.getenv("PHOTOS_PER_PLACE", "2")),
+            output_dir=PROJECT_ROOT,
+        )
         return result
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error analyzing media: {str(e)}")
@@ -59,7 +103,7 @@ async def analyze_media(
         if tmp_file and os.path.exists(tmp_file):
             try:
                 os.remove(tmp_file)
-            except:
+            except Exception:
                 pass
 
 
@@ -67,18 +111,15 @@ async def analyze_media(
 async def detect_origin(request: Request):
     """Detects the user's origin city based on their IP address."""
     try:
-        # Get client IP
         forwarded = request.headers.get("x-forwarded-for")
         if forwarded:
             client_ip = forwarded.split(",")[0].strip()
         else:
             client_ip = request.headers.get("x-real-ip") or request.client.host
 
-        # Clean IPv6 mapped IPv4
         if client_ip and client_ip.startswith("::ffff:"):
             client_ip = client_ip[7:]
 
-        # Check if local IP
         local_ips = {"::1", "127.0.0.1", "localhost"}
         is_local = (
             client_ip in local_ips
@@ -96,7 +137,6 @@ async def detect_origin(request: Request):
                 "note": "IP local detectada, usando Barcelona por defecto"
             }
 
-        # Lookup with ipapi.co
         resp = http_requests.get(
             f"https://ipapi.co/{client_ip}/json/",
             headers={"User-Agent": "HackUPC-Travel-App/1.0"},
@@ -153,10 +193,7 @@ async def voice_validate(
         raise HTTPException(status_code=400, detail="'locations' is not valid JSON")
 
     try:
-        # Transcribe audio with ElevenLabs
         transcript = transcribe_audio(audio.file)
-
-        # Refine locations with Gemini
         result = refine_locations_with_voice(locations_list, transcript)
 
         return {
@@ -188,7 +225,6 @@ def search_flights(origin: str, destinations: str, date: str = "2026"):
     try:
         results = optimizer.optimize_route([origin] + dest_list, date)
 
-        # Add hotel prices
         for dest_name in results["results"]:
             results["results"][dest_name]["hotel_price"] = hotel_searcher.get_hotel_prices(dest_name)
 
