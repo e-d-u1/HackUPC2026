@@ -1,72 +1,84 @@
-# Skyscanner Route Optimizer - HackUPC 2026
+# View it, Visit it — Multi-Modal Travel App (HackUPC 2026)
 
-Este proyecto es un optimizador de rutas de vuelo que utiliza la API de Skyscanner para encontrar los precios más baratos entre múltiples destinos. Permite búsquedas por fechas específicas, meses completos o incluso los mejores precios en una ventana de 12 meses (Rolling Year).
+**View it, Visit it** es una aplicación web de viajes de vanguardia que utiliza Inteligencia Artificial multimodal y validación por voz para ayudarte a descubrir tu próximo destino. El proyecto está dividido en tres fases lógicas integradas en una experiencia de Single Page Application (SPA) premium.
 
-## 🚀 Requisitos Previos
+## 🌟 Características Principales
 
-*   Python 3.8 o superior.
-*   Una clave de API de Skyscanner (Partners API).
-*   Una clave de API de Pixabay (Gratuita, para fotos reales).
+1.  **Fase 1: Análisis de Imagen y Origen (Vision & Metadata)**
+    *   Subida de imagen para identificar destinos probables mediante **Gemini 2.5 Flash**.
+    *   Detección automática de la ciudad de origen del usuario mediante geolocalización por IP.
+2.  **Fase 2: Validación y Corrección (Voice UI & Human-in-the-Loop)**
+    *   Interfaz moderna para revisar las sugerencias de la IA.
+    *   Validación por voz: Corrige o confirma destinos hablando directamente al navegador (transcripción vía **ElevenLabs** y refinamiento con LLM).
+3.  **Fase 3: Dashboard de Vuelos y Mapa Interactivo**
+    *   Búsqueda de vuelos en tiempo real mediante la API de **Skyscanner**.
+    *   Mapa interactivo con marcadores de precio y arcos de ruta.
+    *   Panel lateral con imágenes dinámicas de **Wikipedia** y detalles del destino (clima, paisajes, hoteles).
 
-## 🛠️ Configuración del Proyecto
+---
 
-Sigue estos pasos para poner en marcha el proyecto en tu máquina local:
+## 🚀 Guía de Inicio Rápido
 
-### 1. Crear un Entorno Virtual
-Es recomendable usar un entorno virtual para mantener las dependencias aisladas.
-```bash
-python3 -m venv .venv
-```
+Sigue estos pasos para ejecutar la aplicación en tu entorno local (Linux/macOS/Windows).
 
-### 2. Activar el Entorno Virtual
-*   **En Linux/macOS:**
+### 1. Requisitos Previos
+
+Necesitarás las siguientes API Keys configuradas en tu archivo `.env`:
+*   **Gemini API Key:** Para el análisis multimodal de imágenes y refinamiento de texto.
+*   **ElevenLabs API Key:** Para la transcripción de voz a texto (Scribe v1).
+*   **Skyscanner API Key:** Para obtener ofertas de vuelos reales.
+
+### 2. Instalación
+
+1.  **Clonar el repositorio y entrar en la carpeta:**
     ```bash
-    source .venv/bin/activate
+    cd HackUPC2026
     ```
-*   **En Windows:**
+
+2.  **Crear y activar el entorno virtual:**
     ```bash
-    .venv\Scripts\activate
+    python3 -m venv .venv
+    source .venv/bin/activate  # En Windows: .venv\Scripts\activate
     ```
 
-### 3. Instalar Dependencias
-Instala todas las librerías necesarias ejecutando:
-```bash
-pip install -r requirements.txt
-```
+3.  **Instalar dependencias:**
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-### 4. Configurar Variables de Entorno
-Crea un archivo llamado `.env` en la raíz del proyecto y añade tu API Key:
+### 3. Configuración del Archivo `.env`
+
+Crea un archivo `.env` en la raíz del proyecto (o edita el existente) con el siguiente formato:
+
 ```text
-SKYSCANNER_API_KEY=tu_clave_aqui
-PIXABAY_API_KEY=tu_clave_pixabay_aqui
+GEMINI_API_KEY=tu_clave_gemini
+ELEVENLABS_API_KEY=tu_clave_elevenlabs
+SKYSCANNER_API_KEY=tu_clave_skyscanner
 ```
 
-## 💻 Ejecución
+### 4. Ejecución del Servidor
 
-### Modo Script (Lógica de Vuelos)
-Si quieres probar la lógica de optimización directamente en la consola:
-```bash
-python flights.py
-```
+Levanta el servidor unificado de FastAPI ejecutando:
 
-### Modo API (Servidor FastAPI)
-Para levantar el servidor web y acceder a la API:
 ```bash
 python main.py
 ```
-El servidor estará disponible en `http://localhost:8000`.
 
-## 🌐 Endpoints de la API
+El servidor estará disponible en: **`http://localhost:7999`**
 
-*   **Búsqueda de Vuelos:** `GET /api/search`
-    *   **Parámetros:**
-        *   `origin`: Ciudad de origen (ej: Murcia).
-        *   `destinations`: Lista separada por comas (ej: Tokio,Paris).
-        *   `date`: Puede ser un año (`2025`) o un mes (`2025-06`).
-    *   **Ejemplo:** `http://localhost:8000/api/search?origin=Madrid&destinations=Londres,Roma&date=2025-10`
+---
 
-## 📁 Estructura del Proyecto
-*   `flights.py`: Contiene la clase `SkyscannerOptimizer` con la lógica de negocio y fallback de aeropuertos.
-*   `main.py`: Punto de entrada de la aplicación FastAPI.
-*   `requirements.txt`: Lista de librerías de Python necesarias.
-*   `.env`: Archivo para credenciales sensibles (no incluido en Git).
+## 🛠️ Tecnologías Utilizadas
+
+*   **Backend:** FastAPI (Python), Google GenAI SDK (Gemini), ElevenLabs SDK.
+*   **Frontend:** Vanilla JS (SPA architecture), CSS Moderno (Glassmorphism), Leaflet.js (Mapas).
+*   **APIs Externas:** Skyscanner Partners API, Wikipedia API, ipapi.co.
+
+## 📁 Estructura del Código
+
+*   `main.py`: Punto de entrada unificado y configuración de FastAPI.
+*   `app/main.py`: Definición de todos los endpoints de la API (Fases 1, 2 y 3).
+*   `app/llm.py`: Lógica de IA para análisis de imágenes y corrección por voz.
+*   `app/stt.py`: Integración con ElevenLabs para Speech-to-Text.
+*   `static/`: Contiene el sistema de diseño CSS y la lógica JS de la SPA.
+*   `templates/`: Plantilla HTML base de la aplicación.

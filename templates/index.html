@@ -1,239 +1,155 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skyscanner Route Optimizer</title>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-    <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.6; color: #333; }
-        h1 { color: #0056b3; border-bottom: 2px solid #eee; padding-bottom: 10px; }
-        .container { background: #f9f9f9; padding: 25px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-        .form-group { margin-bottom: 20px; }
-        label { display: block; margin-bottom: 8px; font-weight: bold; }
-        input { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 4px; font-size: 16px; box-sizing: border-box; }
-        button { background-color: #007bff; color: white; padding: 12px 24px; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; transition: background 0.3s; width: 100%; }
-        button:hover { background-color: #0056b3; }
-        button:disabled { background-color: #a0c4ff; cursor: not-allowed; }
-        
-        /* Estilos del Loading Spinner */
-        #loading { display: none; margin: 20px 0; text-align: center; font-weight: bold; color: #555; }
-        .spinner {
-            border: 4px solid rgba(0, 0, 0, 0.1);
-            width: 36px;
-            height: 36px;
-            border-radius: 50%;
-            border-left-color: #007bff;
-            animation: spin 1s linear infinite;
-            display: inline-block;
-            vertical-align: middle;
-            margin-right: 10px;
-        }
-        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>View it, Visit it — Descubre tu próximo destino</title>
+  <meta name="description" content="Sube una imagen de un destino y descubre vuelos baratos con IA multimodal y validación por voz.">
 
-        #results { margin-top: 30px; }
-        #map { height: 400px; width: 100%; margin-top: 20px; border-radius: 8px; display: none; }
-        .card { background: white; margin-bottom: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden; border-left: 5px solid #007bff; }
-        .card-content { padding: 15px; }
-        .card-content h3 { margin: 0 0 10px 0; color: #0056b3; }
-        .card-content p { margin: 5px 0; }
-        .card img { 
-            width: 100%; 
-            aspect-ratio: 16 / 9; /* Reserva el espacio exacto antes de cargar */
-            object-fit: cover; 
-            background: linear-gradient(110deg, #ececec 8%, #f5f5f5 18%, #ececec 33%);
-            background-size: 200% 100%;
-            animation: shine 1.5s linear infinite;
-            cursor: pointer; 
-            transition: opacity 0.3s; 
-            display: block;
-        }
-        @keyframes shine { to { background-position-x: -200%; } }
-        .card img:hover { opacity: 0.9; }
-        .error { color: #dc3545; font-weight: bold; background: #f8d7da; padding: 10px; border-radius: 4px; }
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 
-        /* Estilos para el Modal de Imagen */
-        .modal-img {
-            display: none;
-            position: fixed;
-            z-index: 10000;
-            padding-top: 50px;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0,0,0,0.9);
-            cursor: zoom-out;
-        }
-        .modal-img-content {
-            margin: auto;
-            display: block;
-            width: 80%;
-            max-width: 1000px;
-            border-radius: 8px;
-            animation: zoom 0.3s;
-        }
-        @keyframes zoom {
-            from {transform:scale(0.8); opacity: 0;}
-            to {transform:scale(1); opacity: 1;}
-        }
-    </style>
+  <!-- App CSS -->
+  <link rel="stylesheet" href="/static/css/style.css">
 </head>
 <body>
-    <h1>✈️ Skyscanner Optimizer</h1>
-    <div class="container">
-        <div class="form-group">
-            <label for="origin">Ciudad de Origen:</label>
-            <input type="text" id="origin" placeholder="Ej: Barcelona" value="Madrid">
-        </div>
-        <div class="form-group">
-            <label for="destinations">Ciudades de Destino (separadas por comas):</label>
-            <input type="text" id="destinations" placeholder="Ej: Tokio, Paris, New York" value="Paris">
-        </div>
-        <div class="form-group">
-            <label for="date">Fecha (Año '2025' o Mes '2025-06'):</label>
-            <input type="text" id="date" placeholder="Ej: 2025-06" value="2025">
-        </div>
-        <button id="searchBtn">Buscar Mejores Precios</button>
+  <div id="app">
 
-        <!-- Este div se mostrará solo durante la búsqueda -->
-        <div id="loading">
-            <div class="spinner"></div> <span>Analizando rutas con Skyscanner... esto puede tardar unos segundos.</span>
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar">
+      <a class="navbar-brand" href="/">
+        <span class="logo-icon">🌍</span>
+        <span>View it, Visit it</span>
+      </a>
+      <div class="navbar-steps">
+        <div class="step-indicator active" id="step1">
+          <span>📷</span> Imagen
+        </div>
+        <div class="step-connector"></div>
+        <div class="step-indicator" id="step2">
+          <span>🎙️</span> Voz
+        </div>
+        <div class="step-connector"></div>
+        <div class="step-indicator" id="step3">
+          <span>✈️</span> Vuelos
+        </div>
+      </div>
+    </nav>
+
+    <!-- ===== PHASE 1: Image Upload ===== -->
+    <section class="phase active" id="phase1">
+      <div class="upload-container">
+        <h1 class="upload-title">¿A dónde quieres viajar?</h1>
+        <p class="upload-subtitle">Sube una imagen de tu destino soñado y nuestra IA lo identificará</p>
+
+        <div class="dropzone" id="dropzone">
+          <img class="image-preview" id="imagePreview" alt="Preview">
+          <span class="dropzone-icon">📷</span>
+          <p class="dropzone-text">Arrastra una imagen aquí o haz clic para seleccionar</p>
+          <p class="dropzone-hint">JPG, PNG, WebP — máx. 10MB</p>
+          <input type="file" id="fileInput" accept="image/*">
         </div>
 
-        <div id="map"></div>
-        <div id="results"></div>
+        <div class="origin-badge" id="originBadge" style="display: none;">
+          <span class="origin-dot"></span>
+          <span>Tu origen: </span>
+          <strong id="originCity">Detectando...</strong>
+        </div>
+
+        <button class="btn-analyze" id="btnAnalyze">
+          <span>✨</span> Analizar imagen
+        </button>
+      </div>
+    </section>
+
+    <!-- ===== PHASE 2: Voice Validation ===== -->
+    <section class="phase" id="phase2">
+      <div class="voice-container">
+        <h2 class="voice-title">📍 Destinos detectados</h2>
+        <p class="voice-subtitle">Confirma los resultados o corrígelos con tu voz</p>
+
+        <div class="locations-grid" id="locationsGrid">
+          <!-- Cards rendered by JS -->
+        </div>
+
+        <div class="mic-section">
+          <button class="mic-btn" id="micBtn" title="Grabar audio">🎙️</button>
+          <p class="mic-status" id="micStatus">Pulsa para grabar</p>
+        </div>
+
+        <div class="transcript-box" id="transcriptBox">
+          <span class="transcript-label">Transcripción</span>
+          <span id="transcriptText"></span>
+        </div>
+
+        <button class="btn-confirm" id="btnConfirm">
+          Confirmar destinos y buscar vuelos →
+        </button>
+      </div>
+    </section>
+
+    <!-- ===== PHASE 3: Flight Dashboard ===== -->
+    <section class="phase" id="phase3">
+      <div class="dashboard-container">
+        <div id="flight-map"></div>
+      </div>
+
+      <!-- Destination detail side panel -->
+      <div class="dest-panel" id="destPanel">
+        <button class="dest-panel-close" id="destPanelClose">✕</button>
+        <img class="dest-panel-image" id="destPanelImage" alt="Destination" src="">
+        <div class="dest-panel-body">
+          <h2 class="dest-panel-city" id="destPanelCity">Ciudad</h2>
+          <p class="dest-panel-country" id="destPanelCountry">País</p>
+          <div class="dest-panel-price" id="destPanelPrice">—</div>
+
+          <div class="dest-info-grid">
+            <div class="dest-info-item">
+              <div class="dest-info-label">📅 Fecha</div>
+              <div class="dest-info-value" id="destPanelDate">N/A</div>
+            </div>
+            <div class="dest-info-item">
+              <div class="dest-info-label">🔄 Escalas</div>
+              <div class="dest-info-value" id="destPanelStops">N/A</div>
+            </div>
+            <div class="dest-info-item">
+              <div class="dest-info-label">🌡️ Clima</div>
+              <div class="dest-info-value" id="destPanelClimate">N/A</div>
+            </div>
+            <div class="dest-info-item">
+              <div class="dest-info-label">🏔️ Paisaje</div>
+              <div class="dest-info-value" id="destPanelLandscape">N/A</div>
+            </div>
+            <div class="dest-info-item">
+              <div class="dest-info-label">🏨 Hotel desde</div>
+              <div class="dest-info-value" id="destPanelHotel">N/A</div>
+            </div>
+          </div>
+
+          <div class="dest-description" id="destPanelDescription">
+            Información del destino
+          </div>
+        </div>
+      </div>
+
+      <!-- Restart button -->
+      <button class="btn-restart" id="btnRestart">
+        ↺ Reiniciar búsqueda
+      </button>
+    </section>
+
+    <!-- ===== Loading Overlay ===== -->
+    <div class="loading-overlay" id="loadingOverlay">
+      <div class="loading-spinner"></div>
+      <p class="loading-text" id="loadingText">Procesando...</p>
     </div>
 
-    <!-- Contenedor para el zoom de imagen -->
-    <div id="imgModal" class="modal-img" onclick="this.style.display='none'">
-        <img class="modal-img-content" id="fullImg">
-    </div>
+  </div>
 
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <script>
-        const btn = document.getElementById('searchBtn');
-        const loading = document.getElementById('loading');
-        const resultsDiv = document.getElementById('results');
-        const mapDiv = document.getElementById('map');
-        const imgModal = document.getElementById('imgModal');
-        const fullImg = document.getElementById('fullImg');
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
-        // Inicializar Mapa
-        const map = L.map('map').setView([20, 0], 2);
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
-        let layers = L.layerGroup().addTo(map);
-
-        // Función para obtener imágenes de Wikipedia sin necesidad de API Key
-        // Función para obtener imágenes de Wikipedia con soporte para nombres en español y redirecciones
-        async function getWikiImage(city) {
-            async function fetchFromWiki(lang) {
-                const wikiUrl = `https://${lang}.wikipedia.org/w/api.php?action=query&format=json&origin=*&prop=pageimages&titles=${encodeURIComponent(city)}&pithumbsize=600&redirects=1`;
-                try {
-                    const res = await fetch(wikiUrl);
-                    const data = await res.json();
-                    const pages = data.query.pages;
-                    const pageId = Object.keys(pages)[0];
-                    if (pageId !== "-1" && pages[pageId].thumbnail) {
-                        return pages[pageId].thumbnail.source;
-                    }
-                } catch (e) {
-                    console.error(`Error buscando en Wikipedia (${lang}):`, e);
-                }
-                return null;
-            }
-
-            // Primero intentamos en español, luego en inglés
-            let imageUrl = await fetchFromWiki('es');
-            if (!imageUrl) {
-                imageUrl = await fetchFromWiki('en');
-            }
-
-            return imageUrl || `https://placehold.co/600/400?text=${encodeURIComponent(city)}`;
-        }
-
-        btn.addEventListener('click', async () => {
-            const origin = document.getElementById('origin').value;
-            const destinations = document.getElementById('destinations').value;
-            const date = document.getElementById('date').value;
-
-            // 1. Mostrar loading, bloquear botón y limpiar resultados anteriores
-            loading.style.display = 'block';
-            btn.disabled = true;
-            resultsDiv.innerHTML = '';
-            layers.clearLayers();
-            mapDiv.style.display = 'none';
-
-            try {
-                const url = `/api/search?origin=${encodeURIComponent(origin)}&destinations=${encodeURIComponent(destinations)}&date=${encodeURIComponent(date)}`;
-                const response = await fetch(url);
-                
-                let data;
-                try {
-                    data = await response.json();
-                } catch (err) {
-                    throw new Error("El servidor no devolvió una respuesta válida.");
-                }
-
-                if (!response.ok) {
-                    resultsDiv.innerHTML = `<p class="error">❌ Error ${response.status}: ${data.detail || 'Error desconocido'}</p>`;
-                    return;
-                }
-
-                // 2. Renderizar resultados
-                mapDiv.style.display = 'block';
-                map.invalidateSize();
-                // Marcador Origen
-                const originMarker = L.marker([data.origin.lat, data.origin.lon]).addTo(layers).bindPopup(`<b>Origen: ${data.origin.name}</b>`);
-                
-                // Buscamos las imágenes de Wikipedia en paralelo desde el navegador
-                const destNames = Object.keys(data.results);
-                const imageUrls = await Promise.all(destNames.map(name => getWikiImage(name)));
-
-                let resultsHtml = '<h2>Resultados de la búsqueda:</h2>';
-                
-                destNames.forEach((dest, index) => {
-                    const info = data.results[dest];
-                    const imageUrl = imageUrls[index];
-                    
-                    resultsHtml += `
-                        <div class="card">
-                            <img src="${imageUrl}" alt="${dest}" onclick="openImgModal('${imageUrl}')" onerror="this.src='https://placehold.co/600/400?text=Foto+no+disponible'">
-                            <div class="card-content">
-                                <h3>${dest}</h3>
-                                <p><strong>💰 Vuelo:</strong> ${info.price}</p>
-                                <p><strong>🏨 Hotel desde:</strong> ${info.hotel_price || 'No disponible'}</p>
-                                <p><strong>📅 Fecha:</strong> ${info.date || 'N/A'}</p>
-                                <p><strong>🕒 Visto el:</strong> ${info.observed || 'N/A'}</p>
-                                ${info.duration ? `<p><strong>⏱️ Duración:</strong> ${info.duration}</p>` : ''}
-                                <p><strong>🔄 Escalas:</strong> ${info.stops !== undefined ? info.stops : 'N/A'}</p>
-                            </div>
-                        </div>`;
-                    
-                    if (info.lat !== 0) {
-                        // Añadir foto también al popup del mapa
-                        const popupContent = `<b>${dest}</b><br><img src="${imageUrl}" style="width:100%;border-radius:4px;margin-top:5px;"><br><b>Vuelo:</b> ${info.price}<br><b>Hotel:</b> ${info.hotel_price || 'N/A'}`;
-                        const destMarker = L.marker([info.lat, info.lon]).addTo(layers).bindPopup(popupContent);
-                        L.polyline([[data.origin.lat, data.origin.lon], [info.lat, info.lon]], {color: '#007bff', weight: 2, opacity: 0.6, dashArray: '5, 10'}).addTo(layers);
-                    }
-                });
-                
-                resultsDiv.innerHTML = resultsHtml;
-                map.fitBounds(layers.getLayers().map(l => l.getLatLng ? l.getLatLng() : null).filter(l => l));
-            } catch (error) {
-                console.error(error);
-                resultsDiv.innerHTML = `<p class="error">❌ Error de conexión: ${error.message}</p>`;
-            } finally {
-                // 3. Ocultar loading y reactivar botón pase lo que pase
-                loading.style.display = 'none';
-                btn.disabled = false;
-            }
-        });
-
-        function openImgModal(src) {
-            imgModal.style.display = "block";
-            fullImg.src = src;
-        }
-    </script>
+  <!-- App JS -->
+  <script src="/static/js/app.js"></script>
 </body>
 </html>
